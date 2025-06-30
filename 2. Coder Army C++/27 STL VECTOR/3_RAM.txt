@@ -1,0 +1,18 @@
+RAM ( Random Access Memory )
+It is divided into 2 Parts...
+
+a. HEAP                                 b. STACK
+Memory allocated Randomly               Memory Allocates Continuously
+Large Proportion of RAM                 Small Proportion of RAM
+can create large number of variables    create less number of variables
+cannot create any variable in it easily All main() function variables gets memory here
+vector gets memory in HEAP              int arr[],int a,etc.. gets merory in Statically
+thats why vector<int>k(n),              int arr[n] WRONG ,int arr[1000] Need a constant value
+vector can create "n" size of memory    static have limited memory, so if n=1cr,[OVERFLOW]
+
+It is called```                         It is called```
+Dynamically Memory Allocation           Statically Memory Allocation
+{memory allocate at Run Time}           {Memory allocate at Compile Time}
+
+                                        Stack is fast so, all simple variable allocates memory here
+                                        at time of creation of C++

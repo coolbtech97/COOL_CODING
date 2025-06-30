@@ -1,0 +1,332 @@
+/* styles.css - Custom styles for Anand Kumar's page */
+:root {
+  --primary: #1cdfc5;
+  --accent: #ffa8b6;
+  --bg: #f0f8f8;
+  --dark-bg: #222;
+  --dark-text: #eee;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: #333;
+  transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+header {
+  background: linear-gradient(90deg, var(--primary) 60%, var(--accent) 100%);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(28,223,197,0.15);
+  animation: fadeInDown 1s;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  max-width: 80vw;
+  max-height: 80vw;
+  min-width: 120px;
+  min-height: 120px;
+  border-radius: 50%;
+  margin: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  background: #fff;
+  object-fit: cover;
+  object-position: center 20%; /* crop a bit from top for better face centering */
+  animation: popIn 1.2s cubic-bezier(0.4,0,0.2,1), profilePulse 2.5s infinite alternate;
+  transition: transform 0.12s cubic-bezier(0.4,2,0.2,1), box-shadow 0.12s;
+  cursor: pointer;
+}
+.profile-pic:hover {
+  transform: scale(1.06) translateY(-8px) rotate(-1deg);
+  box-shadow: 0 12px 36px 0 rgba(28,223,197,0.18), 0 8px 32px rgba(0,0,0,0.18);
+  z-index: 2;
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.7) rotate(-10deg); }
+  80% { opacity: 1; transform: scale(1.05) rotate(2deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0); }
+}
+@keyframes profilePulse {
+  0% { box-shadow: 0 0 0 0 rgba(28,223,197,0.3), 0 8px 32px rgba(0,0,0,0.15); }
+  100% { box-shadow: 0 0 0 20px rgba(28,223,197,0.05), 0 8px 32px rgba(0,0,0,0.15); }
+}
+
+.intro h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  animation: colorPulse 2s infinite alternate, bounceIn 1.2s;
+}
+
+@keyframes colorPulse {
+  from { color: #fff; }
+  to { color: #ffe6f0; }
+}
+@keyframes bounceIn {
+  0% { opacity: 0; transform: scale(0.7) translateY(-40px); }
+  60% { opacity: 1; transform: scale(1.1) translateY(10px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 18px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contacts li {
+  margin: 0;
+  animation: fadeInLeft 1.2s;
+  transition: transform 0.18s cubic-bezier(0.4,2,0.2,1);
+}
+
+.contacts a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px #0001;
+  transition: box-shadow 0.2s, background 0.2s, transform 0.18s cubic-bezier(0.4,2,0.2,1);
+  font-size: 1.5em;
+  position: relative;
+}
+
+.contacts a:hover {
+  background: var(--accent);
+  box-shadow: 0 4px 16px #ffa8b6cc;
+  transform: scale(1.18) translateY(-4px) rotate(-6deg);
+}
+
+.contacts a:active {
+  transform: scale(0.95);
+}
+
+.contacts a i {
+  margin: 0;
+  font-size: 1.2em;
+  vertical-align: middle;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contacts a:hover i {
+  color: var(--primary);
+  transform: scale(1.25) rotate(-10deg);
+  filter: drop-shadow(0 2px 6px #ffa8b6cc);
+}
+
+.contacts a[style*="color: red;"] i.fas.fa-gamepad {
+  color: #ff3b3b;
+  text-shadow: 0 0 6px #ffb3b3;
+}
+.contacts a[style*="color: red;"] i.fab.fa-instagram {
+  color: #e1306c;
+  text-shadow: 0 0 6px #f9a;
+}
+.contacts a i.fa-envelope {
+  color: #0077cc;
+}
+.contacts a i.fa-whatsapp {
+  color: #25d366;
+}
+.contacts a i.fa-instagram {
+  color: #e1306c;
+}
+
+.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.dark-mode header,
+.dark-mode .feedback,
+.dark-mode .extra-form,
+.dark-mode .marks-table {
+  background-color: #333 !important;
+  color: var(--dark-text);
+}
+
+.toggle-mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 8px #0002;
+  transition: background 0.3s;
+}
+.toggle-mode:hover {
+  background: var(--primary);
+  color: #222;
+}
+
+.feedback, .extra-form {
+  background: var(--accent);
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.08);
+  animation: fadeIn 1.2s, slideUp 1.2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  from { transform: translateY(40px); }
+  to { transform: translateY(0); }
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+form input:focus, form textarea:focus {
+  border: 1.5px solid var(--primary);
+  outline: none;
+}
+form input[type="submit"] {
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: background 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+form input[type="submit"]:hover {
+  background: #13bfa5;
+}
+form input[type="submit"]:hover::after {
+  content: '';
+  position: absolute;
+  left: -75%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, #fff7, transparent);
+  animation: shimmer 0.7s;
+}
+@keyframes shimmer {
+  100% { left: 120%; }
+}
+
+.marks-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  animation: fadeInUp 1.2s;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.marks-table {
+  background: #fff;
+  border-collapse: collapse;
+  width: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  animation: tablePop 1.2s, glowBorder 2.5s infinite alternate;
+}
+@keyframes tablePop {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes glowBorder {
+  from { box-shadow: 0 4px 16px rgba(0,0,0,0.10), 0 0 0 0 var(--primary); }
+  to { box-shadow: 0 4px 16px rgba(0,0,0,0.10), 0 0 16px 4px var(--primary); }
+}
+.marks-table:hover {
+  animation: tableBounce 0.7s;
+}
+@keyframes tableBounce {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.06) translateY(-8px); }
+  60% { transform: scale(0.98) translateY(4px); }
+  100% { transform: scale(1) translateY(0); }
+}
+.marks-table th, .marks-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #eee;
+  font-size: 18px;
+  animation: fadeIn 1.2s;
+}
+.footer-links a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-links a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/* Animate on scroll */
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
