@@ -2,6 +2,8 @@
 public class anand {
     
     public static void main(String[] args) {
-        System.out.println("HELLO WORLD");
+        int n=6;
+        System.out.println(n);
+        System.out.println(" is my roll number");
     }
 }

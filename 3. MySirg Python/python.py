@@ -1,8 +1,15 @@
+import anand
+import os
+os.system('cls')
 #   """anand"""
 ''''''''
 n=5
-import os
-from tkinter import HIDDEN
-os.system('cls')
+n=anand.pie
+n=22 /7
 print(n)
-HIDDEN
+
+#os.system('cls')
+
+n=2**128
+
+print(n," and ",2**128)

@@ -11,3 +11,4 @@ x=2.7       changed into FLOAT
 x=True      changed into BOOL
 x="Anand"   changed into STR
 """
+num=15
