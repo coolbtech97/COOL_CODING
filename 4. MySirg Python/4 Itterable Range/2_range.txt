@@ -1,0 +1,36 @@
+RANGE
+    range is a class
+    range is immutable sequence               [immutable=Unchangeable]  [mutable=changeable]
+    range can contain only ""int"" type values
+    range contains sequence of integers with common difference (Arithmetic Progression)
+                    (a+(n-1)d)
+
+Create Range
+
+    r= range(BEGIN ,END (not include) , STEPS)
+
+    r= range( 1      ,   10    ,    2      )
+            inclusive Exclusive Common diff
+
+            {1 , 3 , 5 , 7 , 9}
+    
+    r= range( 2 , 8 , 2)
+
+            {2 , 4 , 6}
+    
+    r= range( 10 , 3 , -2)
+
+            {10 , 8 , 6 , 4}
+
+ACCESS:
+    for e in r:
+
+NOTE:
+
+    range(end)        beg=0   step=1
+    if passes only 1 value,(it will considered as END, and beg=0,step=1)
+
+    range(beg,end)            step=1
+    if passes only 2 values,(it will considered as BEG,END, and step=1)
+
+END value does not include in the range

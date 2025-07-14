@@ -1,0 +1,14 @@
+/* CSS SELECTORS
+7. Descendant Selector              div p {}
+8. Child Selector                   div > p
+                            DIV and SECTION are "HIGHER BLOCK ELEMENTS"
+                            property- Div,Section can not be a Child
+
+                            and p, h1,h2.... are "block elements"
+                          **block element cannot be a child,[except for HIGHER BLOCK ELEMENTS]
+
+                          UL / OL child can ONLY be "LISTs" *li
+
+                          **LIST could be the ""Main Branch"",
+                            So, I can put DIV, SECTION and all block elements ALL.... in LIST***
+ */

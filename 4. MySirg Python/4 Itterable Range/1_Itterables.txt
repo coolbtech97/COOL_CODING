@@ -1,0 +1,27 @@
+1. what are iterables?
+2. Various iterables
+3. range
+4. Accessing range elements
+5. Practice
+---------------------------
+ITERABLES
+    An iterable object is something that contains a countable number of values.
+    MULTIPLE ELEMENTS
+
+it will called Iterable objcet,
+    when we can access its elements One by One. from 1st to last,
+
+* Technically, In Python,, an iterator is an object, which implements
+the iterator protocol, which consistes of methods''
+__iter__()      __next__() *
+
+VARIOUS ITTERBLES ARE--
+*range
+*list
+*tuple
+*str
+*bytes
+*bytearray
+*set
+*frozenset
+*dict

@@ -1,0 +1,108 @@
+/*
+<font size="5" color="red">
+
+-----------------------------------
+There are 3 Types of CSS:-
+1. Inline CSS
+2. Internal CSS
+3. External CSS
+
+<h1 style="color: red;"> ANAND </h1>        INLINE CSS
+
+<head>
+    <style>
+        #colr{
+            color: red;
+        }
+    </style>
+<head>
+<body>
+    <h1 id="colr"> ANAND </h1>              INTERNAL CSS
+
+
+creating a separate file with .CSS extension
+and using same style tag codes              EXTERNAL CSS
+and LINK it in <head>
+
+----------------------------------
+
+There are Three MAIN Types to Select any TAG
+1. Select By Element    h1
+2. CLASS                .
+3. ID                   #
+
+-----------------------------------
+There are 9 CSS SELECTOR:-
+1. Element Selector
+2. Class Selector                   .
+3. Id Selector                      #
+4. ATTRIBUTE SELECTOR               p[contentable="true"]
+                                    table[border="1"]{
+                                                        color:red;
+                                                    }
+                        it means- table tag, whose attributes border="1"
+
+5. Universal Selector               *
+6. Grouping Selector                h1,h2,p
+7. Descendant Selector              div p {}
+8. Child Selector                   div > p
+                            DIV and SECTION are "HIGHER BLOCK ELEMENTS"
+                            property- Div,Section can not be a Child
+
+                            and p, h1,h2.... are "block elements"
+                          **block element cannot be a child,[except for HIGHER BLOCK ELEMENTS]
+
+                          UL / OL child can ONLY be "LISTs" *li
+
+                          **LIST could be the ""Main Branch"",
+                            So, I can put DIV, SECTION and all block elements ALL.... in LIST***
+9. ID Selector with Class Selector  #id.class
+                                    HomeWork, do IT, the last one
+*/
+
+h1{                             /* Applies on all H1 tag */
+    background-color: antiquewhite;
+}
+/* Element Selector */
+
+.list{                          /* #CLASS */
+    background-color: aliceblue;
+    display:inline-block;
+    color:crimson;
+}
+/* Class Selector */
+
+#info{                          /* .ID */
+    color: red;
+}
+/* Id Selector */
+
+table{
+    background-color: pink;
+    border-color: black;
+    border-radius: 2%;
+    border-style:hidden;
+}
+#drag{
+    color: brown;
+}
+
+*{                           /*SELECT ALL TAGS */ 
+    color: rgb(73, 73, 209);
+}
+/* Universal Selector */
+
+h2,p,#topic{                /* Select all h2, p, and topic id */
+    color: blueviolet;
+}
+/* Grouping Selector */
+
+h2 p{                           /* Select all <p> in H2 */
+    color:aliceblue;          /* his all decendents[son,grandson,all] */
+}
+/* Descendant Selector */
+
+h2 > p{                         /* Select all <p> in H2 */
+    color:chocolate;          /* HIS SON ONLY */
+}
+/* Child Selector */
