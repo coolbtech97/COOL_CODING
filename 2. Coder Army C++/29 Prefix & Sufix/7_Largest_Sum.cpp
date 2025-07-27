@@ -8,20 +8,19 @@ int main()
 {
     system("cls");
     vector<int> arr={3,4,-5,8,-12,7,6,-2};
-    int s=arr.size(),temp;
     int max=arr[0];
-    for(int start=0;start<s;start++)
+    int s=arr.size(),prefix;
+    for(int i=0;i<s;i++)
     {
-        for(int end=start+1;end<=s;end++)
+        prefix=0;
+        for(int j=i;j<s;j++)
         {
-            temp=0;
-            for(int i=start;i<end;i++)
-                temp+=arr[i];
-            if(max<temp)
-                max=temp;
+            prefix+=arr[j];
+            if(max<prefix)
+                max=prefix;
         }
     }
     cout<<"Maximum is "<<max;
     return 0;
 }
-// O(n)^3
+// O(n)^2

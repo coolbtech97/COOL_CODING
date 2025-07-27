@@ -1,11 +1,5 @@
+# Print N whole numbers
 import os
-os.system('cls')
-# print("Seeta" or "Geeta")
-
-
-a,b,c=1,2,3
-# print(a,b,c)
-(a)
-# print(type(a))
-a=2**200
-print(a)
+os.system("cls")
+for i in range(1,1+int(input("Enter the value of n: "))):
+    print(i,end=" ")
