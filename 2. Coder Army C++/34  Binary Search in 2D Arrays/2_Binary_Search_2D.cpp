@@ -24,9 +24,9 @@ void print(vector<vector<int>>& arr) {
                 cout << " ";
             if (arr[i][j] < 100)  // spacing for 10 to 99
                 cout << " ";
-                cout << arr[i][j];
-                if (arr[i][j] < 1000) // spacing for 100 to 999
-            cout << " ";
+            cout << arr[i][j];
+            if (arr[i][j] < 1000) // spacing for 100 to 999
+                cout << " ";
         }
         cout << endl;
     }
@@ -39,24 +39,29 @@ int main() {
     int k = 52;
     // cout << "Enter the number to search : ";
     // cin >> k;
-    // SORT the complete array
-    sort(arr.begin(),arr.end());
-    // then do binary search
-    int start=0,end=arr.size()*arr[0].size() - 1 , mid, r, c;
-    while(start<=end)
+    
+    // No need to sort - matrix is already sorted row-wise and column-wise
+    // For binary search in a 2D sorted array:
+    int rows = arr.size();
+    int cols = arr[0].size();
+    int start = 0;
+    int end = rows * cols - 1;
+    int mid, r, c;
+    
+    while(start <= end)
     {
-        mid=start+(end-start)/2;
-        r=mid/arr[0].size();
-        c=mid%arr[0].size();
-        if(arr[r][c]==k)
+        mid = start + (end - start) / 2;
+        r = mid / cols;
+        c = mid % cols;
+        if(arr[r][c] == k)
         {
-            cout<<"Found";
+            cout << "Found at position (" << r << "," << c << ")";
             return 1;
         }
-        if(arr[r][c]<k)
-            start=mid+1;
+        if(arr[r][c] < k)
+            start = mid + 1;
         else
-            end=mid-1;
+            end = mid - 1;
     }
     cout << "Not Found";
     return 0;

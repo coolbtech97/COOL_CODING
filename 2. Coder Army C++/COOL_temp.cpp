@@ -34,8 +34,7 @@ void print(vector<vector<int>>& arr, int i) {
 }
 int main() {
     system("cls");
-    vector<vector<int>> arr(4, vector<int>(5, 0));
-    print(arr, 0);
-    cout<<(*(arr+1));
+    vector<int> arr(4,0);
+    // cout<<(*(arr+1));
     return 0;
 }

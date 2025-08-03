@@ -6,19 +6,26 @@
 // ans -  2 1 0 1 1    
 #include<iostream>
 using namespace std;
+
 int main()
 {
-    int a[5],b[5]={0},i,j;
-    system("cls");
-    cout<<"Enter 5 numbers upto 5 : ";
-    for(i=0;i<5;i++)
+    int a[5], b[5]={0}, i;
+    
+    cout<<"Enter 5 numbers between 1 and 5: ";
+    for(i=0; i<5; i++) {
         cin>>a[i];
-        
-    for(i=0;i<5;i++)
-        b[a[i]-1]++;
+        // Validate input
+        if(a[i] < 1 || a[i] > 5) {
+            cout<<"Invalid input! Enter a number between 1 and 5: ";
+            i--; // Retry this input
+            continue;
+        }
+        b[a[i]-1]++; // Count immediately for efficiency
+    }
 
-    cout<<endl<<"The count is :";
-    for(i=0;i<5;i++)
+    cout<<endl<<"The count is:";
+    for(i=0; i<5; i++)
         cout<<" "<<b[i];
+    
     return 0;
-};
+}

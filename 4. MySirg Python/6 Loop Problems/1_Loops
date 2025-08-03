@@ -1,0 +1,9 @@
+LOOPS IN PYTHON
+1. while
+2. for
+        -- Do WHile loop is not here
+
+WHILE
+while condition:
+    # code to execute while condition is true
+    # INDENTATION AND Spaces are MUCH IMPORTANT
