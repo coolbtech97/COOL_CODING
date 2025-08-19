@@ -1,0 +1,54 @@
+*{
+    background-color: black;
+    color: white;
+}
+#anand{
+    font-size: 10vw;   /* Size adjust according to the Width" */
+}
+#kumar{
+    font-size: 10vh;   /* Size adjust according to the Height" */
+}
+h1{
+    font-weight: 600;
+}
+
+/* 
+CSS Fonts--
+
+6. line-height: 1.5;    times the font size
+7. letter-spacing
+8. Word-spacing
+9. Text-transform
+10. Font-stretch
+
+-----------------------------------------------
+
+Cascading--
+1. Order
+2. Specificity
+    ID
+    Attributes
+    Class
+    Child and decendent
+    Element and group element
+
+3. Type
+    Inline
+    Internal and external css
+
+4. Important
+*/
+p{
+    line-height: 1.5;
+    line-height: 20px;
+
+    /* letter-spacing: normal; */
+    letter-spacing: 1px;
+
+    word-spacing: 2px;
+
+    text-transform: capitalize;
+}
+#p2{
+    line-height: 0;
+}

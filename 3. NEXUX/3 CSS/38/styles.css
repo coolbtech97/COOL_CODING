@@ -1,0 +1,36 @@
+h2{
+    background-color: pink;
+    /* BORDER */
+    border-width: 10px;
+    border-style:outset;
+    border-color: blue;
+    border-radius: 11px;        /* Round Corners */
+    /* PADDING */
+    padding: 20px;
+}
+#Trying{
+    background-color: aquamarine;
+    border-left-width: 10px;    
+    border-color:chocolate;
+    border-style: solid;        /* Some Problem Shows */
+}
+#left{
+    background-color: aquamarine;
+    border-left-width: 10px;
+    border-left-color:chocolate;
+    border-left-style: solid;   /* Only SHowing on LEFT */
+    padding: 4px;
+}
+#border{
+    background-color:darkgray;
+    border-width: 10px 20px;
+    border-style: solid;
+    border-color: green;
+}
+#name{
+    background-color: aqua;
+    color: red;
+    height: 200px;  /* Long Size Wow */
+    width: 50vw;
+    padding: 20px;  /* We can See the Distance from Borders */
+}

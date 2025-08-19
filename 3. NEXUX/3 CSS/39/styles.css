@@ -1,0 +1,59 @@
+.first{
+    background-color:orange;
+    margin-bottom: 4px;
+    border-radius: 2%;
+    padding: 4px;
+}
+.second{
+    background-color: aqua;
+    margin-bottom: 4px;
+    border-radius: 2%;
+    padding: 4px;
+}
+.first , .second{
+    height: 150px;
+    width: 300px;
+}
+div > hr{
+    height: 13px;
+    backface-visibility: inherit;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0%;
+}
+hr{
+    height: 2px;
+    width: 99%;
+    background-color: rgb(231, 114, 72);
+    border-radius: 100%;
+}
+.red{
+    color: red;
+    font-weight: bolder;
+}
+body > span{
+    background-color: magenta;
+    margin: 6px;
+}
+h3{
+    background-color: tomato;
+    border-radius: 2px;
+    display: inline;
+    padding: 2px;
+    margin: 5px 1px 0px;
+    box-sizing: border-box;
+}
+.displayblock{
+    display: block;
+}
+.displayinline{
+    margin-left: 5px;
+    background-color: aqua;
+    display: inline;
+}
+#displayinlineblock{
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+    border-radius: 11%;
+}

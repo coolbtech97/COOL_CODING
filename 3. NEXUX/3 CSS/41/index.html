@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index -1</title>
+</head>
+<body>
+    <header>
+        <h1>41 Class</h1>
+    </header>
+    <main>
+        <h2>Today's Topics</h2>
+        <ul>
+            <li>Z-index</li>
+            <li>Overflow
+                <ol>
+                    <li class="ul">hidden<br></li>
+                    <li class="ul">visible<br></li>
+                    <li class="ul">scroll<br></li>
+                    <li class="ul">auto</li>
+                </ol>
+            </li>
+            <li>Float and Clear</li>
+            <li>CSS on Text
+                <ol>
+                    <li>text align :
+                        <ul>
+                            <li class="ul">center</li>
+                            <li class="ul">left</li>
+                            <li class="ul">right<br></li>
+                            <li class="ul">justify (make content equal)</li>
+                        </ul>
+                    </li>
+                    <li>text-align-last</li>
+                    <li>direction : rtl;<br>
+                        unicode-bid : bidi-override;
+                    </li>
+                </ol>
+            </li>
+        </ul>
+        <!-- Starting Noww -->
+        <hr noshade>
+        <h2>z-index</h2>
+        <div class="container">
+            <div class="box box1">Box 1<br>
+                position: relative;<br>
+                left: 50px;<br>
+                top: 50px;<br>
+                z-index: 2;
+            </div>
+            <div class="box box2">Box 2<br>
+                position: relative;<br>
+                right: 20px;<br>
+                bottom: 40px;<br>
+                z-index: 5;
+            </div>
+            <div class="box box3">Box 3<br>
+                position: relative;<br>
+                right: 95px;<br>
+                top: 91px;<br>
+                z-index: 10;
+            </div>
+            <div class="box box4">Box 4<br>
+                position: relative;<br>
+                bottom: 75px;<br>
+                z-index: -1;
+            </div>
+        </div>
+        <pre>
+        Note:
+        1.  z-index will only "NOT work with display: static" (default),
+            display: should be Relative, Absolute, Fixed, Sticky.....etc
+        2.  Higher the z-index value -- Highest the upper showing
+        </pre>
+        <hr noshade>
+        <h2>Overflow</h2>
+        <div class="block">
+            <div class="container2 visible">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur amet quasi consectetur veniam repellat omnis veritatis aliquam enim temporibus asperiores. Ipsam aliquam itaque cum labore voluptatum non quae quo inventore, porro at impedit tempore aperiam a voluptatibus. Et necessitatibus voluptate exercitationem vero molestias repellendus, voluptatum porro eius at iste! Qui a fuga aliquid nulla, incidunt rerum? Veniam ea, eveniet culpa vero placeat porro neque quaerat cum alias, qui deserunt non numquam inventore libero quod. Vel ratione praesentium expedita cumque qui itaque quidem ad provident. Accusantium voluptatem minima consequatur reprehenderit, laborum, deserunt optio, illo quo nulla rerum eos nihil dolor perspiciatis doloremque.
+            </div>
+            <div class="text">overflow: visible<br><p>Do nothing, just continuing Overflow</p></div>
+            <div class="container2 hidden">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo perferendis eum deleniti eaque minima neque omnis, error porro? Voluptate nobis obcaecati consectetur distinctio temporibus rem voluptatem eius neque quia, cupiditate ut, sapiente doloribus nihil non officiis officia. Necessitatibus velit soluta laborum vel similique! Recusandae fugiat corporis ex laudantium ullam non in aspernatur qui necessitatibus nulla, illo totam quasi provident, omnis odit aperiam quia! Reiciendis, illo consequuntur? Inventore a, ex eum error provident quasi laudantium adipisci sint nulla dolorum consectetur iste labore beatae voluptatem. Voluptas, asperiores provident aliquam fugiat dolor voluptates quis vero, possimus ipsam ipsa quae aspernatur dolorum hic fuga unde laboriosam! Ad nisi officiis incidunt? Numquam vero tempora sed placeat laudantium omnis. Inventore at pariatur excepturi in ipsum exercitationem magnam nemo facilis enim itaque, commodi doloremque necessitatibus dolor. Quia consequatur illum corporis quae magnam voluptatem voluptatibus velit voluptas. Animi totam accusamus mollitia dolorem numquam quaerat reprehenderit, quae quo voluptate nostrum laboriosam. Enim voluptas accusamus praesentium nemo asperiores earum ut et consequatur beatae minima reprehenderit, nisi nam dolorem hic necessitatibus aliquam, nihil animi nulla at in? Repudiandae ex explicabo, aliquid porro quae quia magni unde quisquam dolore cum. Iure accusantium pariatur illum porro delectus provident quis molestias vel. Distinctio ea dolor sapiente exercitationem odit soluta accusantium dignissimos perspiciatis veritatis, temporibus et expedita eaque aliquid provident veniam at iusto numquam qui? Blanditiis fugit mollitia aperiam facere quo et voluptatem soluta quia? Qui tempore fuga adipisci ab excepturi ea culpa, delectus quis repudiandae libero eligendi eum voluptatem, explicabo atque recusandae laudantium corporis temporibus dolores, sit aut distinctio dolorum molestias dicta ad. Nemo quam quod quas, omnis sed maiores natus harum in eos molestias praesentium nesciunt, vel error? Numquam, ducimus. Pariatur dolorem eveniet reprehenderit porro voluptas quia natus quis repellendus doloribus iure eaque temporibus, libero maxime asperiores. Optio quasi cupiditate, tempora sequi quo enim modi porro sit, incidunt cum est aliquid, nostrum molestias voluptatibus dolorem pariatur totam nisi maiores! Dolor doloribus dolorem eum fugit id impedit, quibusdam repellendus quis, nesciunt nihil possimus fugiat odit exercitationem delectus recusandae illo unde nemo. Officiis omnis quis, quidem quisquam placeat beatae suscipit molestias doloremque eos culpa fuga alias cum consequuntur numquam debitis excepturi vitae corporis pariatur maiores deleniti. Id impedit aperiam aliquid possimus repellat ipsam aliquam quia veniam ea neque ut est qui rerum ullam odio reprehenderit, nihil debitis minus, eaque mollitia. At culpa dolores adipisci dolor possimus minima! Vero ab, accusamus aliquam quae voluptates natus cum reprehenderit fugit autem necessitatibus quisquam non molestiae laborum? Ratione voluptates laborum numquam facilis, qui, odit iusto sunt, repellat repudiandae inventore quos quibusdam tenetur molestiae fugiat porro. Qui tenetur, assumenda sequi, expedita reiciendis labore modi ut culpa facere quod dolore quia doloremque perspiciatis doloribus aliquid architecto voluptates nesciunt? Doloribus unde corrupti cupiditate consectetur veritatis! Nisi, accusantium voluptatem? Soluta fuga ipsa, consectetur ea ducimus ut quia delectus iusto labore, magni voluptas maxime explicabo, doloremque voluptatum quod? Fuga alias sint numquam maiores officia quisquam quae unde a deserunt sunt suscipit, iusto consequatur voluptas nostrum ullam ratione! Deleniti rem laborum porro est, alias excepturi.
+            </div>
+            <div class="text">overflow: hidden<br><p>Hide all Overflows</p></div>
+            <div class="container2 scroll">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo perferendis eum deleniti eaque minima neque omnis, error porro? Voluptate nobis obcaecati consectetur distinctio temporibus rem voluptatem eius neque quia, cupiditate ut, sapiente doloribus nihil non officiis officia. Necessitatibus velit soluta laborum vel similique! Recusandae fugiat corporis ex laudantium ullam non in aspernatur qui necessitatibus nulla, illo totam quasi provident, omnis odit aperiam quia! Reiciendis, illo consequuntur? Inventore a, ex eum error provident quasi laudantium adipisci sint nulla dolorum consectetur iste labore beatae voluptatem. Voluptas, asperiores provident aliquam fugiat dolor voluptates quis vero, possimus ipsam ipsa quae aspernatur dolorum hic fuga unde laboriosam! Ad nisi officiis incidunt? Numquam vero tempora sed placeat laudantium omnis. Inventore at pariatur excepturi in ipsum exercitationem magnam nemo facilis enim itaque, commodi doloremque necessitatibus dolor. Quia consequatur illum corporis quae magnam voluptatem voluptatibus velit voluptas. Animi totam accusamus mollitia dolorem numquam quaerat reprehenderit, quae quo voluptate nostrum laboriosam. Enim voluptas accusamus praesentium nemo asperiores earum ut et consequatur beatae minima reprehenderit, nisi nam dolorem hic necessitatibus aliquam, nihil animi nulla at in? Repudiandae ex explicabo, aliquid porro quae quia magni unde quisquam dolore cum. Iure accusantium pariatur illum porro delectus provident quis molestias vel. Distinctio ea dolor sapiente exercitationem odit soluta accusantium dignissimos perspiciatis veritatis, temporibus et expedita eaque aliquid provident veniam at iusto numquam qui? Blanditiis fugit mollitia aperiam facere quo et voluptatem soluta quia? Qui tempore fuga adipisci ab excepturi ea culpa, delectus quis repudiandae libero eligendi eum voluptatem, explicabo atque recusandae laudantium corporis temporibus dolores, sit aut distinctio dolorum molestias dicta ad. Nemo quam quod quas, omnis sed maiores natus harum in eos molestias praesentium nesciunt, vel error? Numquam, ducimus. Pariatur dolorem eveniet reprehenderit porro voluptas quia natus quis repellendus doloribus iure eaque temporibus, libero maxime asperiores. Optio quasi cupiditate, tempora sequi quo enim modi porro sit, incidunt cum est aliquid, nostrum molestias voluptatibus dolorem pariatur totam nisi maiores! Dolor doloribus dolorem eum fugit id impedit, quibusdam repellendus quis, nesciunt nihil possimus fugiat odit exercitationem delectus recusandae illo unde nemo. Officiis omnis quis, quidem quisquam placeat beatae suscipit molestias doloremque eos culpa fuga alias cum consequuntur numquam debitis excepturi vitae corporis pariatur maiores deleniti. Id impedit aperiam aliquid possimus repellat ipsam aliquam quia veniam ea neque ut est qui rerum ullam odio reprehenderit, nihil debitis minus, eaque mollitia. At culpa dolores adipisci dolor possimus minima! Vero ab, accusamus aliquam quae voluptates natus cum reprehenderit fugit autem necessitatibus quisquam non molestiae laborum? Ratione voluptates laborum numquam facilis, qui, odit iusto sunt, repellat repudiandae inventore quos quibusdam tenetur molestiae fugiat porro. Qui tenetur, assumenda sequi, expedita reiciendis labore modi ut culpa facere quod dolore quia doloremque perspiciatis doloribus aliquid architecto voluptates nesciunt? Doloribus unde corrupti cupiditate consectetur veritatis! Nisi, accusantium voluptatem? Soluta fuga ipsa, consectetur ea ducimus ut quia delectus iusto labore, magni voluptas maxime explicabo, doloremque voluptatum quod? Fuga alias sint numquam maiores officia quisquam quae unde a deserunt sunt suscipit, iusto consequatur voluptas nostrum ullam ratione! Deleniti rem laborum porro est, alias excepturi.
+            </div>
+            <div class="text">overflow: scroll<br><p>Puts a Scroll Bar</div>
+            <div class="container2 auto">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo perferendis eum deleniti eaque minima neque omnis, error porro? Voluptate nobis obcaecati consectetur distinctio temporibus rem voluptatem eius neque quia, cupiditate ut, sapiente doloribus nihil non officiis officia. Necessitatibus velit soluta laborum vel similique! Recusandae fugiat corporis ex laudantium ullam non in aspernatur qui necessitatibus nulla, illo totam quasi provident, omnis odit aperiam quia! Reiciendis, illo consequuntur? Inventore a, ex eum error provident quasi laudantium adipisci sint nulla dolorum consectetur iste labore beatae voluptatem. Voluptas, asperiores provident aliquam fugiat dolor voluptates quis vero, possimus ipsam ipsa quae aspernatur dolorum hic fuga unde laboriosam! Ad nisi officiis incidunt? Numquam vero tempora sed placeat laudantium omnis. Inventore at pariatur excepturi in ipsum exercitationem magnam nemo facilis enim itaque, commodi doloremque necessitatibus dolor. Quia consequatur illum corporis quae magnam voluptatem voluptatibus velit voluptas. Animi totam accusamus mollitia dolorem numquam quaerat reprehenderit, quae quo voluptate nostrum laboriosam. Enim voluptas accusamus praesentium nemo asperiores earum ut et consequatur beatae minima reprehenderit, nisi nam dolorem hic necessitatibus aliquam, nihil animi nulla at in? Repudiandae ex explicabo, aliquid porro quae quia magni unde quisquam dolore cum. Iure accusantium pariatur illum porro delectus provident quis molestias vel. Distinctio ea dolor sapiente exercitationem odit soluta accusantium dignissimos perspiciatis veritatis, temporibus et expedita eaque aliquid provident veniam at iusto numquam qui? Blanditiis fugit mollitia aperiam facere quo et voluptatem soluta quia? Qui tempore fuga adipisci ab excepturi ea culpa, delectus quis repudiandae libero eligendi eum voluptatem, explicabo atque recusandae laudantium corporis temporibus dolores, sit aut distinctio dolorum molestias dicta ad. Nemo quam quod quas, omnis sed maiores natus harum in eos molestias praesentium nesciunt, vel error? Numquam, ducimus. Pariatur dolorem eveniet reprehenderit porro voluptas quia natus quis repellendus doloribus iure eaque temporibus, libero maxime asperiores. Optio quasi cupiditate, tempora sequi quo enim modi porro sit, incidunt cum est aliquid, nostrum molestias voluptatibus dolorem pariatur totam nisi maiores! Dolor doloribus dolorem eum fugit id impedit, quibusdam repellendus quis, nesciunt nihil possimus fugiat odit exercitationem delectus recusandae illo unde nemo. Officiis omnis quis, quidem quisquam placeat beatae suscipit molestias doloremque eos culpa fuga alias cum consequuntur numquam debitis excepturi vitae corporis pariatur maiores deleniti. Id impedit aperiam aliquid possimus repellat ipsam aliquam quia veniam ea neque ut est qui rerum ullam odio reprehenderit, nihil debitis minus, eaque mollitia. At culpa dolores adipisci dolor possimus minima! Vero ab, accusamus aliquam quae voluptates natus cum reprehenderit fugit autem necessitatibus quisquam non molestiae laborum? Ratione voluptates laborum numquam facilis, qui, odit iusto sunt, repellat repudiandae inventore quos quibusdam tenetur molestiae fugiat porro. Qui tenetur, assumenda sequi, expedita reiciendis labore modi ut culpa facere quod dolore quia doloremque perspiciatis doloribus aliquid architecto voluptates nesciunt? Doloribus unde corrupti cupiditate consectetur veritatis! Nisi, accusantium voluptatem? Soluta fuga ipsa, consectetur ea ducimus ut quia delectus iusto labore, magni voluptas maxime explicabo, doloremque voluptatum quod? Fuga alias sint numquam maiores officia quisquam quae unde a deserunt sunt suscipit, iusto consequatur voluptas nostrum ullam ratione! Deleniti rem laborum porro est, alias excepturi.
+            </div>
+            <div class="text ll">overflow: auto<br><p>Scroll Need = puts scroll<br>Else = no scroll</p></div>
+        </div>
+
+        <hr noshade class="hrdistance"> <!-- Used its Width 100%, thats why It came Down HEREEEEEEEE-->
+        <hr>
+        <h2>Float</h2>
+        <pre>
+    Float Works only in Horizontal Line
+    float: left;    The element will float to the left side
+    float: right;   The element will float to the right side
+
+        </pre>
+        <div class="box floatleft">Box 1<p>float: left;</p></div>
+        <div class="box floatright">Box 2<p>float: right;</p></div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente commodi dolorum impedit. Ut in quasi, quibusdam qui delectus accusantium, eius illo velit a, explicabo fugit deleniti sint facere dolores labore dolore recusandae alias aspernatur consectetur. Voluptatum corporis vitae at repellat maiores, sapiente, porro labore eius reprehenderit, ducimus voluptatibus sint quasi hic. Minus neque ipsam voluptatibus aliquid libero debitis corporis, a nisi quia laboriosam dolor excepturi tenetur explicabo vitae quae iure distinctio delectus. Suscipit similique fugit nisi adipisci temporibus, laborum dolor et? Corporis dolore culpa accusamus quaerat officia inventore aperiam. Voluptatum culpa dolorum ut asperiores, laudantium optio nostrum quisquam. Impedit!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente esse ea voluptatem repellendus quam, autem est explicabo laudantium aliquid ad vel, asperiores qui. Quae, alias dolore voluptates adipisci odit ipsum, enim minima perferendis accusamus excepturi nesciunt qui quod, quaerat culpa ut asperiores dignissimos odio. Officiis fugit illo nulla dolorem exercitationem quibusdam quia aperiam unde atque, consequatur quos facilis suscipit odio facere? Hic consequuntur tempore minima quis laudantium reprehenderit. Pariatur nisi aperiam ex maxime laborum repellendus totam et fugit quas optio.
+        </p>
+        <div class="box floatleft">Box 1<p>float: left;</p></div>
+        <div class="box floatleft">Box 2<p>float: left;</p></div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente commodi dolorum impedit. Ut in quasi, quibusdam qui delectus accusantium, eius illo velit a, explicabo fugit deleniti sint facere dolores labore dolore recusandae alias aspernatur consectetur. Voluptatum corporis vitae at repellat maiores, sapiente, porro labore eius reprehenderit, ducimus voluptatibus sint quasi hic. Minus neque ipsam voluptatibus aliquid libero debitis corporis, a nisi quia laboriosam dolor excepturi tenetur explicabo vitae quae iure distinctio delectus. Suscipit similique fugit nisi adipisci temporibus, laborum dolor et? Corporis dolore culpa accusamus quaerat officia inventore aperiam. Voluptatum culpa dolorum ut asperiores, laudantium optio nostrum quisquam. Impedit!
+        
+        <hr style="margin-top: 6vh;">
+        <h2>Clear</h2>
+        <div class="box floatleft">Box1<p>float: left</p></div>
+        <div class="box clearleft">Box2<p>float: right/left;;<br>clear: left;
+        </p></div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente commodi dolorum impedit. Ut in quasi, quibusdam qui delectus accusantium, eius illo velit a, explicabo fugit deleniti sint facere dolores labore dolore recusandae alias aspernatur consectetur. Voluptatum corporis vitae at repellat maiores, sapiente, porro labore eius reprehenderit, ducimus voluptatibus sint quasi hic. Minus neque ipsam voluptatibus aliquid libero debitis corporis, a nisi quia laboriosam dolor excepturi tenetur explicabo vitae quae iure distinctio delectus. Suscipit similique fugit nisi adipisci temporibus, laborum dolor et? Corporis dolore culpa accusamus quaerat officia inventore aperiam. Voluptatum culpa dolorum ut asperiores, laudantium optio nostrum quisquam. Impedit!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente esse ea voluptatem repellendus quam, autem est explicabo laudantium aliquid ad vel, asperiores qui. Quae, alias dolore voluptates adipisci odit ipsum, enim minima perferendis accusamus excepturi nesciunt qui quod, quaerat culpa ut asperiores dignissimos odio. Officiis fugit illo nulla dolorem exercitationem quibusdam quia aperiam unde atque, consequatur quos facilis suscipit odio facere? Hic consequuntur tempore minima quis laudantium reprehenderit. Pariatur nisi aperiam ex maxime laborum repellendus totam et fugit quas optio.
+        </p>
+        <h3>Summary-</h3>
+        <pre>
+    clear: left;        If any Element is already floating to the left side, MOVE NEXT LINE.
+
+    clear: right;       If any Element is already floating to the right side, MOVE NEXT LINE.
+
+    clear: both;        If any Element is already floating right or Left side, MOVE NEXT LINE.
+        </pre>
+        <P>clear is only used with "Float"</P>
+        <hr style="margin-top: 6vh;">
+        <h2>Extra-tip for Img resiziing</h2>
+        want to resize image,
+        <pre>
+        height: 40px;
+        width: auto;</pre>
+        <h4>Fix its height and Make the another thing on "AUTO",<br>so that the image will not Stretched like BAD,<br>Its original ratio: will remain constant</h4>
+    </main>
+    <footer>
+        &copy; All rights reserved by COOL. Thank You
+    </footer>
+</body>
+</html>

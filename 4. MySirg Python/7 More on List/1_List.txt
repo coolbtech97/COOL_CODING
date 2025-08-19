@@ -1,0 +1,15 @@
+1. What is List?
+2. How to create list object?
+3. How to access list objects?
+4. Concept of negative indexing
+5. Accessing list elements via For Loop
+6. How to delete an element from a list
+7. How to edit an element of a list
+8. How to add more elements in the list
+9. Packing and Unpacking
+10. Built. in methods
+------------------ALREADY DONE---------------------
+                                        notes on last 5th List folder
+New Topics:___
+
+1. Packing and Unpacking

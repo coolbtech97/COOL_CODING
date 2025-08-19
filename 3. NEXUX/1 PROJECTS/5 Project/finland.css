@@ -1,0 +1,14 @@
+*{
+    margin:0;
+}
+.first{
+    background-color: blue;
+    width: 11vw;
+    height: 42vh;
+    margin-left: 31vw;
+}
+.second{
+    background-color: blue;
+    width: 100vw; /* FIX */
+    height: 16vh;
+}

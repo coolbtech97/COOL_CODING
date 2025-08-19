@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+}
+#green{
+    background-color: green;
+    margin-right: 17vw;
+}
+#orange{
+    background-color: orange;
+    margin-left: 17vw;
+}
+div{
+    display: inline-block;
+    height: 100vh;
+    width: 33vw;
+}

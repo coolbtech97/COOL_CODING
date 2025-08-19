@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./35_Intro_CSS.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Form</title>
+</head>
+<body>
+    <header>
+        <h1>Employee Details Form</h1>
+    </header>
+    <main>
+        <form>
+            <label for="name">Full Name: </label>
+            <input id="name" type="text" name="Username" placeholder="Enter your full name" required>
+            <br><br>
+            <label for="mail">Email: </label>
+            <input id="mail" type="email" name="Email" placeholder="Enter your email address" required>
+            <br><br>
+            <label for="contact">Phone Number: </label>
+            <input id="contact" type="number" name="Number" placeholder="Enter your phone number" required>
+            <br><br>
+            <label>Gender: </label>
+
+            <input id="male" type="radio" name="Gender" value="Male">
+            <label for="male">Male</label>
+
+            <input id="female" type="radio" name="Gender" value="Female">
+            <label for="female">Female</label>
+
+            <input id="oth" type="radio" name="Gender" value="Other">
+            <label for="oth">Other</label>
+
+            <br><br>
+            <label for="jobname">Job Title: </label>
+            <input id="jobname" type="text" placeholder="Enter your job title">
+            <br><br>
+
+            <label for="depart">Department: </label>
+
+
+            <select id="depart" name="Department" required>
+
+                <option value="" disabled selected>Select Your Department</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Photographer">Photographer</option>
+                <option value="Farmer">Farmer</option>
+                <option value="Govrn Job">Government Employ</option>
+            </select>
+            <br><br>
+            <button value="Sumbit">Sumbit</button>
+        </form>
+        <hr color="aqua">
+        <pre>
+            Next HW
+            IIT JEE Form
+        </pre>
+
+        <form>
+            <fieldset>
+                <legend>IIT JEE Form</legend>
+            <label for="name">Full Name: </label>
+            <input id="name" type="text" name="Name" required placeholder="Enter your name here">
+            <br><br>
+            <label for="mail">Email: </label>
+            <input id="mail" type="email" required name="Email" placeholder="Enter your Email Id">
+            <br><br>
+            <label for="numb">Phone: </label>
+            <input id="numb" type="number" required name="Number" placeholder="Enter your phone number">
+            <br><br>
+            <label for="pas">Password: </label>
+            <input id="pas" type="password" required name="Password" placeholder="Enter your password">
+            <br><br>
+            <label>Gender: </label>
+
+            <input type="radio" id="malehe" name="Gender" value="Male">
+            <label for="malehe">Male</label>
+
+            <input type="radio" id="femalehe" name="Gender" value="Female">
+            <label for="femalehe">Female</label>
+
+            <input type="radio" id="othe" name="Gender" value="Other">
+            <label for="othe">Other</label>
+            <br><br>
+            <label for="dat">Date of Birth: </label>
+            <input id="dat" type="date" name="DOB" min="2001-01-01" max="2008-12-31">
+            <br><br>
+            <label for="schoolname">School Name: </label>
+            <input id="schoolname" type="text" name="School" required placeholder="Enter your school name">
+            <br><br>
+            <label for="boardn">Board: </label>
+            <select id="boardn" name="Board">
+                <option value="" disabled selected>Select your Board</option>
+                <option value="CBSE">Central Board Of Secondary Education</option>
+                <option value="ICSE">ICSE</option>
+                <option value="BiharBoard">Bihar Board</option>
+            </select>
+            <br><br>
+            <label for="passyear">Year of Passing: </label>
+            <input id="passyear" type="number" min="2002" max="2024" required>
+            <br><br>
+            <label for="examcenter0">Exam-Center: </label>
+            <select id="examcenter0" required>
+                <option value="" disabled selected>Select Center</option>
+                <option value="Banka">Banka</option>
+                <option value="Bhagalpur">BGP</option>
+                <option value="Katihar">Katihar</option>
+                <option value="Purnia">Purnia</option>
+            </select>
+            <br><br>
+            <input type="submit"><br>
+            <button type="submit">Register</button>
+        </fieldset>
+        </form>
+    </main>
+</body>
+</html>

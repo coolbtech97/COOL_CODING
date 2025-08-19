@@ -1,0 +1,48 @@
+1. What is List?
+2. How to create list object?
+3. How to access list objects?
+4. Concept of negative indexing
+5. Accessing list elements via For Loop
+6. How to delete an element from a list
+7. How to edit an element of a list
+8. How to add more elements in the list
+9. Packing and Unpacking
+10. Built. in methods
+------------------ALREADY DONE---------------------
+                                        notes on last 5th List folder
+New Topics:___
+
+1. Packing and Unpacking
+len()   min()   max()   sum()   sorted()always returns as list
+li = list( ItterableSequence)
+
+li == l2
+li < l2
+li+=l2
+
+------------------ALREADY DONE---------------------
+
+New:::
+Repetation Operator  *
+    int * int = [ Multiply ]
+
+    list * int = [ Repeation ]
+
+    li = [1,2,3]* 4
+    It means- [1,2,3,1,2,3,1,2,3,1,2,3]
+
+    li = [1,2,3]*2.5    Wrong ERROR
+
+List can store different Types of Data
+# It can also store a List
+
+List Object Methods-""
+append(n)
+insert(index,n)
+remove(n)    removes only first occured n, Dont try on empty list
+pop()        It removes the last element, and RETURNS IT
+clear()     Clear List
+reverse()
+sort()      It SHORTS list elements
+index(n)     returns only first occurance index of n
+count(n)     count the No. of Occuurance of n in that List
