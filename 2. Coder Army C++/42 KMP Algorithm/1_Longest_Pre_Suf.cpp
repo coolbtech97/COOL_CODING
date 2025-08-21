@@ -10,6 +10,7 @@ int main()
     system("cls");
     string str="ABCDEABCD";
     int s=str.size();
-    vector<vector<string>> prefix,suffix;
+    string first="",last="";
+    string temp="";
     
 }
