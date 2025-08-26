@@ -9,8 +9,16 @@ int main()
 {
     system("cls");
     string str="ABCDEABCD";
-    int s=str.size();
-    string first="",last="";
-    string temp="";
-    
+    int s=str.size(),max;
+    string first="",last="",temp;
+    for(int i=0;i<s;i++){
+        first+=str[i];
+        temp=str[4-i-1];
+        temp+=last;
+        last=temp;
+        if(first==last)
+            max=first.size();
+    }
+    cout<<max<<endl;
+    return 0;
 }
