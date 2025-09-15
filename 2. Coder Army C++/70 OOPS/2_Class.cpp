@@ -29,6 +29,6 @@ int main()
     student s1,s2,s3;   // Object Creation
     s1.setname("Rohit");
     s1.setage(10);
-    //cout<<s1.age<<endl;
+    // cout<<s1.age<<endl;
     return 0;
 }

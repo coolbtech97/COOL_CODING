@@ -10,14 +10,22 @@ class customer{
     string name="";
     int account_num;
     int balance;
+    int discount;
     customer(){               // Constructor [ It always present Default ]
         name = "";
-        account_num = 0;
+        account_num = 0;      // Can make MULTIPLE constructors
         balance = 0;
     }
+    customer(const string &nam, int account_num, int balance){  // Parameterized Constructor
+        /*this->*/name = nam;
+        this->account_num = account_num;
+        this->balance = balance;
+    }
+
 };
 int main(){
     system("cls");
+    string n="cool";
     customer a1;
-    cout<<a1.name<<endl;
+    customer a2("anand", 12345,0);// create and initialize a customer object
 }

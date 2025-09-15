@@ -1,22 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 5
+
 struct Stack {
     int arr[MAX];
     int top;
 };
+
 void initStack(struct Stack* s) {
-    s->top = 2;
-    s->arr[0] = 10;
-    s->arr[1] = 20;
-    s->arr[2] = 30;
+    s->top = 1;
+    s->arr[0] = 100;
+    s->arr[1] = 200;
 }
+
 int isEmpty(struct Stack* s) {
     return s->top == -1;
 }
+
 int isFull(struct Stack* s) {
     return s->top == MAX - 1;
 }
+
 void push(struct Stack* s, int value) {
     if (isFull(s)) {
         printf("Stack Overflow! Cannot push %d\n", value);
@@ -25,6 +29,7 @@ void push(struct Stack* s, int value) {
         printf("%d pushed to stack\n", value);
     }
 }
+
 void pop(struct Stack* s) {
     if (isEmpty(s)) {
         printf("Stack Underflow! Cannot pop\n");
@@ -32,19 +37,21 @@ void pop(struct Stack* s) {
         printf("%d popped from stack\n", s->arr[s->top--]);
     }
 }
+
 void peek(struct Stack* s) {
     if (isEmpty(s)) {
         printf("Stack is empty\n");
     } else {
-        printf("Top element: %d\n", s->arr[s->top]);
+        printf("Peeked value is %d\n", s->arr[s->top]);
     }
 }
+
 void display(struct Stack* s) {
     if (isEmpty(s)) {
         printf("Stack is empty\n");
     } else {
         printf("Stack elements: ");
-        for (int i = s->top; i >= 0; i--) {
+        for (int i = 0; i <= s->top; i++) {
             printf("%d ", s->arr[i]);
         }
         printf("\n");
@@ -54,17 +61,18 @@ void display(struct Stack* s) {
 int main() {
     struct Stack s;
     initStack(&s);
-    int choice, value;
+    int select, value;
+
     printf("Initial Stack:\n");
     display(&s);
 
     while (1) {
         printf("\n--- Stack Menu ---\n");
         printf("1. Push\n2. Pop\n3. Peek\n4. Display\n5. Exit\n");
-        printf("Enter your choice: ");
-        scanf("%d", &choice);
+        printf("Enter your select: ");
+        scanf("%d", &select);
 
-        switch (choice) {
+        switch (select) {
         case 1:
             printf("Enter value to push: ");
             scanf("%d", &value);
@@ -84,7 +92,7 @@ int main() {
             display(&s);
             exit(0);
         default:
-            printf("Invalid choice! Try again.\n");
+            printf("Invalid select! Try again.\n");
         }
     }
     return 0;

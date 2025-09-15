@@ -4,9 +4,10 @@
 #include<iostream>
 using namespace std;
 class a{
+    int b;
     char c;
     char d;
-    int b;
+
 };
 int main()
 {

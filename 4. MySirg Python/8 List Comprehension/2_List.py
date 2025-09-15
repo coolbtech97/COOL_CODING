@@ -22,7 +22,7 @@ index = lis.index(67)   # It returns the INDEX of 1st Occurence Only
 
 y = li.index(100)   if 100 in lis else 'not found'
 #   [    TRUE   ] [    CONDITION    ]  [  FALSE ]
-
+                                                        # Important Trick
 print(y)    # Index / 'not found'
 
 countt = lis.count(100)     # Counts the Occurence of 100
@@ -34,3 +34,13 @@ l2 = sorted(lis,reverse=True)
 lis.sort(li)                    # It sorts the list
 lis.sort(li,reverse=True)       # It sorts the list in decending order
 
+
+#----------------------------------------#
+
+# List Comprehension
+
+for i in range(1,11):
+    print(i,end=" ")
+
+[print(i,end=" ") for i in range(1,11)]
+# Most Important Trick WOW WOW WOW WOW WOW WOW WOW WOW

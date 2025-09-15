@@ -1,0 +1,45 @@
+STR OBJECT METHODS
+index()
+    s1.index('A')
+        // returns Index value of 1st occurence
+count()
+    s1.count('n')
+        // returns Counting of occurence
+startwith()
+    s1.startwith('Ana')
+        // Size Doesn't matter to check
+endswith()
+    s1.endswith('nd')
+        // returns True or False
+
+
+split()******
+
+join() *****
+
+format() *****
+
+isdigit()
+    s1.isdigit()
+        // If all are Digits than return True or False
+islower()
+    s1.islower()
+        // If all alphabets are Lower Case, then returns True
+isupper()
+
+
+lower()
+    s = s1.lower()
+        // Returns Lower Case of that String
+        // Remember No changes in REAL STRING***********************
+upper()
+    s = s1.upper()
+        // Return Upper Case of that String
+        // Note**** No changes in REAL STRING***********************
+
+replace()
+    s1.replace(old,new,count)
+
+    s1.replace('A','a',2)
+    s1.replace('A','a',s1.count('A'))
+    ************

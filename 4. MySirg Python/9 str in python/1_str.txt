@@ -1,0 +1,27 @@
+Notes : -
+1. str introduction
+2. creating str object
+3. indexing
+4. accessing str elements
+5. built-in methods
+6. Concatenation and repetition
+7. comparision operator
+8. str object methods
+9. format
+10. split and join
+11. slicing operator
+
+-----------------
+
+str is a class
+str is immutable                Not append(), Not remove()
+str is iterable
+str is hashable         hash(s)  Gives= 'mysirg' , = 6363482474
+str is a sequence
+
+--------------------
+
+How to create str object ?
+s1 = "Anand"
+s1 = 'Anand'
+s1 = 

@@ -4,8 +4,7 @@
 #include<algorithm>
 #include<string>
 using namespace std;
-string fact(string str,int n)
-{
+string fact(const string &str,int n){
     string s="";
     int size=str.size(), num, carry=0;
     vector<int> arr(size,0);
@@ -33,11 +32,12 @@ int main()
 {
     system("cls");
     int n=8;
-    // cout<<"Enter the Number: ";
-    // cin>>n;
+    cout<<"Enter the Number: ";
+    cin>>n;
     string s="1";
     for(int i=2;i<=n;i++)
         s=fact(s,i);
     cout<<"Factorial of "<<n<<" is "<<s<<endl;
+    cout<<(int)s.size()<<" Numbers";
     return 0;
 }
