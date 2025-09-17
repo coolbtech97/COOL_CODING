@@ -6,7 +6,13 @@ class customer{
     int acc_num,balance;
     public:
     static int total_customer;   // STATIC keyword  CREATE*********
-    static int total_balance;
+    static int total_balance;    //                     static should be public****
+    // Need to create a default constuctor
+    customer(){
+        name="";
+        acc_num=0;
+        total_customer++;
+    }
     customer(string name,int num,int bal){
         this->name=name;
         acc_num=num;
@@ -48,6 +54,7 @@ int main(){
     //total = 1
     customer a2("Mohit",2,1800);
     customer a3("Rohit",3,2100);
+    customer a4;
     //total=3
     cout<<a1.total_customer;
     // I can also change TOTAL from here

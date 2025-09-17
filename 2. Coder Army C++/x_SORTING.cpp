@@ -1,15 +1,15 @@
 #include<iostream>
 #include<string>
 #include<algorithm>
-void cls(){system("cls");}
+void clrscr(){system("cls");}
 using namespace std;
 int main()
 {
-    cls();
+    clrscr();
     string s=" i like this program very much ";
     string temp="",ans="";
-    int len=s.size(),c=0,x=0,start,end;
-    for(int i=len-1;i>=0;i--)
+    int c=0,x=0,start,end;
+    for(int i=s.size()-1;i>=0;i--)
     {
         if(s[i]==' ' && x)
         {
@@ -26,7 +26,7 @@ int main()
             x++;
         }
     }
-    ans+=temp;  // add last word
+    ans+=temp;  // REMEMBER TO ADD LAST WORD********
 
     cout<<ans;
     return 0;
