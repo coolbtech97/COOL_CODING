@@ -21,7 +21,7 @@ class manager:public employ{
     public:
     string department;
     // constructor
-    manager(string name,int salary,string department){
+    manager(const string name,int salary,string department){
         this->name=name;
         this->salary=salary;
         this->department=department;
