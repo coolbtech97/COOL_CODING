@@ -1,99 +1,25 @@
-#include <stdio.h>
-#include <stdlib.h>
-#define MAX 5
-
-struct Stack {
-    int arr[MAX];
-    int top;
+// Operator Overloading
+// In C++, operators can be overloaded to provide custom behavior for user-defined types (like classes)
+// Remember to CREATE **DEFAULT CONSTRUCTOR**
+#include<iostream>
+using namespace std;
+class base{
+    public:
+    int first;
+    base(){first=0;}
+    base(int x){
+        first=x;
+    }
+    base operator +(base &x){
+        base ans;
+        ans.first=first+x.first;
+        return ans;
+    }
 };
-
-void initStack(struct Stack* s) {
-    s->top = 1;
-    s->arr[0] = 100;
-    s->arr[1] = 200;
-}
-
-int isEmpty(struct Stack* s) {
-    return s->top == -1;
-}
-
-int isFull(struct Stack* s) {
-    return s->top == MAX - 1;
-}
-
-void push(struct Stack* s, int value) {
-    if (isFull(s)) {
-        printf("Stack Overflow! Cannot push %d\n", value);
-    } else {
-        s->arr[++(s->top)] = value;
-        printf("%d pushed to stack\n", value);
-    }
-}
-
-void pop(struct Stack* s) {
-    if (isEmpty(s)) {
-        printf("Stack Underflow! Cannot pop\n");
-    } else {
-        printf("%d popped from stack\n", s->arr[s->top--]);
-    }
-}
-
-void peek(struct Stack* s) {
-    if (isEmpty(s)) {
-        printf("Stack is empty\n");
-    } else {
-        printf("Peeked value is %d\n", s->arr[s->top]);
-    }
-}
-
-void display(struct Stack* s) {
-    if (isEmpty(s)) {
-        printf("Stack is empty\n");
-    } else {
-        printf("Stack elements: ");
-        for (int i = 0; i <= s->top; i++) {
-            printf("%d ", s->arr[i]);
-        }
-        printf("\n");
-    }
-}
-
 int main() {
-    struct Stack s;
-    initStack(&s);
-    int select, value;
+    base a(1),b(2);
+    base c=a+b; //error: no match for 'operator+' (operand types are 'base' and 'base')
+    cout<<c.first;
 
-    printf("Initial Stack:\n");
-    display(&s);
-
-    while (1) {
-        printf("\n--- Stack Menu ---\n");
-        printf("1. Push\n2. Pop\n3. Peek\n4. Display\n5. Exit\n");
-        printf("Enter your select: ");
-        scanf("%d", &select);
-
-        switch (select) {
-        case 1:
-            printf("Enter value to push: ");
-            scanf("%d", &value);
-            push(&s, value);
-            break;
-        case 2:
-            pop(&s);
-            break;
-        case 3:
-            peek(&s);
-            break;
-        case 4:
-            display(&s);
-            break;
-        case 5:
-            printf("\nFinal Stack before exit:\n");
-            display(&s);
-            exit(0);
-        default:
-            printf("Invalid select! Try again.\n");
-        }
-    }
     return 0;
 }
