@@ -1,0 +1,43 @@
+Slicing Operator
+strobject[beg:end:step]  # Same like RANGE
+
+s='mysirg'
+
+s[0:5:1] # 'mysir'
+
+s[0:6:1] # 'mysirg'
+
+s[0:10:1] # 'mysirg'    ALSO PUT VALUE MORE THAN SIZE Allowed**`````
+
+s[0:5:2] # 'msr'
+
+s[1:5:3] # 'yr'
+
+s[5:1:-1] # 'gris'
+
+beg---------       **EXTREME START** depends on Step
+
+s[:5:1]    Step is +ve , so Beg= 0   by default
+s[:5:-1]   Step is -ve , so Beg= -1  by default
+
+s[:0:-1]  # 'grisy'
+
+end----------     ** EXTREME END** depends on Step
+
+s[1::1]    Step is +ve , so End= -1 + 1   by default
+                                (last index +1 )
+                                    +1 because Last value is included, so end should be +1 than that
+s[:5:-1]   Step is -ve , so End= 0 -1  by default
+                                    -1 because First value is included, so end should be -1 than that
+
+step-------------
+
+step = 1   BY DEFAULT
+
+
+
+
+
+s1 = 'anand'
+s1[::-1]  # 'dnana'
+

@@ -13,12 +13,6 @@ endswith()
         // returns True or False
 
 
-split()******
-
-join() *****
-
-format() *****
-
 isdigit()
     s1.isdigit()
         // If all are Digits than return True or False
@@ -43,3 +37,25 @@ replace()
     s1.replace('A','a',2)
     s1.replace('A','a',s1.count('A'))
     ************
+
+format() ***** replace {} WITHIN string
+    s1="Sum of {} and {} is {}"
+    s1.format(a,b,a+b)
+
+    OR 1 MORE WORKing-----
+    s2="Sum of {2} and {1} is {0}"
+    s2.format(a,b,a+b)
+        indexx0 1  2
+    {0} got changed with a
+    {1} got changes with b
+    {2} got changes with a+b
+
+
+split()******
+    Always RETURNS List of Strings []````
+    s1='I am Anand Kumar'
+    li=s1.split(' ') # Split on the basis of ' '
+    It Means li['I','am','Anand','Kumar']
+
+
+join() *****

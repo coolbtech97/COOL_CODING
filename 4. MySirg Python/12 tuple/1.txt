@@ -1,0 +1,14 @@
+    TUPLE
+Agenda---
+1. Tuple Introduction
+2. Tuple Object
+3. Indexing
+4. Accessing Tuple Elements
+5. Built-in methods
+6. Concarenation and Repetition operator
+7. Comparison operator
+8. Tuple Object methods
+9. Slicing operator
+10. User Input
+
+-----------------------------------------------------------------------
