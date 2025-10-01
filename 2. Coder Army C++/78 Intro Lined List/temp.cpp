@@ -1,11 +1,13 @@
 #include<iostream>
+#include<conio.h>
 using namespace std;
-class check{
-    public:
-    int n=9;
-};
 int main(){
     system("cls");
-    check c;
-    cout<<c.n;
+    int n=9;
+    int*p = new int[20];
+
+    for(int i=0;i<20;i++){
+        cout<<p[i]<<" ";
+    }
+    // getch();
 }

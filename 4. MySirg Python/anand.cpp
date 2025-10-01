@@ -3,15 +3,27 @@ using namespace std;
 int main()
 {
     system("cls");
-    long long int ans=1;
-    int i=0,n,p;
-    cout<<"Enter the number and the power :";
-    cin>>n>>p;
-    while(i<p)
+    double ans = 1; // Use double for fractional results
+    int i = 0, n, p;
+    cout << "Enter the number and the power :";
+    cin >> n >> p;
+    if (p >= 0)
     {
-        ans*=n;
-        i++;
+        while (i < p)
+        {
+            ans *= n;
+            i++;
+        }
     }
-    cout<<ans;
+    else
+    {
+        while (i < -p)
+        {
+            ans *= n;
+            i++;
+        }
+        ans = 1.0 / ans;
+    }
+    cout<<ans<<endl;
     return 0;
 }
