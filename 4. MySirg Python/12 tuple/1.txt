@@ -12,3 +12,14 @@ Agenda---
 10. User Input
 
 -----------------------------------------------------------------------
+|               tuple 
+tuple is a class            [predefined class]
+                               [class is a group of variables and functions]
+tuple is iterable   [group of variables]
+                            [Can be access One by One]
+TUPLE IS **IMMUTABLE**~~~~~
+|           OH NO non non on no on no
+
+tuple elements are indexed
+tuple is a sequence
+tuple can store Heterogeneous elements

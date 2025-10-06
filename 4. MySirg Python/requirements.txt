@@ -1,0 +1,5 @@
+pygame
+pyautogui
+pyttsx3
+pywin32
+pillow
