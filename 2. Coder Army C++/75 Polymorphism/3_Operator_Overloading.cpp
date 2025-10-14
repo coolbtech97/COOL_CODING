@@ -1,26 +1,25 @@
-// Operator Overloading in C++
-#include <iostream>
+// Operator Overloading
+// In C++, operators can be overloaded to provide custom behavior for user-defined types (like classes)
+// Remember to CREATE **DEFAULT CONSTRUCTOR**
+#include<iostream>
 using namespace std;
-
-class Complex {
-    private:
-        float real;
-        float imag;
+class base{
     public:
-        Complex(float r = 0, float i = 0) : real(r), imag(i) {}
-        // Overloading the + operator
-        Complex operator + (const Complex& obj) {
-            return Complex(real + obj.real, imag + obj.imag);
-        }
-        void display() {
-            cout << "Real: " << real << ", Imaginary: " << imag << endl;
-        }
+    int first;
+    base(){first=0;}
+    base(int x){
+        first=x;
+    }
+    base operator +(base &x){
+        base ans;
+        ans.first=first+x.first;
+        return ans;
+    }
 };
-
 int main() {
-    Complex c1(3.5, 2.5), c2(1.5, 4.5);
-    Complex c3 = c1 + c2;  // Calls the overloaded + operator
-    c3.display();
+    base a(1),b(2);
+    base c=a+b; //error: no match for 'operator+' (operand types are 'base' and 'base')
+    cout<<c.first;
+
     return 0;
 }
-// Note: Operator overloading is a compile time polymorphism.

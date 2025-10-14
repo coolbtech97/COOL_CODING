@@ -1,5 +1,6 @@
 // Insert Teacher's code
 #include<iostream>
+#include<cstdlib> // for system("cls")
 using namespace std;
 class node{
     public:
@@ -10,8 +11,8 @@ class node{
         next=NULL;
     }
     node(int n){
-        data=n;
-        next=NULL;
+        this->data=n;
+        this->next=NULL;
     }
 };
 void print(node*head){
@@ -19,9 +20,10 @@ void print(node*head){
 
     cout<<endl;
     while(temp!=NULL){
-        cout<<temp.data<<" ";
+        cout<<temp->data<<" ";
         temp=temp->next;
     }
+    cout<<endl; // ensure newline after printing list
     return;
 }
 int main(){
@@ -30,17 +32,13 @@ int main(){
     int arr[4]={2,4,6,8};;
     node*head=NULL;
     node*tail=head;
-    print(tail);
+    // print(head); // optional
     for(int i=0;i<4;i++){
-        if(head==NULL)
-            head=new node(arr[i]);// or arr[0]
-        else{
-            // node*tail=head; // I used to initialise at the beginning
-            while(tail->next!=NULL)
-                tail=tail->next;
-            node*temp=new node(arr[i]);
-            tail->next=temp;
-          //tail->next=new node(arr[i]);
+        if(tail==NULL){
+            head = tail = new node(arr[i]); // FIX: set head and tail on first insert
+        } else {
+            tail->next = new node(arr[i]);  // FIX: append at tail
+            tail = tail->next;              // FIX: advance tail
         }
     }
     print(head);
