@@ -8,8 +8,9 @@ int main()
     cin>>n;
     if(n%4==0)
     {
-        cout<<"You won";
-        return 0;
+        cout<<"You won"<<endl;
+        return 1;
     }
-    
+    cout<<"You Lose"<<endl;
+    return 0;
 }

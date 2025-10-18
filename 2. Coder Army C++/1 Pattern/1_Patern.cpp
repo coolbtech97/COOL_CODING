@@ -4,11 +4,11 @@ using namespace std;
 
 int main()
 {
-    int i,j,n;
+    int i,j,n=5;
     char name;
     system("cls");
     cout<<"Enter the size : ";
-    cin>>n;
+    // cin>>n;
     cout<<endl;
 
     for(i=1;i<=n;i++)

@@ -8,13 +8,10 @@ int main()
     cin>>n;
     for(i=1;i;c?i--:i++)
     {
-        if(i==n+1)
-        {
-            i--;
-            c=1;
-        }
+        if(i-1==n)
+            --i,c=1;
         for(j=1;i+j<=n;j++)
-            cout<<" ";
+            cout<<"  ";
         for(j=1;j<=i;j++)
             cout<<" *";
         cout<<endl;
