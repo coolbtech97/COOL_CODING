@@ -12,7 +12,7 @@
 // 8. Other useful Operators
 
 //-------------------------------------
-// 1. Arithmetic Operators
+// 1. Arithmetic Operators-->>>>>
 
 // +        Addition        ERROR if x = undefined+2
 // -        Subtraction
@@ -37,4 +37,32 @@
 // --       Decrement
 
 //------------------------------------
-// 2. Assignment Operators
+// 2. Assignment Operators-->>>>>>
+
+// +=
+// -=
+// %=
+// /=
+// *=
+// **=
+
+//----------------------------------------------------------------------------------
+// next video start
+
+// COMPARISION OPERATORS-->>>>>>>>>>        also known as Relational Operator
+
+// ==       Equal to            --------|
+// ===      Strict equal to             |   EQUALITY OPERATORS
+// !=       Not equal to                |
+// !==      Strict not equal to --------|
+
+// >        Greater than        --------|
+// <        Less than                   |   INEQUALITY OPERATORS
+// >=       Greater than or equal to    |
+// <=       Less than or equal to ------|
+
+//------------------------------------------------------------------------------
+// LOGICAL OPERATOR
+//------------------------------------------------------------------------------
+// BITWISE OPERATOR
+// &

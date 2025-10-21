@@ -14,15 +14,274 @@
         <h1>FlexBOX</h1>
         <p>Main Axis: The primary axis along which flex items are placed (horizontal by default).</p>
         <p>Cross Axis: The perpendicular axis to the main axis (vertical by default).</p>
+        
         <h2>flex-direction</h2>
-        <ul >
+        <ul>
             <li><span class="green">row:</span> Default; Items align horizontally from left to right.</li>
             <li><span class="green">row-reverse:</span> Items align horizontally from right to left.</li>
             <li><span class="green">column:</span> Items align vertically from top to bottom.</li>
             <li><span class="green">column-reverse:</span> Items align vertically from bottom to top.</li>
         </ul>
 
-        <h2>justify-content</h2>
+        <h3>Examples-- >></h3>
+        <div class="container">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <pre>
+    .container{
+    background-color: aquamarine;
+    height: 240px;
+    display: flex;  /* Flexbox */
+    }
+    NOTE:
+        flex-direction: row;   // By Default
+                               We can change it to ->
+                        column;
+                        row-reverse;
+                        column-reverse;
+        </pre>
+        <h3>flex-direction: column;</h3>
+        <div class="container fc">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <h3 class="padup">flex-direction: row-reverse;</h3>
+        <div class="container frr">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <h3 class="padup">flex-direction: column-reverse;</h3>
+        <div class="container fcr">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <hr color="blue">
+        <h2 class="padup">justify-content</h2>
+        <ul>
+            <li><span class="green">flex-start:</span> Item align to the start of the container.</li>
+            <li><span class="green">flex-end:</span> Items align to the end of the container.</li>
+            <li><span class="green">center:</span> Items are centered along the main axis.</li>
+            <li><span class="green">space-between:</span> Items are spaced with equal space between, but no space at the edges.</li>
+            <li><span class="green">space-around:</span> Items are spaced wiht equal space arround them.</li>
+            <li><span class="green">space-evenly:</span> Items have equal space between and around them.</li>
+        </ul>
+        <h3>Examples-- >></h3>
+        <div class="container">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <pre>
+    .container{
+    background-color: aquamarine;
+    height: 240px;
+    display: flex;  /* Flexbox */
+    justify-content: start;         // BY DEFAULT
+    }
+    NOTE:
+                We can change it to ->
+                        end;
+                        center;
+                        column-reverse;
+    JUSTIFY CONTENT will Work around Main Axis
+        </pre>
+        <h3>justify-content: end;</h3>
+        <div class="container justend">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <h3 class="padup">justify-content: center;</h3>
+        <div class="container justcenter">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <h3 class="padup">justify-content: space-around</h3>
+        <div class="container justspacearound">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <h3 class="padup">justify-content: space-between</h3>
+        <div class="container justspacebetween">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <h3 class="padup">justify-content: space-evenly</h3>
+        <div class="container justspaceevenly">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <hr color="blue">
+        <h2 class="padup">align-items</h2>
+        <ul>
+            <li><span class="green">flex-start:</span> Aligns items to the start of the cross axis.</li>
+            <li><span class="green">flex-end:</span> Aligns items to the end of the cross axis.</li>
+            <li><span class="green">center:</span> Centers items along the cross axis.</li>
+            <li><span class="green">stretch:</span> Stretches items to fill the container along the cross axis. ( Default )</li>
+            <li><span class="green">baseline:</span> Aligns items based on their text baseline.</li>
+        </ul>
+        <h3>Examples-- >></h3>
+        <div class="container alignstart">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <pre>
+    .container{
+    background-color: aquamarine;
+    height: 240px;
+    display: flex;  /* Flexbox */
+    align-items: start;         // BY DEFAULT
+    }
+    NOTE:
+                We can change it to ->
+                        end;
+                        center;
+    JUSTIFY CONTENT will Work around CROSS AXIS.
+        </pre>
+        <h3 class="padup">align-items: end;</h3>
+        <div class="container alignend">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <h3 class="padup">align-items: center;</h3>
+        <div class="container aligncenter">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <h3 class="padup">align-items: stretch;</h3>
+        <pre>
+    NOTE: remove the Height of the box, then it will work...
+        </pre>
+        <div class="container alignstretch">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+        <h3 class="padup">align-items: baseline;</h3>
+        <pre>
+    NOTE: It is use to make all fonts baseline Same.
+          this actually creates a baseline../
+        </pre>
+        <div class="container bas">withoutㅤㅤ
+            <div class="first">Hello</div>
+            <div class="second">Coders</div>
+        </div>
+        <div class="container bas alignbaseline">withㅤㅤㅤ
+            <div class="first">Hello</div>
+            <div class="second">Coders</div>
+        </div>
+        <!-- <hr color="blue">
+        <h2 class="padup">flex-wrap</h2>
+        <ul>
+            <li><span class="green">nowrap:</span> All items stay on a single line ( default ).</li>
+            <li><span class="green">wrap:</span> Items wrap onto multiple lines from top to bottom.</li>
+            <li><span class="green">wrap-reverse:</span> Items wrap onto multiple lines from bottom to top.</li>
+        </ul>
+        <h3>Examples-- >></h3>
+        <div class="container containerbig">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+            <div class="box box1">Box5</div>
+            <div class="box box2">Box6</div>
+            <div class="box box3">Box7</div>
+            <div class="box box4">Box8</div>
+            <div class="box box1">Box9</div>
+            <div class="box box2">Box10</div>
+            <div class="box box3">Box11</div>
+            <div class="box box4">Box12</div>
+            <div class="box box1">Box13</div>
+            <div class="box box2">Box14</div>
+            <div class="box box3">Box15</div>
+            <div class="box box4">Box16</div>
+        </div>
+        <pre>
+    .container{
+    background-color: aquamarine;
+    height: 240px;
+    display: flex;  /* Flexbox */
+    flex-wrap: nowrap;          // BY DEFAULT
+    }
+    NOTE:
+                We can change it to ->
+                        wrap;
+                        wrap-reverse;
+        </pre>
+        <h3 class="padup">flex-wrap: wrap;</h3>
+        <div class="container wrap containerbig">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+            <div class="box box1">Box5</div>
+            <div class="box box2">Box6</div>
+            <div class="box box3">Box7</div>
+            <div class="box box4">Box8</div>
+            <div class="box box1">Box9</div>
+            <div class="box box2">Box10</div>
+            <div class="box box3">Box11</div>
+            <div class="box box4">Box12</div>
+            <div class="box box1">Box13</div>
+            <div class="box box2">Box14</div>
+            <div class="box box3">Box15</div>
+            <div class="box box4">Box16</div>
+        </div>
+        <h3 class="padup mrgin">flex-wrap: wrap-rev;</h3>
+        <div class="container wrap-rev containerbig">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+            <div class="box box1">Box5</div>
+            <div class="box box2">Box6</div>
+            <div class="box box3">Box7</div>
+            <div class="box box4">Box8</div>
+            <div class="box box1">Box9</div>
+            <div class="box box2">Box10</div>
+            <div class="box box3">Box11</div>
+            <div class="box box4">Box12</div>
+            <div class="box box1">Box13</div>
+            <div class="box box2">Box14</div>
+            <div class="box box3">Box15</div>
+            <div class="box box4">Box16</div>
+        </div> -->
+        <hr color="blue">
+        <h2 class="padup">align-content</h2>
+        <p>The <span class="green">align-content</span> property in flexbox is essential for
+        managing how multiple rows of items are aligned within a flex
+        container, especially when there is extra space on the cross-axis.</p>
+        <br><p class="green">flex-start, flex-end, center, space-between, space-around, space-evenly.</p>
+        <pre>
+            
+    NOTE: more feature to WRAP sizing between Wrapped Lines...
+        </pre>
     </main>
     <footer>
 
