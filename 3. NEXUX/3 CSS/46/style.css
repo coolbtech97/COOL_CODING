@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding-left: 4px;
+}
+.large-font{
+    font-size: large;
+    font-weight: bold;
+    font-style:oblique;
+}
+.simple{
+    font-style: normal;
+}
+h2,h3{
+    margin-top: 40px;
+}
+.green{
+    color: green;
+}
+.center{
+/*  justify-content: center;     NOT WORKING*/
+/*  align-items: center;         NOT WORKING*/
+    padding-top: 6px;
+}
+hr{
+    color: red;
+    margin:20px ;
+    height: 8px;
+    width: 100vw;
+    margin-left: 0px;
+}
+/* .pad0{
+    margin-top: 0px;
+} */
+.container{
+    margin-top: 4px;
+    background-color: aquamarine;
+    display: flex;
+    height: fit-content;
+}
+.container-big-center{
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+    background-color: aquamarine;
+    display: flex;
+    height: 400px;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    margin:2px
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color:blue;
+}
+.box3{
+    background-color: green;
+}
+.box4{
+    background-color: orange;
+}
+.order-positive{
+    order:-1;
+}
+.flex-grow{
+    flex-grow: 1;
+}
+.flex-grow-2{
+    flex-grow: 2;
+}
+.flex-shrink{
+    flex-shrink: 2;
+}
+.flex-shrink-0{
+    flex-shrink: 0;
+}
+.flex-shrink-3{
+    flex-shrink: 3;
+}
+.flex-basis{
+    flex-basis: 300px;
+}
+.flex-auto{
+    flex-basis: auto;
+}
+.align-self-flex-start{
+    align-self: flex-start;/* normal */
+}
+.align-self-flex-end{
+    align-self: flex-end;
+}
+.flex-all{
+    flex: 2 2 200px;
+}
+.query{
+    background-color: brown;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+}
+@media (max-width: 400px) {
+    .query{
+        background-color: black;
+        color: yellow;
+    }
+}

@@ -97,7 +97,7 @@ hr{
     font-size: 20px;
 }
 .containerbig{
-    height: 400px;
+    height:fit-content;
 }
 .wrap{
     flex-wrap: wrap;
@@ -108,4 +108,8 @@ hr{
 .wrap-rev{
     flex-wrap: wrap-reverse;
     margin-top: 11px;
+}
+.aligncontent{
+    flex-wrap: wrap;
+    align-content:center;
 }

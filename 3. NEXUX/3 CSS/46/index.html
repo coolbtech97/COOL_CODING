@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Flex Items</h1>
+    <h2>1. Order</h2>
+    <p>
+        The <span class="green">order</span> property controls the visual orderof flex items within a flex container.<b>Defapt</b> <span class="green">order: 0;</span>
+    </p>
+
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+    <pre>
+    Defapt-- order: 0;
+                can be opsitive or negative
+    </pre>
+    <h3>Order -1 of Red Box 2</h3>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2 order-positive">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+    <pre>
+        It shifts by 1 to the left,
+
+        Note: If i do like -10000 or maximum than the limit - It will come at First
+
+              If i do like 10000 or maximum than the limit - It will come at Last***
+    </pre>
+    <hr color="blue">
+    <h2>2. Flex-Grow</h2>
+    <p class="green">The flex-grow property defines how much a
+        flex item shopd grow relative to other items when extra space
+        is available in the flex container.<b>Defapt:</b> flex-grow: 0;
+    </p>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+    <pre>
+    Defapt-- flex-grow: 0;
+                can be Positive, Or Negative...
+
+    NOTE: IT WILL WORK along WITH "FLEX-DIRECTION". Remember THIS****
+        growth can also be increase towards column, ThathWhy You need to remember this
+    </pre>
+    <h3>flex-grow: 1;</h3>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2 flex-grow">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+    <pre>
+        Box 2-
+            flex-grow: 1;
+    </pre>
+    <h3>flex-grow: 1; BOX2<br>flex-grow: 1; BOX3</h3>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2 flex-grow">Box 2</div>
+        <div class="box box3 flex-grow">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+    <pre>
+        Box 2-
+            flex-grow: 1;
+        Box 3-
+            flex-grow: 1;
+    </pre>
+    <h3>flex-grow: 1; BOX2<br>flex-grow: 2; BOX3  <span class="green">more value</span></h3>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2 flex-grow">Box 2</div>
+        <div class="box box3 flex-grow-2">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+    <pre>
+        Box 2-
+            flex-grow: 1;
+        Box 3-
+            flex-grow: 2;       consumes 2x space
+    </pre>
+    <hr color="blue">
+    <h2>3. Flex-Shrink</h2>
+    <p>
+        The <span class="green">flex-shrink</span> property defines how much a flex item shopd shrink relative to other items
+        when the container is too small to fit all items at their initial size.<b>defapt:</b>
+        <span class="green">flex-shrink: 1;</span>
+    </p>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box1">Box 5</div>
+        <div class="box box2">Box 6</div>
+        <div class="box box3">Box 7</div>
+        <div class="box box4">Box 8</div>
+        <div class="box box1">Box 9</div>
+        <div class="box box2">Box 10</div>
+        <div class="box box3">Box 11</div>
+        <div class="box box4">Box 12</div>
+        <div class="box box1">Box 13</div>
+        <div class="box box2">Box 14</div>
+        <div class="box box3">Box 15</div>
+        <div class="box box4">Box 16</div>
+    </div>
+    <pre>
+    Defapt--:: flex-shrink: 1;
+                can be Positive, Or Negative...
+
+    NOTE: IT WILL WORK along WITH "FLEX-DIRECION". Remember THIS****
+        IT SHRINKS FASTER AS THE VALUE YOU used to MENTION.
+    </pre>
+    <h3>flex-shrink: 2</h3>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2 flex-shrink">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box1">Box 5</div>
+        <div class="box box2">Box 6</div>
+        <div class="box box3">Box 7</div>
+        <div class="box box4">Box 8</div>
+        <div class="box box1">Box 9</div>
+        <div class="box box2">Box 10</div>
+        <div class="box box3">Box 11</div>
+        <div class="box box4">Box 12</div>
+        <div class="box box1">Box 13</div>
+        <div class="box box2">Box 14</div>
+    </div>
+    <pre>
+        Box 2-
+            flex-shrink: 2;
+        as you see, it is shrinking Faster Enough
+    </pre>
+
+    <h3>flex-shrink: 0 <span class="green">(no shrink) _FIXED</span></h3>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2 flex-shrink-0">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box1">Box 5</div>
+        <div class="box box2">Box 6</div>
+        <div class="box box3">Box 7</div>
+        <div class="box box4">Box 8</div>
+        <div class="box box1">Box 9</div>
+        <div class="box box2">Box 10</div>
+        <div class="box box3">Box 11</div>
+        <div class="box box4">Box 12</div>
+        <div class="box box1">Box 13</div>
+        <div class="box box2">Box 14</div>
+        <div class="box box3">Box 15</div>
+        <div class="box box4">Box 16</div>
+    </div>
+    <pre>
+        Box 2-
+            flex-shrink: 0;
+        NOTE: IT WILL NEVER SHRINK, wow wow wow wow****
+
+        as you see, Box 2 is not Shrinking ANy
+    </pre>
+    <h3>flex-shrink: 2; BOX2<br>flex-shrink: 3; BOX3  <span class="green">more value</span></h3>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2 flex-shrink">Box 2</div>
+        <div class="box box3 flex-shrink-3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box1">Box 5</div>
+        <div class="box box2">Box 6</div>
+        <div class="box box3">Box 7</div>
+        <div class="box box4">Box 8</div>
+        <div class="box box1">Box 9</div>
+        <div class="box box2">Box 10</div>
+        <div class="box box3">Box 11</div>
+        <div class="box box4">Box 12</div>
+        <div class="box box1">Box 13</div>
+    </div>
+    <pre>
+        Box 2-
+            flex-shrink: 2;
+        Box 3-
+            flex-shrink: 3;
+
+        as you can see Box 3 is more Shrinking Faster than others
+    </pre>
+<!-- Flex Basis -->
+    <hr color="blue">
+    <h2>4. Flex-Basis</h2>
+    <p>
+        The <span class="green">flex-basis</span> property sets the initial size of a flex item
+        before any extra space is distributed or the irem is allowed to grow or shrink.
+        <span class="green">flex-basis: auto;</span> (Uses the item's content<br>size, or width/height if explicity set.)
+    </p>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2 flex-auto">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+    <pre>
+    
+    Defaut ->
+        flex-basis: auto;
+    </pre>
+    <h3>flex-basis: 300px; <span class="green">increases the size</span></h3>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2 flex-basis">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+    <pre>
+    
+    It is used to Increase any BOX SIZE up to that Limit,[
+    </pre>
+
+    <hr color="blue">
+    <h2>5. Align-Self</h2>
+    <p>
+        The <span class="green">align-self</span> property allows you to override the
+        <span class="green">align-items</span> property for a specific flex item.
+        This means each item can have its own cross-axis alignment (e.g., vertical
+        alignment if <span class="green">flex-direction: row</span>), even if the container
+        has a global alignment rule.<br>
+        <span class="green large-font">It works on CROSS AXIS</span>
+    </p>
+    <h3>Default:</h3>
+    <div class="container-big-center">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+
+    <h3>align-self: flex-start;</h3>
+    <div class="container-big-center">
+        <div class="box box1">Box 1</div>
+        <div class="box box2 align-self-flex-start">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+    <h3>align-self: flex-end;</h3>
+    <div class="container-big-center">
+        <div class="box box1">Box 1</div>
+        <div class="box box2 align-self-flex-end">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+    <!-- flex: ALL TRY -->
+    <hr color="blue">
+    <hr color="blue pb"> <!-- pb is WORKING AUTOMATICALLY, also pd, .... -->
+    <h2>6. flex: [flex-grow] [flex-shrink] [flex-basis];</h2><br>
+    <p class="simple large-font">Just Like <span class="green">border: 2px solid black</span></p>
+    <p class="center">I can also set these 3 at ONCE</p>
+    <h3>Default:</h3>
+    <div class="container-big-center">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+    <h3>flex: 2 2 200px;</h3>
+    <div class="container-big-center">
+        <div class="box box1">Box 1</div>
+        <div class="box box2 flex-all">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+    <pre>
+
+        flex: flex-grow flex-shrink flex-basis
+    </pre>
+    <hr color="blue">
+    <h2>Media Query: ] Responsive :)</h2>
+    <p>Here's a Trick</p>
+    <pre>
+    
+    </pre>
+                <div class="box query">Media Query Demo - Resize Window!</div>
+</body>
+</html>
