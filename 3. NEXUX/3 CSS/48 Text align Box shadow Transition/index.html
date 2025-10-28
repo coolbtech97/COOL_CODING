@@ -23,6 +23,59 @@
         CENTERS THE INLINE ELEMENT**
         CENTERS THE CONTENT OF BLOCK LEVEL ELEMENT**    (not the element)
     </pre>
+<!-- Text Transformation Heading -->
+    <h2>TEXT TRANSFORMATION</h2>
+    <ol>
+        <li>text-transform:
+            <ul class="h4">
+                <li>uppercase</li>
+                <li>lowercase</li>
+                <li>capitalize</li>
+            </ul>
+        </li>
+    </ol>
+<!-- Text Spacing Heading -->
+    <h2>TEXT SPACING</h2>
+    <ol>
+        <li>text-indent <span class="space lowercase">Do effects on 1st Line</span></li>
+        <li>letter-spacing<span class="space letter-spacing">I am Anand Kumar</span></li>
+        <li>line-height <span class="space lowercase">The Spaces Between The Lines</span></li>
+        <li>word-spacing<span class="space word-spacing">I am Anand Kumar</span></li>
+        <li>white-space</li>
+    </ol>
+    <div class="sameline" style="justify-content: space-between;">
+        <h2>TEXT SHADOW</h2>
+        <p>( Remember To Put 2 Elements )</p><p></p><p></p><p></p><p></p>
+    </div>
+    <div class="vertical text-shadow-5px">
+        <h3 class="h4">text-shadow: 5px;</h3>
+        <p>I am Anand Kumar</p>
+    </div>
+    <div class="vertical text-shadow-5px-4px">
+        <h3 class="h4">text-shadow: 5px 4px;</h3>
+        <p>I am Anand Kumar</p>
+    </div>
+    <!-- Box Shadow -->
+    <h2>Box Shadow</h2>
+    <h4 class="green">box-shadow: h-off blue-radius spread-radius color;</h4>
+    <ul>
+        <li><b>h-offset</b>: Horizontal offset of the shadow (positive values move the shadow to the right) (negative values up).</li>
+        <li><b>v-offset</b>: Vertical offset of the shadow (positive values move the shadow down, negative values up).</li>
+        <li><b>blue-radius</b>: The blue radius (how much the shadow should be blurred). The higher the number, the more blurred the shadow is.</li>
+        <li><b>spread-radius</b>: This value expands or contracts the size of the shadow. Positive values cause the shadow to expand, while negative values cause it to shrink.</li>
+        <li><b>color</b>: The color of the shadow. You can use color names, HEX, RGB, or RGBA values.</li>
+    </ul>
+    <!-- Transition -->
+    <h2>TRANSITION</h2>
+    <p>transition: property duration timing-function delay;</p>
+    <p><b>property</b>: The CSS property you want to animate (e.g., <span class="green">background-color, width, opacity</span>, etc.). You can use <span class="green">all</span> to apply transitions to all animatable properties.</p>
+    <p><b>duration</b>: The time it takes for the transition to complete (e.g., <span class="green">2s</span>, <span class="green">500ms</span>).</p>
+    <p><b>timing-function</b>: A function that describes how the transition progresses over its duration. Common values include:</p>
+    <ul>
+        <li><span class="green">linear</span>: The transition has a constant speed.</li>
+        <li><span class="green">ease</san></li>
+    </ul>
+    <!-- Starting Coding -->
     <hr>
     <h3>Text-Align: Left;</h3>
     <div class="container-left">
@@ -99,8 +152,8 @@
         <li>text-decoration-line:
             <ul class="brinjal">
                 <li>overline;</li>
-                <li>line-through;</li>
                 <li>underline;</li>
+                <li>line-through;</li>
                 <li>overline underline;</li>
             </ul>
         </li>
@@ -108,5 +161,189 @@
         <li>text-decoration-style</li>
         <li>text-decoration-thickness</li>
     </ol>
+    <hr>
+
+    <div class="overline vertical">
+        <h3 class="h4">text-decoration-line: overline</h3>
+        <p>I am Anand Kumar</p>
+    </div>
+    <div class="underline vertical">
+        <h3 class="h4">text-decoration-line: underline</h3>
+        <p>I am Anand Kumar</p>
+    </div>
+    <div class="line-through vertical">
+        <h3 class="h4">text-decoration-line: line-through</h3>
+        <p>I am Anand Kumar</p>
+    </div>
+    <pre> **We can also put multiple at same TiME..->>      Example Like</pre>
+    <div class="overline-underline vertical">
+        <h3 class="h4">text-decoration-line: overline-underline</h3>
+        <p>I am Anand Kumar</p>
+    </div>
+    <hr>
+    <!-- text-decoration-color: red;  -->
+    <h2>text-decoration-color:</h2>
+    <div class="vertical overline decoration-color">
+        <h3 class="h4">text-decoration-color: red;</h3>
+        <p>I am Anand Kumar</p>
+    </div>
+    <hr>
+    <!-- text-decoration-style: dotted;  -->
+    <h2>text-decoration-style:</h2>
+    <div class="vertical overline style-dotted">
+        <h3 class="h4">text-decoration-style: dotted;</h3>
+        <p>I am Anand Kumar</p>
+    </div>
+    <div class="vertical overline style-dashed">
+        <h3 class="h4">text-decoration-style: dashed;</h3>
+        <p>I am Anand Kumar</p>
+    </div>
+    <div class="vertical overline style-double">
+        <h3 class="h4">text-decoration-style: double;</h3>
+        <p>I am Anand Kumar</p>
+    </div>
+    <pre>   And Some More are there.......</pre>
+    <!-- text-decoration-thickness -->
+    <hr>
+    <h2>text-decoration-thickness:</h2>
+
+    <hr>
+    <!-- text-transform -->
+    <h2>text-transform:</h2>
+    <div class="uppercase vertical">
+        <h3 class="h4">text-transform: uppercase;</h3>
+        <p>I am Anand Kumar</p>
+    </div>
+    <div class="lowercase vertical">
+        <h3 class="h4">text-transform: lowercase;</h3>
+        <p>I am Anand Kumar</p>
+    </div>
+    <div class="capitalize vertical">
+        <h3 class="h4">text-transform: capitalize;</h3>
+        <p>I am Anand Kumar</p>
+    </div>
+    <hr>
+    <h4>margin collapse</h4>
+    <div class="vertical">
+        <div class="container">
+            <div class="box"><b>margin: 10px;</b></div>
+        </div>
+        <div>
+            <p>The first box's Top Margin within its Parent, and last Box's Bottom Margin Gets Error,</p>
+            <p>The Solution is to Put The <b><i>Padding</i>***</b></p>
+        </div>
+    </div>
+    <hr>
+    <!-- Box Shadow -->
+    <h3>Box-Shadow</h3>
+    <pre>
+        box-shadow: Horizontal Vertical;
+    </pre>
+    <div class="container top-pad">
+        <div class="box right-down"><b>box-shadow: 12px 18px;</b></div>
+    </div>
+    <div class="container top-pad">
+        <div class="box right-up"><b>box-shadow: 12px -18px;</b></div>
+    </div>
+    <div class="container top-pad">
+        <div class="box left-down"><b>box-shadow: -12px 18px;</b></div>
+    </div>
+    <div class="container top-pad">
+        <div class="box left-up"><b>box-shadow: -12px -18px;</b></div>
+    </div>
+
+    <h4>Can also Decide Color</h4>
+    <pre>
+        box-shadow: 12px 18px green;
+    </pre>
+    <div class="container top-pad">
+        <div class="box right-down-green"><span class="pad">box-shadow: 12px 18px green;</span></div>
+    </div>
+    <h4>Can also Decide BLUR</h4>
+    <pre>
+        box-shadow: h-offset v-offset blur color;
+        box-shadow: 12px 18px 6px green;
+    </pre>
+    <div class="container top-pad">
+        <div class="box right-down-green-blur"><span class="pad">box-shadow: 12px 18px 6px green;</span></div>
+    </div>
+    <h4>Can also Add Spread-Radius</h4>
+    <pre>
+        box-shadow: h-offset v-offset blur spread-radius color;
+        box-shadow: 12px 18px 6px  30px green;
+    </pre>
+    <div class="container top-pad spread">
+        <div class="box"><span class="pad">box-shadow: 12px 18px 6px green;</span></div>
+    </div>
+
+    <h4 class="pink">ADD BLUR IN ALL DIRECTIONS</h4>
+    <pre>
+        box-shadow: 0px 0px 6px 10px black;</pre>
+    <div class="container top-pad spread">
+        <div class="box all-blur"><span class="pad">box-shadow: 12px 18px 6px green;</span></div>
+    </div>
+    <h4 class="pink">ADD BORDER-RADIUS: 100%</h4>
+    <pre>
+        box-shadow: 0px 0px 6px 10px blue;
+        border-radius: 100%;</pre>
+    <div class="container top-pad spread">
+        <div class="box box-radius-100"></div>
+    </div>
+    <div class="vertical">
+        <h4>Use of <span class="pink">INSET</span></h4>
+        <p>It is used to make the Shadow INNER Side->></p>
+    </div>
+    <pre>
+        box-shadow: INSET h-offset v-offset color;
+        box-shadow: inset 10px 10px green;
+    </pre>
+    <div class="container top-pad spread">
+        <div class="box inset"><span class="pad">box-shadow: inset 10px 10px green;</span></div>
+    </div>
+    <div class="container top-pad spread">
+        <div class="box inset-50"><span class="pad">box-shadow: inset 50px 50px green;</span></div>
+    </div>
+    <h2 class="right-side">Search Online Any Help</h2>
+    <pre class="right-side">MDN DOCS (problem)
+        for ex- mdn doc border box
+        then, open the 1st developer Mozilla WebPage
+    </pre>
+    <hr>
+    <hr style="margin: 0 !important;">
+    <h2 style="display: inlin;">Transition</h2>
+
+    <div class="one-line">
+        <div class="one">
+            <p>Without Transition Effect</p>
+            <p>Putting a Transition Effect on a Box</p>
+            <div class="container top-pad">
+                <div class="box">
+                    <p>
+                        box :hover{
+                            <br>
+                                <p><span class="pad-left">b</span>ackground-color: brinjal;
+                            <br>}
+                                </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="two">
+            <p>Without Transition Effect</p>
+            <p>Putting a Transition Effect on a Box</p>
+            <div class="container top-pad">
+                <div class="box">
+                    <p>
+                        transition-property: background-color;<br>
+                        transition-duration: 1s;<br>
+                        transition-timing-function: linear;<br><br><br>
+                        do There in .box <br>
+                        And :hover will work automatically
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
