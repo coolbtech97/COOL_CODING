@@ -7,13 +7,106 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h2>Text Alignment and Direction</h2>
+    <h2>TEXT ALIGNMENT AND DIRECTION</h2>
     <ol>
         <li>text-align: left, right, center, justify</li>
         <li>direction: ltr, rtl</li>
         <li>unicode-bidi: bidi-override</li>
         <li>text-align-last: left, right, center, justify</li>
         <li>vertical-alignment: <span class="brinjal">baseline, sub, super</span></li>
+    </ol>
+    <pre>
+        It actually centers the Inner Material of that Thing,
+        ex- text-align: center;
+            It actually centered the Texts, not the AREA in center
+        
+        CENTERS THE INLINE ELEMENT**
+        CENTERS THE CONTENT OF BLOCK LEVEL ELEMENT**    (not the element)
+    </pre>
+    <hr>
+    <h3>Text-Align: Left;</h3>
+    <div class="container-left">
+        <div class="first">Aur Bhaiya Kise ho</div>
+        <div class="second"><i>default</i></div>
+    </div>
+    <h3>Text-Align: Right;</h3>
+    <div class="container-right">
+        Aur bhaiya Kise Ho
+    </div>
+    <h3>Text-Align: Center;</h3>
+    <div class="container-center">
+        Aur bhaiya Kise Ho
+    </div>
+    <h3>Text-Align: justify;</h3>
+    <h4><u>OFF</u></h4>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum, hic explicabo vitae laboriosam reiciendis. Similique asperiores sunt veritatis commodi neque? Voluptas voluptate nisi sint commodi incidunt! Mollitia vel voluptas sint necessitatibus iusto veritatis aspernatur minus assumenda similique labore inventore nam facere, laborum fugiat deserunt illo architecto sed optio velit? Deleniti temporibus aperiam corrupti odit.
+    </div>
+    <h4><u>ON</u></h4>
+    <div class="container-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum, hic explicabo vitae laboriosam reiciendis. Similique asperiores sunt veritatis commodi neque? Voluptas voluptate nisi sint commodi incidunt! Mollitia vel voluptas sint necessitatibus iusto veritatis aspernatur minus assumenda similique labore inventore nam facere, laborum fugiat deserunt illo architecto sed optio velit? Deleniti temporibus aperiam corrupti odit.
+    </div>
+    <hr>
+    <!-- Text-Align-Last -->
+    <h3>Text-Align-Last: left;</h3>
+    <div class="last left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum, hic explicabo vitae laboriosam reiciendis. Similique asperiores sunt veritatis commodi neque? Voluptas voluptate nisi sint commodi incidunt! Mollitia vel voluptas sint necessitatibus iusto veritatis aspernatur minus assumenda similique labore inventore nam facere, laborum fugiat deserunt illo architecto sed optio velit? Deleniti temporibus aperiam corrupti odit.
+    </div>
+    <h3>Text-Align-Last: right;</h3>
+    <div class="last right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum, hic explicabo vitae laboriosam reiciendis. Similique asperiores sunt veritatis commodi neque? Voluptas voluptate nisi sint commodi incidunt! Mollitia vel voluptas sint necessitatibus iusto veritatis aspernatur minus assumenda similique labore inventore nam facere, laborum fugiat deserunt illo architecto sed optio velit? Deleniti temporibus aperiam corrupti odit.
+    </div>
+    <h3>Text-Align-Last: center;</h3>
+    <div class="last center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum, hic explicabo vitae laboriosam reiciendis. Similique asperiores sunt veritatis commodi neque? Voluptas voluptate nisi sint commodi incidunt! Mollitia vel voluptas sint necessitatibus iusto veritatis aspernatur minus assumenda similique labore inventore nam facere, laborum fugiat deserunt illo architecto sed optio velit? Deleniti temporibus aperiam corrupti odit.
+    </div>
+    <h3>Text-Align-Last: justify;</h3>
+    <div class="last justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum, hic explicabo vitae laboriosam reiciendis. Similique asperiores sunt veritatis commodi neque? Voluptas voluptate nisi sint commodi incidunt! Mollitia vel voluptas sint necessitatibus iusto veritatis aspernatur minus assumenda similique labore inventore nam facere, laborum fugiat deserunt illo architecto sed optio velit? Deleniti temporibus aperiam corrupti odit.
+    </div>
+    <!-- Direction -->
+    <hr color="aqua">
+    <h2>Direction</h2>
+    <h3>ltr - <i>Left To Right</i></h3>
+    <h4 class="ltr">I am Anand Kumar</h4>
+    <h3>rtl - <i>Right To Left</i></h3>
+    <h4 class="rtl">I am Anand Kumar</h4>
+    <pre>   This came because Different Languages came with rtl like Chinese, Arabic
+    </pre>
+    <hr noshade color="aqua"><div class="sameline">
+    <h2>Unicode-bidi _ _ _ </h2>
+    <h3>& rtl - <i>Right To Left</i></h3></div>
+    <h4 class="bidi">I am Anand Kumar</h4>
+    <hr>
+    <!-- Vertical-Align -->
+    <h2>Vertical-Align</h2>
+    <div class="vertical">
+        <h3 class="h4">vertical-align: sub;</h3>
+        <p>I am Anand <span class="sub">Kumar</span></p>
+    </div>
+    <div class="vertical">
+        <h3 class="h4">vertical-align: super;</h3>
+        <p>I am Anand <span class="super">Kumar</span></p>
+    </div>
+    <div class="vertical">
+        <h3 class="h4">vertical-align: baseline;</h3>
+        <p>I am Anand <span class="baseline">Kumar</span></p>
+    </div>
+    <hr class="red">
+    <!-- TEXT DECORDER -->
+    <h2>TEXT DECORDER</h2>
+    <ol>
+        <li>text-decoration-line:
+            <ul class="brinjal">
+                <li>overline;</li>
+                <li>line-through;</li>
+                <li>underline;</li>
+                <li>overline underline;</li>
+            </ul>
+        </li>
+        <li>text-decoration-color: red</li>
+        <li>text-decoration-style</li>
+        <li>text-decoration-thickness</li>
     </ol>
 </body>
 </html>

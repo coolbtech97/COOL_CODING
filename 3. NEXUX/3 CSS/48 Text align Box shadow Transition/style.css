@@ -1,0 +1,88 @@
+.red{
+    background-color: red;
+    color: red; /* for extra use red */
+}
+.brinjal{
+    color: rgb(34, 29, 86);
+}
+hr{
+    margin-top: 35px;
+    padding: 2px 0px;
+    background-color: aqua;
+    border: none;
+}
+.container{
+    background-color: aqua;
+}
+.container-left{
+    text-align:left;
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    .second > i{
+        color:blueviolet;
+    }
+}
+.container-right{
+    text-align: right;
+    background-color: aqua;
+}
+.container-center{
+    text-align: center;
+    background-color: aqua;
+}
+.container-justify{
+    text-align: justify;
+    background-color: aqua;
+}
+h4,.h4{
+    color: blueviolet;
+    font-size: large;
+    font-weight: bolder;
+}
+.last{
+    background-color: rgb(201, 176, 225);
+}
+.left{
+    text-align-last:left;
+}
+.right{
+    text-align-last:right;
+}
+.center{
+    text-align-last:center;
+}
+.justify{
+    text-align-last:justify;
+}
+.ltr{
+    direction: ltr;
+}
+.rtl{
+    direction: rtl;
+}
+.bidi{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+.sameline{
+    display: flex;
+    h3{
+        margin-left: 80px;
+    }
+}
+.sub{
+    vertical-align: sub;
+}
+.super{
+    vertical-align: super;
+}
+.baseline{
+    vertical-align: baseline;
+}
+.vertical{
+    display: flex;
+    p{
+        margin-left: 40px;
+    }
+}
