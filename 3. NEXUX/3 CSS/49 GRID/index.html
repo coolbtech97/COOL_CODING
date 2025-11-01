@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chango&family=Maiden+Orange&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h2>Without-Grid</h2>
+        <div class="container">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+        <h2>With Grid</h2>
+        <pre>
+
+    It Should be Apply on The Parent Element
+    it automatically fills the complete set
+        </pre>
+        <div class="container grid">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+        <h2>grid-template-columns</h2>
+        <hr noshade="true">
+        <pre>
+
+    grid-template-columns: 200px;
+        </pre>
+        <div class="container grid template-col1">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+        <hr noshade="true">
+        <pre>
+
+    grid-template-columns: 200px 200px;
+        </pre>
+        <div class="container grid template-col2">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+        <hr noshade="true">
+        <pre>
+
+    grid-template-columns: 200px 200px 200px;
+        </pre>
+        <div class="container grid template-col3">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+
+        <hr noshade="true">
+        <h2>grid-template-rows</h2>
+        <pre>
+
+            ```The real meaning of rows size & cols size is to create,
+            that sizes boxes
+
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+        </pre>
+        <div class="container grid template-col3 template-row3">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+        <hr noshade="true">
+        <pre>
+
+    grid-template-columns: 200px 400px 200px;
+    grid-template-rows: 200px 200px 200px;
+        </pre>
+        <div class="container grid template-col4 template-row3">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+        <hr>
+        <h3 class="font2">How to Achieve automatically Fills with Full Height & Full Width</h3>
+        <pre>
+    
+    FRACTION fr
+
+    grid-template-columns: 1fr 1fr 1fr;         divides into 3 fractions, then gives 1
+    grid-template-rows: 1fr 1fr;            divides into 2 fractions, then gives 1
+        </pre>
+        <div class="container-full grid fraction-full">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+        <h4 class="font2">If using Different Value in Fraction</h4>
+        <pre>
+
+    grid-template-columns: 1fr 2fr 1fr;         divides into 4 fractions, then gives 1: 2: 1
+    grid-template-rows: 1fr 1fr;            divides into 2 fractions, then gives 1
+        </pre>
+        <div class="container-full grid fraction-full frac-121">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+<!-- GAP -->
+        <hr noshade="true">
+        <h2 class="font1 brinjal green">GAP</h2>
+        <pre>
+
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+        </pre>
+        <div class="container-some grid fraction-full gap pad">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+<!-- Only Row-Gap -->
+        <hr noshade="true">
+        <h3 class="font1 brinjal green">row-gap</h3>
+        <pre>
+
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+        </pre>
+        <div class="container-some grid pad fraction-full row-gap">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+<!-- Only Row-Gap && Column Gap More -->
+        <hr noshade="true">
+        <h3 class="font2 font-large brinjal green">row-gap: 1rem<br>column-gap:3rem;</h3>
+        <pre>
+
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 3rem;
+        </pre>
+        <div class="container-some grid pad fraction-full row-gap column-gap-3">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+
+        <!-- New Designing System of GRID -->
+        <hr noshade="true">
+        <h2><span class="font2 font-large brinjal green">New <br> grid-column-start: 1; <br>grid-column-end: 4;</span> _________________Some Problem Occured here./</h2>
+        <pre>
+
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;                 Problem is with Box5, Box6
+    gap: 1rem;                                   because, I "FIXED" here 1fr,1fr = 2ROWS ONLY,
+     .Box1{                                      so Its, overflowing
+        grid-column-start: 1;           SOLUTION-> make it 1fr 1fr 1fr; [TELL Perfect No. of Rows]
+        grid-column-end: 4;                     OR, not mention About ROWs... (occur some problem in Rows-Sizes)
+     }
+        </pre>
+        <div class="container-some grid pad fraction-full gap">
+            <div class="box grid-start-end">Box 1 <br> grid-column-start: 1; <br> grid-column-end: 4;</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+        <hr noshade="true">
+        <h2>__________Solution is here./</h2>
+        <pre>
+
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1FR; - Problem Fixed with putting one more row
+    gap: 1rem;
+     .Box1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+     }
+        </pre>
+        <div class="container-some grid pad fraction-full gap template-row-3-fr">
+            <div class="box grid-start-end">Box 1 <br> grid-column-start: 1; <br> grid-column-end: 4;</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box">Box6</div>
+        </div>
+        <hr noshade="true">
+        <h2>_________More Design <span class="font2 font-large brinjal">slide Bar</span>./</h2>
+        <pre>
+
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1FR;  &Lt;;- Problem Fixed with putting one more row
+    gap: 1rem;
+     .Box1,box6{     /* grid-start-end = HEADER FOOTER*/
+        grid-column-start: 1;
+        grid-column-end: 4;
+     }
+     .Box2{     /* grid-start-end */
+        grid-column-start: 1;
+        grid-column-end: 4;
+     }
+        </pre>
+        <div class="container-some grid pad fraction-full gap template-row-3-fr">
+            <div class="box box1">Box 1 <br> grid-column-start: 1; <br> grid-column-end: 4;</div>
+            <div class="box box2">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box box1 template-row-4-fr">Box6</div>
+        </div>
+        <hr>
+        <p class="font2 font-large brinjal pad">
+            <b>In place of using</b><br>
+            <span class="pad">grid-column-start: 1;</span><br>
+            <span class="pad">grid-column-end: 4;</span><br>
+            <b>I can use</b><br>
+            <span class="pad">grid-column: 1/4;</span>
+        </p>
+        <hr noshade="true">
+    </main>
+</body>
+</html>

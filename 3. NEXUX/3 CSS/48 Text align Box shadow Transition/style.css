@@ -5,6 +5,11 @@
 .brinjal{
     color: rgb(34, 29, 86);
 }
+.fonthead{
+  font-family: "Chango", sans-serif,'Times New Roman', Times, serif;
+  font-weight: 10;
+  font-style: normal;
+}
 hr{
     margin-top: 35px;
     padding: 2px 0px;
@@ -227,19 +232,127 @@ h4,.h4{
     padding-left: 13px;
 }
 /* Transition Effects */
-.one .box:hover{
+.one-line .box:hover{
     background-color: rgb(98, 0, 255);
 }
-.two .box:hover{
-    background-color: rgb(98, 0, 255);
-}
-.two .box{
+.linear .box{
     transition-property: background-color;
     transition-duration: 1s;
     transition-timing-function: linear;
 }
 .one-line{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     /* justify-content: space-evenly; */
+}
+.ease .box{
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}.ease-in .box{
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}.ease-out .box{
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}.ease-in-out .box{
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.one-line > div{
+    box-shadow: inset 0px 0px 60px 10px rgb(207, 207, 211);
+    margin-top: 15px;
+    border-color: rgb(66, 49, 49);
+    padding: 6px;
+    border-radius: 8px;
+    > div{
+        box-shadow: inset 0px 0px 20px 10px rgb(162, 177, 178);
+        border-color: rgb(66, 49, 49);
+        padding: 6px;
+        border-radius: 8px;
+    }
+}
+.big-box{
+    padding: 10px;
+}
+.trans{
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    /* transition-delay: 1s; */
+}
+.container2{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    div{
+        color: #fff;
+        padding: 4px;
+        border-radius: 4px;
+        background-color: red;
+        height: 250px;
+        width: 250px;
+        margin-right: 2px;
+        transition-property: background-color;
+        transition-duration: 1s;
+        transition-timing-function: linear;
+        transition-delay: 1s;
+    }
+    div:hover{
+        background-color: rgb(98, 0, 255);
+    }
+}
+.widchange{
+    div:hover{
+        width: 200px;
+    }
+}
+.container2{
+    .all{
+        transition-property: all;
+    }
+}
+.oneline{
+    display: flex;
+    justify-content: space-around;
+    >div{
+        box-shadow: inset 0px 0px 60px 10px rgb(207, 207, 211);
+        border-radius: 20px;
+        margin: 11px;
+    }
+    flex-wrap: wrap;
+}
+.container3{
+    height: 300px;
+    width: 300px;    /* Full Width */
+    display: flex;
+    background-color: aqua;
+    /* height: 200px; */
+    align-items: center;
+    justify-content: center;
+            transition-delay: 1s;
+        transition-duration: 1.5s;
+        transition-timing-function: linear;
+        transition-property: all;
+    .circle{
+        transition-delay: 1s;
+        transition-duration: 1.5s;
+        transition-timing-function: linear;
+        transition-property: all;
+        background-color: aqua;
+        height: 250px;
+        width: 250px;
+    }
+    :hover{
+        background-color: blueviolet;
+        border-radius: 100%;
+    }
 }

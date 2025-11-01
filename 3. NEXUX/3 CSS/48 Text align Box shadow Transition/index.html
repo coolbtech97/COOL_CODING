@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text align Box Shadow Transition</title>
     <link rel="stylesheet" href="./style.css">
@@ -73,8 +76,12 @@
     <p><b>timing-function</b>: A function that describes how the transition progresses over its duration. Common values include:</p>
     <ul>
         <li><span class="green">linear</span>: The transition has a constant speed.</li>
-        <li><span class="green">ease</san></li>
+        <li><span class="green">ease</span>: The transition starts slow, speeds up, and then slows down.</li>
+        <li><span class="green">ease-in</span>: The transition starts slow and then speeds up.</li>
+        <li><span class="green">ease-out</span>: The transition starts fast and then slows down.</li>
+        <li><span class="green">ease-in-out</span>: The transition starts slow, speeds up, and then slows down again.</li>
     </ul>
+    <p><b>delay</b>: The time to wait before starting the transition (e.g., <span class="green">1s</span> ).</p>
     <!-- Starting Coding -->
     <hr>
     <h3>Text-Align: Left;</h3>
@@ -273,14 +280,14 @@
         box-shadow: 12px 18px 6px  30px green;
     </pre>
     <div class="container top-pad spread">
-        <div class="box"><span class="pad">box-shadow: 12px 18px 6px green;</span></div>
+        <div class="box"><span class="pad">box-shadow: 12px 18px 6px  30px green;</span></div>
     </div>
 
     <h4 class="pink">ADD BLUR IN ALL DIRECTIONS</h4>
     <pre>
         box-shadow: 0px 0px 6px 10px black;</pre>
     <div class="container top-pad spread">
-        <div class="box all-blur"><span class="pad">box-shadow: 12px 18px 6px green;</span></div>
+        <div class="box all-blur"><span class="pad">box-shadow: 0px 0px 6px 10px black;</span></div>
     </div>
     <h4 class="pink">ADD BORDER-RADIUS: 100%</h4>
     <pre>
@@ -328,7 +335,7 @@
                 </div>
             </div>
         </div>
-        <div class="two">
+        <div class="linear">
             <p>Without Transition Effect</p>
             <p>Putting a Transition Effect on a Box</p>
             <div class="container top-pad">
@@ -343,7 +350,105 @@
                 </div>
             </div>
         </div>
+        <div class="ease">
+            <p>Without Transition Effect</p>
+            <p>Putting a Transition Effect on a Box</p>
+            <div class="container top-pad">
+                <div class="box">
+                    <p>
+                        transition-property: background-color;<br>
+                        transition-duration: 1s;<br>
+                        transition-timing-function: ease;<br><br><br>
+                        same
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="ease-in">
+            <p>Without Transition Effect</p>
+            <p>Putting a Transition Effect on a Box</p>
+            <div class="container top-pad">
+                <div class="box">
+                    <p>
+                        transition-property: background-color;<br>
+                        transition-duration: 1s;<br>
+                        transition-timing-function: ease-in;<br><br><br>
+                        same
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="ease-out">
+            <p>Without Transition Effect</p>
+            <p>Putting a Transition Effect on a Box</p>
+            <div class="container top-pad">
+                <div class="box">
+                    <p>
+                        transition-property: background-color;<br>
+                        transition-duration: 1s;<br>
+                        transition-timing-function: ease-out;<br><br><br>
+                        same
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="ease-in-out">
+            <p>Without Transition Effect</p>
+            <p>Putting a Transition Effect on a Box</p>
+            <div class="container top-pad">
+                <div class="box">
+                    <p>
+                        transition-property: background-color;<br>
+                        transition-duration: 1s;<br>
+                        transition-timing-function: ease-in-out;<br><br><br>
+                        same
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <hr style="background-color: rgba(160, 19, 19, 0.8);border-radius: 60px;max-width: 80%;">
+    <h3>Transition-Delay: 1s</h3>
+    <div class="container2">
+        <div>
+        transition-property: background-color;<br>
+        transition-duration: 1s;<br>
+        transition-timing-function: linear;
+        transition-delay: 1s;
+        </div>
+    </div>
+    <div class="oneline">
+        <div class="one">
+            <h3>Width with no Transition</h3>
+            <pre>Transition property is only applying on background-color</pre>
+            <div class="container2 widchange">
+                <div>
+                transition-property: background-color;<br>
+                transition-duration: 1s;<br>
+                transition-timing-function: linear;<br>
+                transition-delay: 1s;<br><br><br>
+                width: 200px;
+                </div>
+            </div>
+        </div>
+        <div class="two">
+            <h2 class="green fonthead">Transition Property: All;</h2>
+            <pre>               then, it will Apply on ALL</pre>
+            <div class="container2 widchange">
+                <div class="all">
+                transition-property: all;<br>
+                transition-duration: 1s;<br>
+                transition-timing-function: linear;<br>
+                transition-delay: 1s;<br><br><br>
+                width: 200px;
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="brinjal"><u>Best Example of Transition-Property: ALL;</u></h3>
+    <div class="container3 fullwidth">
+        <div class="circle"></div>
+    </div>
+    <h2>Text-Shadow Is Homework</h2>
 </body>
 </html>
