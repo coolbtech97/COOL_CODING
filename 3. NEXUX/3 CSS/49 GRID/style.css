@@ -97,13 +97,21 @@ hr{
 .pad{
     padding: 1rem;
 }
-.box1{
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
 .template-row-3-fr{
     grid-template-rows: 1fr 1fr 1fr;
 }
 .template-row-4-fr{
     grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.box1 , .box6{
+    grid-column: 1/4;
+}
+.box2{
+    grid-row: 2/4;
+}
+.box3{
+    grid-column: 2/4;
+}
+.full-width{
+    width: 100%;
 }

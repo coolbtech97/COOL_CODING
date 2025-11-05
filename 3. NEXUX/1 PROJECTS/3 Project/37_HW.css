@@ -1,10 +1,11 @@
 header{
     background-color: green;
+    p{
+        color: yellow;
+        font-family: 'Playwrite AU NSW', cursive;
+    }
 }
-header > p{
-    color: yellow;
-    font-family: 'Playwrite AU NSW', cursive;
-}
+header > 
 p{
     /* color: rgb(255, 255, 255); */
     font-family: 'Inconsolata', monospace;
