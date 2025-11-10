@@ -142,5 +142,60 @@
         }
     </pre>
     <hr>
+    
+    <h3>New Concept of Applying</h3>
+    <div class="container-y">
+        <div class="ybox ybox1">Box1</div>
+        <div class="ybox ybox2">Box2</div>
+        <div class="ybox ybox3">Box3</div>
+        <div class="ybox ybox4">Box4</div>
+        <div class="ybox ybox5">Box5</div>
+        <div class="ybox ybox6">Box6</div>
+        <div class="ybox ybox7">Box7</div>
+        <div class="ybox ybox8">Box8</div>
+    </div>
+    <pre>
+
+        .container{
+            >div{
+                background-color: green;
+            }
+            background-color: gray;
+            height: 100%;
+            padding: 4rem;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(4,1fr);  /* 1fr 1fr 1fr 1fr */
+            grid-template-rows: repeat(3,1fr);      /* fr = FRACTION */
+            grid-template-areas: 
+            "Box1 Box2 Box2 Box3"           REMEMBER-> These Patterns will decide how it
+            "Box1 Box4 Box5 Box6"                       will Show In Real ONEE******************
+            "Box1 Box7 Box8 Box6";-----------
+        }                                   |
+        .ybox1{                             |
+            grid-area: Box1; ---------------|
+        }
+        .ybox2{
+            grid-area: Box2; ---------------|
+        }
+        .ybox3{
+            grid-area: Box3; ---------------|
+        }
+        .ybox4{
+            grid-area: Box4; ---------------|
+        }
+        .ybox5{
+            grid-area: Box5; ---------------|
+        }
+        .ybox6{
+            grid-area: Box6; ---------------|
+        }
+        .ybox7{
+            grid-area: Box7; ---------------|
+        }
+        .ybox8{
+            grid-area: Box8; ---------------|
+        }
+    </pre>
 </body>
 </html>
