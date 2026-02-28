@@ -1,0 +1,16 @@
+TYPE CONVERSION->>
+Every expression written in Java has a type that can be
+deduced from the structure of the expression and the types of
+the literals, variables and methods mentioned in the expression.
+
+In Java--
+3 is int type by default
+3.6 is double type
+'a' is also int type (uni code in java sees)
+
+if i write 5+6.7
+, then compiler conver 5 into double
+
+int x=3;
+float y=x;      // Compiler convert x into FLOAT type   3 -> 3.0
+                // is called Widening Converison, No Error

@@ -15,7 +15,7 @@ int main()
     }
     for(i=0;i<6;++i)
     {
-        if(a[i]>l2&&a[i]!=l)
+        if(a[i]>l2 &&a[i]!=l)
         l2=a[i];
     }
     

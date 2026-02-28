@@ -1,0 +1,13 @@
+In Java,
+-------------------------------------
+1. PRIMITIVE DATA TYPES
+boolean - implementation dependent
+char    - 2 bytes
+byte    - 1 byte
+short   - 2 byte
+int     - 4 bytes
+long    - 8 bytes
+float   - 4 bytes
+double  - 8 bytes
+-------------------------------------
+2. NON PRIMITIVE DATA TYPES

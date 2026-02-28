@@ -1,0 +1,28 @@
+Assignment-2 Java Operators
+
+1. Write a program with one char type variable.
+    Assign 'A' in the variable. Now change the value
+    of variable from 'A' to 'B' using increment operator.
+2. Write a program to find unicode of the character '+'.
+3. Write a program to make the last digit of a number stored
+    in a variable as zero.
+    (Example - if x=2345 then make it x=2340).
+4. write a program to calculate sum of digits of a given number.
+5. What will be the result of an expression - 5>4>3
+6. What will be the value get stored in variable x as a result of an expression
+    - int x = (int)true.
+7. What will be the value get stored in variable x as a result of an expression
+    - int x = !5>-2.
+8. What will be the value get stored in variable x as a result of an expression
+    - int x = 5.5 % 1.5
+9. Write a program to reverse a three digit number.
+10. Write a program to print the character corresponding to the unicode 100
+
+------------------------------------------------------------------------------------
+5. is wrong
+    5>4>3
+    true>3
+    ERROR
+
+6. // true is not 1, in java ERROR
+

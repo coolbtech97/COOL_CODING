@@ -1,0 +1,117 @@
+AGENDA
+-------------------
+1. Classification of operators
+-- operators are used to manipulate data to produce usedful
+-- information
+
+-- Operators using 1 operand Unary Operator
+-- Operators using 2 operand Binary Operator
+-- Operators using 3 operand Ternary Operator
+---------------------------------------------------
+Types of Operatos->>
+1. Unary operators  +,-,++,--
+-- +    unary+   +2
+-- -    unary-   -5
+-- ++
+-- --
+
+---- post
+---- pre
+--NOTE:: [Incremenet and Decrement Operatos will work only on variables
+-- and not constants ].
+
+2. Arithmetic operators
+-- * , / , %    higher priority
+-- + , -        lower priority
+-- [Associativity Rule :: left -> right]
+
+NOTE:: (float)5/2;
+--      type caseting 1st,
+--      division at last,
+--      Answer is 2.5
+-- defination
+-- (float)5/2
+-- 5.0/2
+-- 2.5
+
+-- 5.5 % 2      In C,C++ It is wrong,
+--              In Java, It works;;''
+----Unlike C, java allows real constants with modulo operator
+
+--  5 %  2 =  1
+-- -5 %  2 = -1         numerator is -ve,
+--  5 % -2 =  1         remainder is -ve.
+-- -5 % -2 = -1
+
+3. Bitwise Operators    & , | , ^ , ~, >> , <<
+
+-- &    AND
+
+-- |    OR
+
+-- ^    XOR
+
+-- ~    NOT
+
+-- >>   Right Shift
+
+-- <<   Left Shift
+
+--NOTE::[ WORKS ON BITS ]
+
+-- example->>>
+--  Q. 35 & 53 = ??
+
+--  35  00100011
+--  53  00110101
+------------------
+--      00100001    = 33 ANSWER
+
+4. Relational Operators < , > , <= , >= ,== , !=
+--always give boolean type result
+--""NOT RETURN"" 1 or 0 , other like C++
+
+--Int value cannot convert into boolean
+---- (boolean)25;   /\ ERROR ERROR
+--Boolean cannnot be converted to Int
+---- (int)bool;     /\ ERROR ERROR
+-- incompatable
+
+-- 5>4>3 == ??
+-- flase>3
+-- ERROR
+
+5. Logical operators ! , && , ||
+-- Only Works with booleans""""
+
+-- !    NOT     ! boolean
+-- &&   AND       boolean && boolean
+-- ||   OR        boolean || boolean
+
+-- example
+-- !5>2
+-- ERROR        !5 ->   ! only works with boolean values
+
+6. Conditional Operators
+-- ?:   Ternary Operator
+--      (next class)
+
+7. Assignment Operator  = , += , -= , *= , /= , %=
+-- It is used to copy value
+
+-- x=4
+-----------------
+-----------------   aleady knows these example are no longer needed
+-----------------
+
+8. Instance of Operator
+
+Object instanceof className/SubClass/interface
+Result will be either True or False
+
+9. Instance of Operator
+-- instanceof is to check that the OBJECT is of which CLASS/subclass/interface
+
+String s1 = "Anand";
+
+boolean a = s1 instanceof String;

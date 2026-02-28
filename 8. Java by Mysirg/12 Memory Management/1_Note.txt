@@ -1,0 +1,11 @@
+AGENDA->>>
+1. What is Static?
+2. Static variable
+3. Static method
+4. Types of variables in Java
+5. Default value
+6. Practice
+
+
+----------------------------------------------------------------------
+

@@ -1,0 +1,109 @@
+AGENDA->>>>
+
+1. Object Oriented programming
+2. key concepts of OOP
+3. Encapsulation
+4. Class
+5. Example
+6. Object
+7. Instantiation in C++
+8. Instantiation in Java
+9. Reference variable
+10. Code in Java file
+11. garbage Collector
+
+----------------------------------------------------------------------------
+
+Object Oriented programming
+-> Java is an object oriented programming language.
+-> Real world is full of objects.
+-> Object is used to represent a real world entity.
+-> Class is a description of object.
+NoTe;; [ "Object is an instance of a class" ]
+
+----------------------------------------------------------------------------
+Key Concepts of OOP
+1. Encapsulation
+2. Data Handling
+3. Abstraction
+4. Polymorphism
+5. Inheritance
+
+
+1. ENCAPTULATION->
+    -> An act of combining 'properties' and 'methods' related to the same entity is called Encapsulation.
+    -> Encapsulation can be implemented by defining class.
+
+
+CLASSES->>
+-> Class is a description of an object.
+-> Class is a blueprint of an object.
+-> Class == common noun
+-> Class is a way to achieve encapsulation
+-> Class is defined with the class keyword
+    class ClassName{
+        // variables
+        // methods
+    }
+
+example->
+    Define a class Box with length, breadth, and height as member variables, Also define setDimension() and showDimension() as member functions.
+
+    ANswer
+    class Box{
+        int length, breadth, height;                //instance member variables
+        void setDimension(int x,int y,int z){       // local variables
+            length=x;
+            breadth=y;
+            height=z;
+        }
+        void showDimension(){
+            System.out.println("Length="+length);
+            System.out.println("Breadth="+breadth);
+            System.out.println("Height="+height);
+        }
+    }
+
+
+
+OBJECT->>
+-> Object is an instance of a class
+-> Object == Proper Noun
+-> Object is a real world entity
+-> Object ca be created using class
+
+
+Instantiation   [Creating_Object]
+-> In C++, object can be created in two ways..;
+        a. SMA(static memory allocation)
+            Box b1;     // b1 is an object in C++
+
+        b. DMA(synamic memory allocation)
+            Box*p = new Box;
+                or
+            Box*p = new Box();
+
+
+.        ***INSTANTIATION IN JAVA***         .
+-> In JAVA, object can be created ONLY BY DMA.
+
+        Box b1;             // b1 is note an object
+        b1=new Box();       // b1 is a reference variable
+            or
+        Box b1=new Box();   // if b1 is a local variable
+                            // then it is blank when not inialized
+
+
+// REFERENCE VARIABLE IN C++ and java
+                C++                                 Java
+    Any Type                                    Only Class Type
+    Use & to declare                            No Symbol required
+    Mandatory to inialize during declatation    Optional
+    Cannot Modify                               Can Modify
+
+it means---
+        in c++ we can do int *n=new int;
+        But in Java, Only non primitive (Class) can be reference variable
+        and can only create dynamically
+
+        

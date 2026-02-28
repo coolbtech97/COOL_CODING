@@ -1,0 +1,82 @@
+AGENDA/////////
+1. Iterative Control Statements
+2. WHile
+3. Do-WHile
+4. For
+5. break
+6. continue
+7. nested loop
+8. for-each loop
+----------------------------------------------------
+// Iterative Control Statements     [Iteration :: Repetation]
+-> WHile
+-> Do WHile
+-> for
+-> for each
+            while(condition){
+                // while block
+            }
+            // NOTE::: Condition must be evaluated as a boolean value(true or false)
+            // NOTE::: If the condition is true, the while block will be executed
+            // NOTE::: If the condition is false, the while block will be skipped and the program will continue with the next statement after the while block
+            // NOTE::: The while loop will continue to execute as long as the condition is true
+            // NOTE::: If the condition becomes false, the loop will terminate and the program will continue with the next statement after the while block
+            // NOTE::: If the condition is never false, the loop will continue indefinitely (infinite loop)
+            // NOTE::: It is important to ensure that the condition will eventually become false to avoid infinite loops
+
+// NESTED LOOP
+// Loop within loop
+
+----------------------------------------------------
+
+// Break
+// The break is a control transfer statement.
+// It is a keyword.
+// It is used in the body of loop to terminate the execution of the loop.
+// When the break statement is encountered inside a loop, the loop iteration stops and
+//      control moves to the first statement after the loop.
+// Break CAN ALSO BE USED IN THE BODY OF SWITCH........
+
+// example----- SOME PROBLEM
+// for(int i=1;i<=10;i++){
+//     for(int j=1;j<=5;j++){
+//         if(i+j >8)
+//             break
+//         print(I+J);
+//     }
+// }        In this example, the break only exits One loop, BAD BAD BAD BAD
+
+// Labelled Break                   WOW WOW WOW WOW WOW WOW WOW WOW
+// It helps in breaking the full nested loop
+
+// first:
+// for(int i=1;i<=10;i++){
+//     for(int j=1;j<=5;j++){
+//         if(i+j >8)
+//             break first;
+//         print(I+J);
+//     }
+// }                        Break first means break from the first block,,
+//                          the whole nested loop is here of first block,,
+//                          so it automatically gets out from the all nested loops and successfully exits the repetiting loop whole
+//      It is not available in the C++, C, and python and most of other programming langugaes
+
+-------------------------------------------------------------
+
+// CONTINUE
+// It is a keyword
+// It is used only in the body of loop
+// It is used to skip the current iteration
+
+
+-------------------------------------------------------------
+
+// FOR-EACH  ->>>
+// for each loop is applicable on collection of values to access all the elements
+// on eby one from first element to the last element.
+
+// for ( type var : array){
+//      ------------
+//      -statements-
+//      ------------
+// }

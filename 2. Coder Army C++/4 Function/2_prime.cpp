@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-bool prime(int x)
+bool prime(int &x)
 {
     if(x<2)
         return 0;
@@ -9,6 +9,7 @@ bool prime(int x)
             return 0;
     return 1;
 }
+
 int main()
 {
     int n;

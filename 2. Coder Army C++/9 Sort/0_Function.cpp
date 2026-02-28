@@ -10,6 +10,9 @@ int main()
     // Ascending Sorting
     sort( arr , arr+s );
 
+    // sort( arr+s-1 , arr-1 ); why its not working
+            reverse( arr , arr+s );     //reversing for Descending
+
     for(int i=0;i<s;i++)
         cout<<arr[i]<<" ";
     

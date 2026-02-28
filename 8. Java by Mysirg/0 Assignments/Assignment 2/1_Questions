@@ -1,0 +1,71 @@
+Assignment-2 Java Operators
+
+1. Write a program to find and print unit digit of a number stored in a variable.
+2. Write a program to print a number stored in a variable without its last digit.
+3. Write a program to swap values of two int variables.
+4. Write a program to swap values of two int variables without using third variable.
+5. How to identify whether a variable is a value type variable or nullable type variables?
+6. Why there is an error in the Java statement - float x=3,4; ?
+7. What will be the result of an expression - 35&83; ?
+8. What will be the result of an expression - 47|29; ?
+9. What will be the result of an expression - 76^108; ?
+10. Write a program to rotate digits of a number towards right by one position.
+
+----------------------------------------------------------------------------------------------
+
+ANSWERS
+1. to find last digit, we use n%10;
+
+2. to remove last digit, we use n/10;
+
+3. swap a,b;    using third variable
+    c=a;
+    a=b;
+    b=c;
+
+4. swap a,b     without using third variable
+    a+=b
+    b=a-b
+    a-=b
+
+5.
+NOTE:       value type variable         |       Nullable type variable
+            (ordinary variable)         |       (Reference variable)
+        All primitive type variables    |   Class Type variables are Reference
+        are value type variable.        |   variables.
+            int x;                      |       String s1;
+            float y;                    |       Student ram;
+            boolean z;                  |       car c;
+nOTE: null is a special keyword that acts as data also,
+      It can only be stored in reference variables,
+      it cannot be stored in ordinary variables.
+
+
+6. float x = 3.4;
+    ERROR:: by default, 3.4 Real Constant is of DOUBLE type,
+            so, if double type value goes in float variable
+            then, narrowing conversion required,
+            & java doesnot do automatically narrowing conversion
+
+7. 35 & 83
+
+    35  00100011
+    83  01010011
+    ------------
+        00000011 = 3 ANSWER
+
+8. 47 | 29
+
+    47  00101111
+    29  00011101
+    ------------
+        00111111 = 63 ANSWER
+
+9. 76 ^ 108 [XOR]
+
+    76  01001100
+   108  01101100
+   -------------
+        00100000 = 32
+
+10. program

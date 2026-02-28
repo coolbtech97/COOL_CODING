@@ -16,6 +16,6 @@ int main()
     system("cls");
     cout<<"Enter the number to search : ";
     cin>>s;
-    cout<<serch(a,s,sizeof(a)/sizeof(a[0]));
+    cout<< serch(a,s,sizeof(a)/sizeof(a[0])) ;
     return 0;
 }

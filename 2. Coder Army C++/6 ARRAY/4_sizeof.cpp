@@ -6,6 +6,6 @@ int main()
     system("cls");
     cout<<sizeof(a);
     cout<<endl;
-    cout<<sizeof(a)/sizeof(a[0]);
+    cout<<sizeof(a)/sizeof(int);
     return 0;
 };

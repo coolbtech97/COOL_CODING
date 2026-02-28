@@ -1,0 +1,41 @@
+main()
+public static void main(String []args){
+    Box b1 = new Box();
+    b1.setDimension(10,20,30);
+    b1.showDimension();
+// The previous object got no reference to point towards them,
+// So they will become Garbage block, and can be deleted by GARBAGE COLLECTOR
+    b1 = new Box();
+    b1.setDimension(40,50,60);
+    b1.showDimension();
+}
+
+////-> GARBAGE COLLECTOR***
+
+    -garbage collector is a part of JVM where job
+     is to release memory of unrederenced objects from the heap.
+
+    -Automatic memory management or automatic garbage collection
+     is the process of looking at heap memory, identifying which
+     objects are un use and which are not, and deleting the unused
+     objects.
+
+    -In programming languages like C or C++, allocating and deallocating
+     memory is a manual process.
+
+
+////-> How Garbage Collection works?
+
+    1. Marking/
+        -It is the process of marking not in use objects.
+        -All the objects are scanned in the marking phase
+         to make this determination.
+         This can be very time consuming processes.
+    
+    2. Normal Deletion/
+        -Removes unrederenced objects.
+        -Memory allocator holds the references to the free spaces.
+    
+    DELETION WITH COMPACTING
+        -In addition to deletion, compacting referenced objects bt moving
+         referenced objects together.

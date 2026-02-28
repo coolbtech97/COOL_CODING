@@ -1,0 +1,31 @@
+AGENDA
+1. switch
+2. example
+
+--------------------------------------------------------------------
+Switch is a multiway branch statement
+
+switch(expression){
+    case constant1:
+        -------------
+        -------------
+    case constant2:
+        -------------
+        -------------
+    case constant3:
+        -------------
+        -------------
+    default:
+        -------------
+    
+}
+
+NOTE::::::::
+        Java Switch expression must me of byte, short, int, long, enums, strings,
+        and wrapper classes
+        
+        variables are not allowed in case constant.
+
+        Optionally, break can be used to constrol outside switch block.
+
+        NESTING of switch is also possible.

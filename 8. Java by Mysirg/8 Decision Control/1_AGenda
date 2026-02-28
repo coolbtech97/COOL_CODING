@@ -1,0 +1,36 @@
+AGENDA
+1. Decision CO=ontrol Statements
+2. if
+3. if else
+4. conditional operator
+5. nedted if
+6. if else ladder
+
+-----------------------------------------------------------
+Decision Control Statements
+-> if
+-> if else
+-> conditional operator
+-> nedted if else
+-> if else ladder
+NOTE::[ Condition must be evaluated as a boolean value ]
+
+example
+if(5){          // WRONG WRONG, condition is not boolean here, Integer here
+
+}
+if(2+3){        // Allowed
+
+}
+
+
+// CONDITIONAL operator             // ternary operator
+
+// condition ? exp1 : exp2
+-> same as c++, if condition true, exp1 else exp2
+
+
+// Main difference between IfElse and Conditional operator is
+// IfElse is not an expression
+// Conditional operator is an expression
+

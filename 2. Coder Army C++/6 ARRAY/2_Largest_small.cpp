@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     system("cls");
-    int a[5],small=INT_MAX,large=INT_MIN,i=0;
+    int a[5]={0},small=INT_MAX,large=INT_MIN,i=0;
     // without INT_MAX , i can put the value of a[0],Then Check from a[1]
     // without INT_MIN , i can put the value of a[0],Then Check from a[1]
     cout<<"Enter 5 numbers : ";
