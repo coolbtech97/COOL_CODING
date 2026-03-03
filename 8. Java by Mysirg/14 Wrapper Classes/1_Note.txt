@@ -1,0 +1,17 @@
+AGENDA->>>
+1. Why Java is not completely OOP language?
+2. Wrapper classes
+3. Primitive - Wrapper
+4. Autoboxing & Unboxing
+5. Method of Wrapping
+
+--------------------------------------------------------------------
+
+// W̲h̲y̲ ̲J̲a̲v̲a̲ ̲i̲s̲ ̲n̲o̲t̲ ̲c̲o̲m̲p̲l̲e̲t̲e̲l̲y̲ ̲O̲O̲P̲ ̲l̲a̲n̲g̲a̲u̲g̲e̲?
+
+-> Java is an object oriented programming langauge and as said
+    everything in Java is an object.
+
+                                   data
+      **BUT WHAT ABOUT THE "Primitive Types" ?
+                                     ^

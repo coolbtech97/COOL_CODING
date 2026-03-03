@@ -1,0 +1,116 @@
+AGENDA->>>
+1. What is Static?
+2. Static variable
+3. Static method
+4. Types of variables in Java
+5. Default value
+6. Practice
+
+
+----------------------------------------------------------------------
+
+// STATIC->>>
+-> Static member means it belongs to the type (class) itseld and not
+    to the instance of that type.
+
+-> Static Keyword can be used in java as-           (in C++, static can be only use in 3 places)
+    - static member variable or static variable     
+    - static method                                 (in C++, static member function)
+    - static blocks                                 (in C++, no concept)
+    - static classes (nested class)            --- NESTED CLASS REQUIRES STATIC #####*---------
+.                                              ---  outer classes can never be static --------- 
+  [NO CONCEPT OF STATIC LOCAL VARIBALE IN JAVA]
+
+
+----------------------------------------------------------------------
+
+// STATIC VARIABLES->>>
+-> Static variables are declared in class using static Keyword.
+
+-> Static variables are by default initialized to its default value.
+
+-> Static variable has a single copy for the whole class and does
+    not depend on the objects.
+
+
+
+
+Class Program
+    Class Test {
+        int a,b;        // Instance Variables | Non static variables
+        static int k;   // Static Variables | Class Variables
+
+        void setA(int x){   //.. Instance Method
+            a=x;
+        }
+        void setB(int y){   //.. Instance Method
+            b=y;
+        }
+        void setK(int z){   //** Static Method      - IT CAN BE STATIC
+            k=z;
+        }                                       // Static method cannot access instance variables
+    }
+
+    Test t1,t2;     //object creation
+    Print t1.k;
+    Print t2.k;     // **OBJECT CAN ACCESS STATIC MEMBER OF THE CLASS**
+    Print Test.k;   //please always prefer-|
+                    Object.StaticMember  (Dont Prefer)
+                    ClassName.StaticMember (prefer WOW)
+
+note: remember to understand the difference between the LOCAL variable and MEMBER variable
+    : Local Variables need to be initialized
+    : Member Variables initialized by Constructor ( 0 , 0.0 , null)[depends on its data type]
+
+----------------------------------------------------------------------
+
+// STATIC METHODS->>>
+-> Static methods are qualifies witht eh Keyword "static" while defining in the class.
+-> Static methods cannot access non static members of the class directly like instance methods.
+-> Static methods can access static members of the same class.
+-> Static methods can be invoked using class name and dot operator.
+
+----------------------------------------------------------------------
+// Types of VARIABLES->>>
+
+1. Instance variables
+2. Static Variables
+3. Local Variables
+4. G̶l̶o̶b̶a̶l̶ ̶V̶a̶r̶i̶a̶b̶l̶e̶s̶        (website shorturl.at/apXji )
+5. S̶t̶a̶t̶i̶c̶ ̶l̶o̶c̶a̶l̶ ̶v̶a̶r̶i̶a̶b̶l̶e̶s̶
+
+        these two websites are not available in JAVA programming
+
+
+----------------------------------------------------------------------
+// dEFAULT VALUE->>>
+
+                    Types of variables
+                            |
+        acc. to scope       |        acc. to content/data
+        -------------------------------------------
+        |                                         |
+    1. Instance Variables           value type variables (ordinary variable)
+    2. Static Variables             nullable type variables (reference variable)
+    3. Local Variable
+
+    [total 3*2 = 6 possible types of variables are there***]--____---____--____****
+
+
+-> Default value of Instance or static variables----*
+        1. value type variables     0               |
+        2. nullable type variable   null           /
+                                                 /
+-> Local variable are blank by default.**********************
+                                                            |
+    NO CONCEPT OF GARBAGE VALUE                             |
+                                                            |
+                                                            |
+                                                            |
+                                ----------------------------
+                                |
+                                |
+                For Example -   main(){
+                                    int x;          it has Not 0    *******
+                                    Student s1;     it has Not null *******
+                                }
