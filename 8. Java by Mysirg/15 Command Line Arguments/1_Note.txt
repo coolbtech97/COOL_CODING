@@ -1,22 +1,16 @@
 AGENDA->>>
-1. Why Java is not completely OOP language?
-2. Wrapper classes
-3. Primitive - Wrapper
-4. Autoboxing & Unboxing
-5. Method of Wrapping
+1. What is CLI ?
+2. How to compile and run Java code from CLI ?
+3. How to pass arguments to Java main() method from CLI ?
+4. How to access command line arguments in main() method ?
+5. How to use command line arguments from IntelliJ IDEA ?
 
 --------------------------------------------------------------------
 
-// W̲h̲y̲ ̲J̲a̲v̲a̲ ̲i̲s̲ ̲n̲o̲t̲ ̲c̲o̲m̲p̲l̲e̲t̲e̲l̲y̲ ̲O̲O̲P̲ ̲l̲a̲n̲g̲a̲u̲g̲e̲?
-
--> Java is an object oriented programming langauge and as said
-    everything in Java is an object.
-
-                                   data
-      **BUT WHAT ABOUT THE "Primitive Types" ?
-                                     ^
--> Primitive types are sort of left out in the world of objects,
-    that is they cannot participate in the object activities.
+// CLI
+-> Command Line Interface
+    on windows
+    on macOS
 
 
 --------------------------------------------------------------------
@@ -125,11 +119,3 @@ UNBOXING-
     int x = Integer.parseInt("345");
     float y = Float.parseFloat("35.56");
 
-
-
-
-------------------------------------------------------------------------------------------------------
-from class java teacher->
-
-// Upcasting
-    Object m = new Integer

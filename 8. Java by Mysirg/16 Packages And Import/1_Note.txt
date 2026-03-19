@@ -1,0 +1,21 @@
+//  Packages and import
+
+--------------------------------------------------------------
+// AGENDA
+1. What are Packages?
+2. Benefits of Packages
+3. How to create packages?
+4. General Error
+5. How to create packages in IntelliJ?
+6. import
+7. printing date and time
+8. Multiple classes in Java file
+
+--------------------------------------------------------------
+
+// Packages
+->  Packages are nothing more than the way we organize files into different
+    directories according to their functionlality usuablity as well as category
+    they should belong to.
+->  Files in one directory ( or package ) would have different functionlality
+    from those of another directory.

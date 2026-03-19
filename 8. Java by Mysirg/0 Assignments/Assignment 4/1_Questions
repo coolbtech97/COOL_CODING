@@ -1,0 +1,45 @@
+Assignment-4 Decision Control
+
+1. Write a program to check whether a given number is divisible by 5 or not.
+2. Write a program to check whether a given number is even or odd.
+3. Write a program to check whether a given number is even or odd without modulo operator.
+4. Write a program to check whether a given number is positive or non positive.
+5. Write a program to print greater between two numbers.
+6. Write a program to check whether a given number is positive, negative or zero.
+7. Write a program to print greater among three numbers.
+8. Write a program to check whether a character is an alphabet, a digit or some other character.
+9. Write a program to check whether a given number is a three digit number or not.
+10. Write a program to check whether a given number is divisible by 5 or 7.
+
+----------------------------------------------------------------------------------------------
+
+ANSWERS
+1. if n%5==0;
+
+2. if n%2==0;
+
+3. x/2*2 == x , ************* NEW TRICK WOW WOW WOW WOW
+
+    (x&1)==0
+
+4. x>0
+
+5.  System.out.println(x>y?x+" is greater that "+y:y+" is greater thatn "+x);
+
+
+6. if(x>0)  (x==0)  (x<0)
+
+7.  if(x>y){
+        if(x>z)
+            // x is greater
+        else
+            // z is greater
+    }
+    else{
+        if(y>z)
+            // y is greater
+        else
+            // z is greater
+    }
+
+8. //// THIS ASSIGNMENT ANSWERS ARE IN THE LAST VIDEO OF 15. Wrapper Classes
