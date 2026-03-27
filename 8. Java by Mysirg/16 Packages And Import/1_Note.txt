@@ -19,3 +19,140 @@
     they should belong to.
 ->  Files in one directory ( or package ) would have different functionlality
     from those of another directory.
+
+-------------------------------------------------------------
+
+// Example
+->  files in java.io package do something related to I/O ,      [packages have pre defined classes]
+    but files in java.net package give us the way to deal
+    with the Network.
+
+-------------------------------------------------------------
+
+// Benefits
+->  Packaging also help us to avoid class name collision when
+    use the same class name as that of others.
+->  The Benefits of using package reflect the ease of maintenance,
+    organization and increase collaboration among developers.       [Multiple packas can have same name class,]
+.                                                                   [but their body can be different WOW WOW]
+-------------------------------------------------------------
+
+// Creating Package
+->  Suppose we  have  a  file called       helloWorld.java
+and we want to put this file in a package  World
+
+                note:   1 class can be in 1 package [connot put in Multiple Packages]
+                    Keyword package
+
+                    javac helloWorld.java       - it creates .class file only
+
+                    javac -d . helloWorld.java  - it creates package folder
+                                                    . means CURRENT folder
+
+    package world;
+    public class HelloWorld{
+        public class void main(String []args){
+            System.out.println("Hello COOL);
+        }
+    }
+
+    > javac -d . HelloWorld.java            ************
+
+----------------------------------------------------------------
+// General Error
+->  'javac' is not recognised as an internal or external command,
+    operable program or batch file.
+
+->  When you get this error, you should conclude that your
+    operating system cannot find the compiler.
+
+    [Set PATH of javac so that O.S. can find it.]
+
+
+[[ Run the program in that package ]]
+//  package.file_name
+//  world.HelloWorld
+
+//      Running Program 
+    > java world.HelloWorld                 ************
+
+----------------------------------------------------------------
+
+// Create Packages in IntelliJ
+->  Right click on src folder from project tree views.
+->  Select package.
+->  give name to your package.
+
+----------------------------------------------------------------
+
+// import
+->  To use classes that resides in another package,
+    we need to use import statements.
+->  You can import whole package or a particular class
+    using one import statement.
+
+->  SYNTAX
+    import package.*;               * means all
+    import package.className;
+
+whole import statement at the beginning of java file
+----------------------------------------------------------------
+    (never run by entering the package FOLDER,)
+// How to compile Java File?
+    javac -d . filename.java
+
+    > javac -d . HelloWorld.java            ************
+
+// How to run java file
+    java packageName.className
+
+    > java world.HelloWorld                 ************
+
+----------------------------------------------------------------
+
+//  Example
+
+    import java.time.LocalDateTime;
+    class HelloWorld {
+        public static void main(String []args) {
+            LocalDateTime t = LocalDateTime.now();
+            System.out.println("Current Date Time is "+t);
+        }
+    }
+
+        // t is reference variable
+    // LocalDateTime.now()
+            // localdatetime is a CLASS
+            // and now () is its STATIC MEMBER FUNCTION
+    
+    // WE CAN ALSO MAKE IT IN MANY FORMATS BROTHER
+
+----------------------------------------------------------------
+// Multiple Classes in a Java File**************************
+************************************************************************
+****************************************************
+IMPORTANT RULES
+    ->  We can have only only one public class in a single java file.   or no public class
+    ->  Name of the file should eb same as the name of public class.
+    ->  In absence of public class, any class name can be given to the file name.
+
+
+
+
+
+
+
+
+
+
+
+
+
+// I can also create without importing class
+
+    pacakge_name . class_name obj = new pacakge_name . class_name();
+
+    ex -    Example.HelloWorld = new Example.HelloWorld();
+
+        wow wow wow wow
+    

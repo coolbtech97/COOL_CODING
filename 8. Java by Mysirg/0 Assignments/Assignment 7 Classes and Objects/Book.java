@@ -1,0 +1,1 @@
+// 10. Define a class Book with member variables bookId, title, price and author. Provide setters and getters.

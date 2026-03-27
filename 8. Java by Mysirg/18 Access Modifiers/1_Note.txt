@@ -1,0 +1,111 @@
+// AGENDA
+1. Access Modifiers
+2. Access Modifier on class
+3. Access Modifier on members
+
+--------------------------------------------------------------------------------------
+
+// Access Modifiers
+->  Java Supports four categories of accessibility rules
+        1. private
+        2. protected
+        3. public
+        4. Default      - we cannot use Default, everything is Default bydefault
+.                       - in java, no Private, its of default type          | Default is not a Keyword
+        Modifiers can be used for                                             Absence of private, protected, public
+            class
+            member variables
+            member functions
+
+--------------------------------------------------------------------------------------
+
+// Class
+->  There can be only two possibilities,
+    either is a public class or
+    just a class,   which means it is of 'Default' type.
+
+->  THere can be only 'one public class' in a single java file. {or no need}
+.                                                         Inner Class, there we can use Private class, protected class, or public class, WOW WOW WOW
+->  The name of the java file must be the same as the name of the public class.
+
+->  Only public class can be accessed directly from outside the package.**********
+
+    ex- import p2.b1;
+        class A{
+            public static void main(String []args){
+                b1 x = new b1();
+                //  IF, THE B1 CLASS IS PUBLIC, Then we can access that class from here.
+            }           cannot access non public class by importing
+        }
+
+class type is of Default (bydefault), or public.
+                Not protected or private.
+
+                But INNER CLASS CAN BE..***
+
+MEANS, to access at package time in another class, the packaged class should be PUBLIC.
+
+means, public class is need to get it see though outside the class, and can be used in package.
+
+ex---
+
+package-         p1                                          p2
+            import p2.*;
+Classes-      A1 class                                      B1 class;
+.                                                    public B2 class;
+.                                                           B3 class;
+
+        B1 o1 = new B1();   Wrong
+        B2 o2 = new B2();         good,^^
+        B3 o3 = new B3();   Wrong
+
+        //o2.f1();
+
+--------------------------------------------------------------------------------------
+
+// Members
+
+                                _______
+
+       package P1                              package P2
+ __________________________              __________________________
+|                          |            |                          |
+|P A1   ________________   |            |  B1   ________________   |    P means "Public Class"
+|      | private        |  |            |      | private        |  |
+|      | * default      |  |            |      | * default      |  |
+|      | protected      |  |            |      | protected      |  |
+|      | public         |  |            |      | public         |  |
+|      |________________|  |            |      |________________|  |
+|                          |            |                          |
+|P A2   ________________   |            |P B2   ________________   |
+|      | private        |  |            |      | private        |  |
+|      | * default      |  |            |      | * default      |  |
+|      | protected      |  |            |      | protected      |  |
+|      | public         |  |            |      | public         |  |
+|      |________________|  |            |      |________________|  |
+|                          |            |                          |
+|  A3   ________________   |            |  B3   ________________   |
+|      | private        |  |            |      | private        |  |
+|      | * default      |  |            |      | * default      |  |
+|      | protected      |  |            |      | protected      |  |
+|      | public         |  |            |      | public         |  |
+|      |________________|  |            |      |________________|  |
+|                          |            |                          |
+|__________________________|            |__________________________|
+
+->  PRIVATE members cannot be accessed from outside the class body.
+
+->  DEFAULT members are accessible only from the classes of same package.
+
+->  PROTECTED members are accessed from any class of the same package and subclasses of any package.
+
+->  PUBLIC members are accessible from any class of any package.
+        But, that should should be PUBLIC to be access as PAckage wow wow wow wow****
+
+
+----------
+    1 package can have multiple public class.
+    but in 1 .java file, there can be only 1 public class
+
+In 'that' package, except Private, everything acts like PUBLIC.       [within the package]
+

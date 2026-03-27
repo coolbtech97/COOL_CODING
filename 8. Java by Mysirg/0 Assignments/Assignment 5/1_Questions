@@ -1,0 +1,46 @@
+Assignment-5 Iterative COntrol statements
+
+1. Write a program to print MySirG 5 times on the screen.
+2. Write a program to print the first 10 natural numbers.
+3. Write a program to print the first 10 natural numbers in reverse order.
+4. Write a program to print the first 10 odd natural numbers.
+5. Write a program to print the first 10 odd natural numbers in reverse order.
+6. Write a program to print the first 10 even natural numbers.
+7. Write a program to print the first 10 even natural numbers in reverse order.
+8. Write a program to print squares of the first 10 natural numbers.
+9. Write a program to print cubes of the first 10 natural numbers.
+10.Write a program to print a table of 5.
+
+----------------------------------------------------------------------------------------------
+
+ANSWERS
+1. for(int i=0;i<5;i++)
+    System.out.println("MySirG");
+
+2. for(int i=1;i<=10;i++)
+    System.out.println(i);
+
+3. for(int i=10;i>0;i--)
+    System.out.println(i);
+
+4. for(int i=1;i<10*2;i+=2)
+    System.out.println(i);
+
+5. for(int i=(10*2)-1;i>0;i-=2)
+    System.out.println(i);
+
+6. for(int i=2;i<=10*2;i+=2)
+    System.out.println(i);
+
+7. for(int i=10*2;i>1;i-=2)
+    System.out.println(i);
+
+8. for(int i=1;i<=10;i++)
+    System.out.println(i*i);
+
+9. for(int i=1;i<=10;i++)
+    System.out.println(i*i*i);
+
+10. int n=5;
+    for(int i=1;i<=10;i++)
+        System.out.println(n+" * "+i+" = "+n*i);

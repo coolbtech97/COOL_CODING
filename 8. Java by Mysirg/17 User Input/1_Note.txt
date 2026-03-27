@@ -1,0 +1,98 @@
+//  User Input
+
+--------------------------------------------------------------
+// AGENDA
+1. Scanner class
+2. Example
+3. Methods of Scanner class
+
+--------------------------------------------------------------
+
+// Scanner Class
+->  We can read java input from System.in using Scanner class.
+->  Scanner is final class, that is, cannot be extended.
+->  A scanner breaks input into tokens using a delimiter pattern,
+    which by default matches whitespace.
+
+-------------------------------------------------------------
+
+//What does scanf Function do in C langage.
+-> scanf("%d%d",&a,&b);
+-> it scans data from BUFFER(an intermediate location)[standard input buffer]
+-> buffer is actually a CHAR TYPE ARRAY
+->  If buffer is empty, and we call buffer by scanf function
+    scanf use to copy data from buffer to the location, not from the keyboard wah wah
+
+    Format specifier is used to convert buffer's data into that type of data, ( 'FILER' krna data ko )
+
+    Lets assume, if BUFFER IS EMPTY, than scanf will take data from where???>
+        Then scanf internally calls another function, let that function name be READ(),
+            Read() function works to take data from keyboard to the BUFFER,
+        means, scanf will call that function only, when the buffer is empty,
+
+        For eXample, when it calls and the screen is Paused, it means that READ() let, function is called
+        to take the data from the keyboard to the BUFFER.
+        [not confirmed the name of that function is READ()]
+
+        delimiter - >
+            new line  \n
+            tab space \t
+            space     ' '
+        
+    So, scanf will copy data from the BUFFER, when delimiter not found.
+
+    [ main work of SCANF, is to Filter data to what data type, we used to tell data type by giving format specifier]
+
+// SCANNER CLASS ALSO DO THAT SAME THING AS SCANF function in C programming
+// System.in    takes data from the keyboard to the BUFFER
+
+// [ WE CAN ALSO PUT DATA TO THE BUFFER NOT FROM the keyboard]
+    1. keyboard         system.in takes data from keyboard to the buffer
+    2. Data in a file   ''''''''''''''''''''''''''''''''''
+
+    // In scanf function, we used to tell what type of data need to convert,
+    // here in java, Scanner class have many function (NEXT METHODS), which helps to convert data into specific type.
+
+// EXAMPLE
+
+        import java.util.Scanner;
+        class Example{
+            public static void main(String []args){
+                System.out.println("Enter your name and age");
+                Scanner sc = new Scanner(System.in);
+                String name = sc.next();
+                int age = sc.nextInt();
+
+                System.out.println("Name: "+name);
+                System.out.println("Age: "+age);
+            }
+        }
+
+    // at creating OBJECT sc ,
+    there need to pass Argument,****
+  //DEFAULT CONSTRUCTOR is Not* available in Scanner Class********
+
+
+-------------------------------------------------------------
+// Next can take only 1 word of String
+// NextLine can take any length of string on that current line from the BUFFER
+
+
+-------------------------------------------------------------
+//  Methods of Scanner
+
+-> next()               hasNext()
+-> nextLine()           hasNextLine()
+-> nextBoolean()        hasNextBoolean()
+-> nextByte()           hasNextByte()
+-> nextDouble()         hasNextDouble()
+-> nextFloat()          hasNextFloat()
+-> nextInt()            hasNextInt()
+-> nextLong()           hasNextLong()
+-> nextShort()          hasNextShort()
+
+    these are the methods,
+                    && there are the methods to check if
+                    the next data in the buffer can be
+                    changed to required data or not(*****(***))
+
