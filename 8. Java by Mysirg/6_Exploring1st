@@ -1,0 +1,18 @@
+AGENDA
+1. Before Exploring First Java program
+-- Java is a case sensitive language
+-- Java Statements are terminated at ;
+-- To make even the smallest program in java, you must define a class
+-- No concept of non member function
+2. First Java program
+
+-- public class HelloWorld{
+--     public static void main(String[]args){
+--         System.out.println("Hello World");
+--     }
+-- }   --// do not put semicolon HERE
+
+3. Naming Style in Java
+4. COmpile and RUn Java program
+
+--------------------------------
