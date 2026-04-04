@@ -32,3 +32,21 @@
 
 ----------------------------------------------------------------------------------------------------------
 
+KEY POINTS / TRICKS
+
+1. Complex -> real, img
+2. Time -> sec>59 => min++, sec-=60 ; min>59 => hr++, min-=60
+3. Cuboid -> l,b,h ; V=l*b*h ; SA=2(lb+bh+hl)
+4. Employee -> empid, name, sallary
+5. Contact -> id, firstName, mobileNo, emailId
+6. Question -> queNo, que, A, B, C, D, answer
+7. Course -> courseId, courseName, duration, fee
+8. Distance -> add in cm first, then back to km m cm
+9. Circle -> area = πr² ; circ = 2πr
+10. Book -> bookId, title, price, author
+
+TRICK:
+    private data + public set/get
+    display => show()
+    calculate => formula method
+

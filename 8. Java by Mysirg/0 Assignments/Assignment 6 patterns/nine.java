@@ -1,5 +1,5 @@
 public class nine{
-    public static void main(){
+    public static void main(String[] args){
         for(int i=0;i<5;i++){
             char c = 'A';
             for(int k=0;k<i;k++)c++;

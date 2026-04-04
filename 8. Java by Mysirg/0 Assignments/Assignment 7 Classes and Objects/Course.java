@@ -1,1 +1,0 @@
-// 7.  Define a class Course with fields courseId, courseName, duration, fee. Provide setter and getters.

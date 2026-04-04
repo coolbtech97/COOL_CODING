@@ -2,7 +2,7 @@
 public class reverse{
     public static void main(String[] args){
         int n=123;
-        int num=0,r;
+        int num=0;
         while(n>0){
             num*=10;
             num+=n%10;

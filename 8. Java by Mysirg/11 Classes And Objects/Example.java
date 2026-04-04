@@ -7,8 +7,8 @@ class BoX {
     }
     void showDimension(){
         System.out.println("Length="+length);
-        System.out.println("Breadth"+breadth);
-        System.out.println("Height"+height);
+        System.out.println("Breadth="+breadth);
+        System.out.println("Height="+height);
     }
 }
 public class Example{

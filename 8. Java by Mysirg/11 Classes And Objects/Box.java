@@ -7,8 +7,8 @@ public class Box {
     }
     void showDimension(){
         System.out.println("Length="+length);
-        System.out.println("Breadth"+breadth);
-        System.out.println("Height"+height);
+        System.out.println("Breadth="+breadth);
+        System.out.println("Height="+height);
     }
     public static void main(String []args){
         Box b1=new Box();

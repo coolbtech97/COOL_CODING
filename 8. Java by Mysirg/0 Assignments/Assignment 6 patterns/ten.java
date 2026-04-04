@@ -1,9 +1,5 @@
 public class ten{
     void star(Integer n){
-        
-    }
-    public static void main(){
-        Integer n = 5;
         for(int i=1;i<=n;i++){
             if(i==1||i==n)
                 for(int i2=0;i2<n;i2++)
@@ -16,6 +12,10 @@ public class ten{
                         System.out.print("  ");
             System.out.println();
         }
+    }
+    public static void main(String[] args){
+        Integer n = 5;
+        new ten().star(n);
     }
 }
 
