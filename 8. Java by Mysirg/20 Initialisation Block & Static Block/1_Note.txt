@@ -1,0 +1,96 @@
+// AGENDA
+1. Ways to initialize instance variables
+2. Initialization block
+3. Static Block
+
+--------------------------------------------------------------------------------------
+// Ways to initialize instance variables
+    1. During declaration in the class
+    2. USing constructor
+    3. Instant Method
+    4. Initializer or initialization block
+
+--------------------------------------------------------------------------------------
+
+// 1. During declaration in the class
+class A {
+    int x = 10; // instance variable initialized during declaration
+}
+
+// 2. Using constructor
+class B {
+    int x;
+    
+    B() {
+        x = 20; // instance variable initialized in constructor
+    }
+}
+
+// 3. Instant Method
+class C {
+    int x;
+    
+    void initialize() {
+        x = 30; // instance variable initialized in an instant method
+    }
+}
+
+// 4. Initializer or initialization block
+class D {
+    int x;
+    
+    {
+        x = 40; // instance variable initialized in an initialization block
+    }
+}
+       
+
+
+----------------------------------------------------------------------------------------
+
+
+// Initialization Block
+- A block without name in the class is called initialization block.
+- you can write multiple initialization blocks in a class.
+- Compiler combines all the initialization blocks and put the combined code in each of the constructor, at the start of the code.
+
+- As the code of initialization block goes inside constructor, it is always executed whenever an instance is created and it runs each time when an object of the class is created.
+- The initialization block is used to initialize the common part of various constructors of a class.
+
+class E {
+    int x;
+    
+    {
+        x = 50; // instance variable initialized in an initialization block
+    }
+    
+    E() {
+        // constructor code
+    }
+    
+    E(int y) {
+        // constructor code
+    }
+}
+
+what if need to initialize static member???-->>>|
+---------------------------------------------------------------------------------------
+
+// Static Block
+- A block in the class, with no name but qualified with static keyword, is known as static block.
+- You can define multiple static blocks in the class, compuler combines them to one block.
+- Static block is used*** to initialize static variables or to perform static varaibles or to perform class specific job.
+
+- There is no specific way to call static block. It executes automatically when the class is loaded into the memory.
+- Static block executes only once, when the class is first loaded in the memory.
+class F {
+    static int x;
+    
+    static {
+        x = 60; // static variable initialized in a static block
+    }
+    
+    static {
+        // another static block
+    }
+}

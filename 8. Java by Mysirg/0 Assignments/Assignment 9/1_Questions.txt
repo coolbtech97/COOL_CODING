@@ -1,0 +1,13 @@
+// Wrapper Classes
+
+1.  Define a class Circle with member variable radius. Provide methods like setRadius, getRadius, getArea, getCircumference.
+    Use wrapper classes instead of primitives.
+
+2.  Define a class MarkSheet with properties to hold marks of five subjects (like physics, mathematics, chemistry, English and Hindi).
+    Provide setters and getters.
+    Use Wrapper classes instead of primitives.
+    3. provide a method to find maximum marks.
+    4. provide a method to find average of marks in all subjects.
+    5. provide a method to find result as pass or fail. passing marks is taken as argument.
+
+--------------------------------------------------------------------------------------------

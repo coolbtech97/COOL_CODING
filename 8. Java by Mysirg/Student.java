@@ -35,5 +35,5 @@ public class Student{
 
 
 class Employ{
-    int roll;
+    public int roll;
 }

@@ -1,0 +1,70 @@
+// AGENDA
+1. Constructor
+2. Why Constructor
+3. Types of Constructors
+4. Copy Constructor
+5. Private Constructor
+6. Singleton Class
+7. Design pattern of Singleton Class
+
+--------------------------------------------------------------------------------------
+
+// Constructor
+-> Constructor is a special member of the class whose name is the same as the name of the class
+-> Constructor has no return type
+-> Constructor are called implicitly only once at the time of object creation
+-> Constructor is always instance member
+
+-> When there is no constructor defined in the class by programmer,
+   compiler impilicitly provide a default constructor for the class.
+-> Constructor can be parameterized
+-> Constructor can be overloaded
+-> Constructor can not be abstact, final, static, or synchronized.
+-> Any access modifier can be used on constructor.
+
+-- make constructor private to restrict object creation from outside the class. 
+   This is used in Singleton design pattern.
+-- but we mostly make default constructor->public** to allow object creation from outside the class.
+
+// When There are multiple constructors in a class, 
+// having different parameters, then it is called "Constructor Overloading".
+
+--------------------------------------------------------------------------------------
+// Why Constructor
+->  Object is a real world entity, that is, it must be a representative of a real world thing.
+->  In order to represent a real world entity, and object must have the same state as of the entity.
+->  To make it possible object member varaibles must be initialized with appropriate values.
+
+
+--------------------------------------------------------------------------------------
+// Types of Constructors
+1. Non-Parameterized Constructor
+2. Parameterized Constructor
+3. Default Constructor
+
+--------------------------------------------------------------------------------------
+
+// Copy Constructor
+-> Unlike C++, Java doesn't create a default copy constructor.
+-> You can define an explicit copy constructor.
+
+--------------------------------------------------------------------------------------
+
+// Private Constructor
+-> What will happen when you define a private constructor in your class?
+-> You can access private members only within the class.
+-> Why there is a need to create private constructor?
+
+--------------------------------------------------------------------------------------
+
+// Singleton Class
+-> If only one instance of a class can be created, then it is called singleton class.
+
+--------------------------------------------------------------------------------------
+
+// Design pattern of Singleton Class
+-- class should contain
+   - private static reference variable of same class type
+   - private constructor
+   - public static method returning object reference. Method may return null when object is already created.
+

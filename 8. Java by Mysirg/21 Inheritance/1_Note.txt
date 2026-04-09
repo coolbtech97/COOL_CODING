@@ -1,0 +1,12 @@
+// Agenda
+1. Preface for Inheritance
+2. Inheritance
+3. Syntax
+4. Benefits
+5. Is-A relationship
+6. Member accessibility
+7. Types of Inheritance
+8. Example
+
+--------------------------------------------------------------------------------------
+// Ways to initialize in

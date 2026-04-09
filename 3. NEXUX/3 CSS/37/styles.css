@@ -39,7 +39,7 @@ Cascading--
 4. Important
 */
 p{
-    line-height: 1.5;
+    line-height: 10.5;
     line-height: 20px;
 
     /* letter-spacing: normal; */
@@ -50,5 +50,5 @@ p{
     text-transform: capitalize;
 }
 #p2{
-    line-height: 0;
+    line-height: 0.3;
 }

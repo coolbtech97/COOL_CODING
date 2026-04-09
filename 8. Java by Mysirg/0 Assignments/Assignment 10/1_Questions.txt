@@ -1,0 +1,14 @@
+// Command Line Arguments
+
+1.  Write a java program to add two numbers. Numbers are provided through command line.
+2.  Write a java program to add N numbers. Numbers are provided through command line.
+3.  Write a java program to print all the strings supplied through command line.
+4.  Write a java program to calculate LCM of two numbers. Numbers are provided through command line.
+5.  Write a java program to check whether a given number is a Prime number o tr not. Number is provided through command line.
+6.  Write a java program to filter and print numbers which are prime. Numbers are provided through command line.
+7.  Write a java program to calculate factorial of a number. Number is provided through command line.
+8.  Write a java program to sum of digits of a number. Number is provided through command line.
+9.  Write a java program to find the greatest number among all the numbers provided through command line.
+10. Write a java program to calculate HCF of two numbers. Numbers are provided through command line.
+
+--------------------------------------------------------------------------------------------

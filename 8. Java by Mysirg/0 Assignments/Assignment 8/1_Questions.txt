@@ -1,0 +1,34 @@
+// Static Member
+
+1.  Define a class Account to represent a bank account. Create accountNumber,
+    customerName, balance as instance members and rateOfInterest as static variable.
+    Provide member functions for the following operations
+    A. Set account number
+    B. Set customer name
+    C. Set balance
+    D. Set rate of interest
+    E. Calculate simple interest (take time as an argument)
+    F. Get account number
+    G. Get balance
+    H. Get customer name
+
+2.  Define a class SuperCar to represent a super car of the most powerful and richest
+    person of the world. The car is specially designed and guaranteed to the only
+    available super car of its king in the world. Make sure only one isntance can be
+    created of the SuperCar. Create instance variabes like ownerName, price, colour,
+    brand. Provide appropriate setters and getters.
+
+3.  Define a class Video to represent a video entity for a popular app like Youtube.
+    Create member variables like videoId, title. views, likes and totalVideos. Provide
+    methods to set and get properties of video.
+
+4.  Define a class Batch for an educational institute with properties batch code, course
+    name, start date, student count, time, days and total number of batches. Provide
+    appropriate methods to access properties.
+
+5.  Define a class Box with length, breadth, height and box count as properties. Provide
+    methods to set dimensions and show dimensions. ALso define a method to diplay
+    box count.
+
+--------------------------------------------------------------------------------------------------
+

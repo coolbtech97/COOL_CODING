@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int a[6]={2,7,4,11,5,8};
+    
     system("cls");
     // ROTATE ARRAY BY 1
     int temp=a[5];
