@@ -1,0 +1,41 @@
+// Agenda
+1. final instance variable
+2. final static variable
+3. final local variable
+4. final class
+5. final method
+
+--------------------------------------------------------------------------------------
+// final instance variable
+->  A Java variable can be declared using the keyword 'final'.
+->  fincal variable can be assigned only once.
+->  A variable that is declared as fincal and not initialised is called a blank final variable.
+
+-------------------------------------------------------------------------------------
+// final static variable
+->  A static variable that is declared as final and not initialised
+    is called 'blank static final variable'.
+->  A blank static final variable forces static initialization block
+    to initialize it or assign value during declaration.
+
+
+NOTE::: DONT DO IT IN Block,
+        Do it in STATIC Block*****************
+
+class Test {
+    static final int NUMBER; // blank static final variable
+
+    static {
+        x = 10; // initializing blank static final variable
+    }
+}
+-------------------------------------------------------------------------------------
+// final local variable
+->  Local variables that are final must be initialized before it's use,
+    but you should remember this rule is applicable to non final local variables too.
+->  final local variable once initialized cannot be chamnged.
+
+-------------------------------------------------------------------------------------
+// final method
+->  Methods declared as 'final' cannot be overridden.
+hhuiohiki

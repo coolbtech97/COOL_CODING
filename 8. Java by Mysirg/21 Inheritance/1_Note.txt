@@ -9,4 +9,90 @@
 8. Example
 
 --------------------------------------------------------------------------------------
-// Ways to initialize in
+// Inheritance
+->  Inheritance is a mechanism in Java by which one class is allowed to inherit the features (fields and methods) of another class.
+->  Object Oriented Programming allows classes to inherit commonly used state and behavior from other classes.
+
+--------------------------------------------------------------------------------------
+// Syntax of inheritance in C++
+class Child : public Parent
+{
+    // body of child class
+};
+
+--------------------------------------------------------------------------------------
+// Syntax of inheritance in Java
+class SubClass extends SuperClass
+{
+    // body of subclass
+}
+
+->  'extends' is a keyword
+->  Base class = SuperClass = ParentClass
+->  Derived class = SubClass = ChildClass
+
+->  In Java, each class is alllowed to have on direct super class, and
+    each superclass has the potential for any number of subclasses.
+
+--------------------------------------------------------------------------------------
+// Benefits of Inheritance
+1. Code Reusability:    Inheritance supports the concept of "reusability", which means that you can create a new class that is a modified version of an existing class. This allows you to reuse code and avoid redundancy.
+2. Abstraction:         Inheritance allows you to create a new class that is a more specific version of an existing class. This allows you to abstract away common features and focus on the specific features of the new class.
+3. Updation in methods: Inheritance allows you to update the methods of the parent class in the child class. This means that you can modify the behavior of the parent class without changing its code.
+4. Easy Modification:   Inheritance allows you to modify the behavior of the parent class without changing its code. This means that you can easily modify the behavior of the parent class without affecting the child class.
+
+----------------------------------------------------------------------------------------
+// Is-A relationship
+->  Inheritance represents an "Is-A" relationship between the parent class and the child class. This means that the child class is a specific type of the parent class. For example, if we have a parent class called "Animal" and a child class called "Dog", then we can say that a Dog is an Animal.
+->  The "Is-A" relationship is important because it allows us to use polymorphism, which is the ability of an object to take on many forms. For example, if we have a method that takes an Animal as a parameter, we can pass a Dog object to that method because a Dog is an Animal.
+
+----------------------------------------------------------------------------------------
+// Generalization
+->  Generalization is the process of extracting shared characteristics from two or more classes, and combining them into a generalized superclass. The subclasses can then inherit from the superclass, and have their own specific features. For example, if we have two classes called "Car" and "Bike", we can extract the shared characteristics of both classes (such as "wheels", "engine", etc.) and create a generalized superclass called "Vehicle". The Car and Bike classes can then inherit from the Vehicle class, and have their own specific features (such as "number of doors" for Car, and "type of handlebars" for Bike).
+->  When you find a generize class, or a common super class, thats called generalization.
+
+->  [ finding the SUPER CLASS ]
+->  Hierarchy Relationship
+
+------------------------------------------------------------------------------------------
+// Member Accessibility Rules
+->  Sub Class can access public and protected members of super class.
+->  Sub Class can also access default members if it is in the same package as of superclass.
+
+------------------------------------------------------------------------------------------
+// Types of Inheritance
+1. Single Inheritance:     A class inherits from one superclass.
+2. Multilevel Inheritance: A class inherits from a superclass, which in turn inherits from another superclass.
+3. Hierarchical Inheritance: Multiple classes inherit from a single superclass.
+
+- No concept of multiple inheritance
+
+------------------------------------------------------------------------------------------
+
+Q. 1. Define a class Person with appropriate members.
+class Person
+{
+    String name;
+    int age;
+    String gender;
+    void display()
+    {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Gender: " + gender);
+    }
+}
+Q. 2. Define a subclass Employ of Person with appropriate members.
+
+class Employ extends Person
+{
+    private double salary;
+    public void setSalary(double salary)
+    {
+        this.salary = salary;
+    }
+    public double getSalary()
+    {
+        return salary;
+    }
+}

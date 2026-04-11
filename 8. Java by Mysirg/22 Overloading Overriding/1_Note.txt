@@ -1,0 +1,156 @@
+// Agenda
+1. Revise function overloading in C++
+2. Method overloading in Java
+3. Method overriding in Java
+4. Method overriding in Java
+5. Method Hiding
+
+--------------------------------------------------------------------------------------
+// Function Overloading      or Function Polymorphism(considered or resolving by seeing, set at compiler time)
+.                                        compiler time polymorphism [ resolve at compile time ]
+C++
+    Two functions with the same name but differ in arguments.
+    Overloaded versions must resides in a single scope.-----
+.                                                           |
+class A{                                                    |
+    public:
+    void fun(int x){
+        cout<<"fun with int argument"<<endl;
+    }                                                               WOW WOW
+    void fun(double x){
+        cout<<"fun with double argument"<<endl;
+    }
+}
+
+
+------------------------
+class A{                                                    |
+    public:
+    void fun(){                                                 //
+        cout<<"fun with int argument"<<endl;                        //
+    }
+}                                                                   ERROR ERROR in C++
+class B: public A{
+    public:                                                         ERROR ERROR in C++
+    void fun(int x){                        
+        cout<<"fun with int argument in class B"<<endl;             ***OK in JAVA WOW WOW
+    }
+}
+
+B obj;
+obj.fun(); // fun without int argument
+
+->> It will show error because fun() is not visible in class B, it is hidden by fun(int x) in class B. To make it visible we have to use using keyword.
+-> MEANS, agar Child class me show nahi hoga, tabhi to Parent class me Gayega
+-- Java me Inheritance hone par Scope vi expand hota he, ishlea it will WORK*** wow wow wow wow
+called Hiding
+
+--------------------------------------------------------------------------------------
+// Method Overloading in C++
+->  Methods sharing same name but different signatures, is known as Overloaded methods.
+->  Overloaded methods provide similar services but different implementations.
+
+
+Function Prototype
+    ReturnType  FunctionName (Arguments)
+
+Function Signature
+                FunctionName (Arguments)
+
+Function Name
+                FunctionName
+
+
+// Method Overloading in Java
+->  Jaa truly extends the scope of class in inheritance.
+    Method OCerloading is possible even if the one version resides
+    in superclass and another version resides in subclass.
+
+->  Method overloading is a way to implement the concept of polymorphism.
+
+class A{
+    void show(){}
+    void show(int){}
+    void show(int,int,int){}
+}
+
+Note: **Method overloading is not possible by changing the return type of the method only. It must differ in parameters.
+
+--------------------------------------------------------------------------------------
+
+// Method Overriding
+->  Functions with the same prototype but different implementations,
+    one reside in superclass and another reside in subclass, is known as overridden methods.
+->> MATLAB, OVERRIDING HAPPENS BETWEEN CLASSES,   [ AT iNHERITANCE ]
+    OVLOADING HAPPENS WITHIN A CLASS
+
+// WHY Overriding
+->  When subclass wants to modify superclass methodd for its user,
+    subclass has to override the superclass mthod in the subclass.
+
+    YOU WANT                          YOU DO
+    To modify class     ->       Inheritance (extends)
+    To modify method    ->       Overriding\
+
+->  Whenever you need to modify Superclass method definition with respect to subclass,
+    you have to override the method.
+
+--------------------------------------------------------------------------------------
+// Virtual Keyword in C++
+
+class A{
+    public:
+    void f1(){}
+};
+class B: public A{
+    public:
+    void f1(){}
+};
+
+B obj;
+obj.f1(); // it will call f1() of class B, because of object of
+A *p = new B;
+p->f1(); // it will call f1() of class A, because of pointer of class A, it is called early binding, because compiler decide at compile time which function to call
+
+thatswhy if, we make the parents function VIRTUAL, then it will call the child class function, it is called late binding, because compiler decide at runtime** which function to call
+
+It is known Run Time Polymorphism, because it called at runtime, and it is achieved by using virtual keyword in C++.
+
+--------------------------------------------------------------------------------------
+
+// Method Overriding in Java
+->  Overridden methods in Java are binded dynamically,
+    so there is no need of virtual function.
+
+    MEANS: java me virtual keyword ki jarurat nahi hoti,
+    because java me by default, all methods are virtual, except static and final methods.
+
+
+->  In Java, access specifier of overridden method in the subclass can be same
+    as of method in superclass or lesser restrictive.
+
+class A{
+    void f1(){}
+}
+class B extends A{
+    void f1(){} // it is same as of method in superclass
+}
+
+so here always f1() of class B will be called, because of object of class B, and it is called late binding, because compiler decide at runtime which function to call
+
+--------------------------------------------------------------------------------------
+
+// Method Hiding
+->  Static method with same prototype
+    one in super class and another in subclass is method hiding.
+
+class A{
+    static void f1(){}
+}
+class B extends A{
+    static void f1(){} // it is same as of method in superclass
+}
+
+B obj;
+obj.f1(); // it will call f1() of class B, because of object of class B, it is called early binding, because compiler decide at compile time which function to call
+
