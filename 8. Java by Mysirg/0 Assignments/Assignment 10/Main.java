@@ -1,8 +1,37 @@
 public class Main {
     public static void main(String[] args) {
-        //1
-        System.out.println("Run question-wise classes directly with command line arguments.");
-        System.out.println("Example: java Add 4 5");
+        System.out.println("Demo run of all Assignment 10 classes with sample inputs:\n");
+
+        System.out.println("1) Add -> java Add 4 5");
+        Add.main(new String[]{"4", "5"});
+
+        System.out.println("\n2) AddN -> java AddN 1 2 3 4 5");
+        AddN.main(new String[]{"1", "2", "3", "4", "5"});
+
+        System.out.println("\n3) PrintStrings -> java PrintStrings anand kumar rajak");
+        PrintStrings.main(new String[]{"anand", "kumar", "rajak"});
+
+        System.out.println("\n4) LCM -> java LCM 10 25");
+        LCM.main(new String[]{"10", "25"});
+
+        System.out.println("\n5) PrimeCheck -> java PrimeCheck 271");
+        PrimeCheck.main(new String[]{"271"});
+
+        System.out.println("\n6) PrimeFilter -> java PrimeFilter 271 432 53 646");
+        PrimeFilter.main(new String[]{"271", "432", "53", "646"});
+        System.out.println();
+
+        System.out.println("\n7) Factorial -> java Factorial 8");
+        Factorial.main(new String[]{"8"});
+
+        System.out.println("\n8) SumOfDigits -> java SumOfDigits 498");
+        SumOfDigits.main(new String[]{"498"});
+
+        System.out.println("\n9) Greatest -> java Greatest 23 53 54 76 27 45");
+        Greatest.main(new String[]{"23", "53", "54", "76", "27", "45"});
+
+        System.out.println("\n10) HCF -> java HCF 23 33");
+        HCF.main(new String[]{"23", "33"});
     }
 }
 

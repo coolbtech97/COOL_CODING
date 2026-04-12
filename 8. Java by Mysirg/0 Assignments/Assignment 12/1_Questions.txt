@@ -1,0 +1,12 @@
+// User Input -1
+1.  Write a Java program to print first N natural numbers.
+2.  Write a Java program to print first N natural numbers in reverse order.
+3.  Write a Java program to print first N odd natural numbers.
+4.  Write a Java program to print first N odd natural numbers in reverse order.
+5.  Write a Java program to print first N even natural numbers.
+6.  Write a Java program to print first N even natural numbers in reverse order.
+7.  Write a Java program to print squares of first N natural numbers.
+8.  Write a Java program to print cubes of first N natural numbers.
+9. Write a Java program to print table of N.
+
+--------------------------------------------------------------------------------------------

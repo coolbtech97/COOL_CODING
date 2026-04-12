@@ -1,0 +1,93 @@
+// Agenda
+1. this
+2. super
+
+--------------------------------------------------------------------------------------
+// this
+->  The this object reference is a local variable in instance member methods
+    referring the current object.
+->  this keyword is used as a reference to the current object which is an instance
+    of the current class.
+
+->  The this reference to the current object is useful in situations where a local
+    variable hides or shadow, a field with same name.
+
+
+Example-
+class A{
+    int x;
+    A(int x){
+        this.x = x; // this.x refers to the field and x refers to the parameter
+    }
+}
+
+->  If a method needs to pass the current object to another Method, it can do
+    using this reference.
+
+->>Note that the this reference cannot***** be used in Static context, as static code
+        is not executed in the context of any object.
+
+----------------------------------------------------------------------------------------
+// super
+->  The keyword super also references the current object, but as an instance of the
+    current class's superclass.
+->  The keyword super can be used to resolve name conflict between superclass and
+    subclass.
+
+
+Example-
+class A{
+    void f1(){
+        System.out.println("Method of class A");
+    }
+}
+class B extends A{
+    void f1(){
+        super.method(); // calls the method of superclass A
+    }
+}
+
+->  Super can only be used in instance member methods
+    and constructors of a class, as it is used to refer to the current object as an
+    instance of the superclass.
+
+--------------------------------------------------------------------------------------
+
+f1();   // This is a call to the method f1 of the 'current class', which will be resolved at compile time.
+super.f1(); // This is a call to the method f1 of the 'superclass', which will also be resolved at compile time.
+
+this.f1(); // This is a call to the method f1 of the 'current class', which will be resolved at compile time,
+            but it is explicitly using the this reference to indicate that it is calling the method of the current class.
+
+
+// EXAMPLE---
+
+class Test{
+    public static void main(String[] args) {
+        B b = new B();
+        b.f1(); // This will call the method f1 of class B, which in turn calls super.f1() to call the method of class A.
+    }
+}
+class A{
+    public void f1(){
+        System.out.println("Method of class A");
+    }
+}
+class B extends A{
+    public void f1(){
+        System.out.println("Method of class B");
+    }
+    public void f2(){
+        System.out.println("B");
+        super.f1(); // This will call the method f1 of class A, which will print "Method of class A"
+    }
+}
+
+---------------------------
+this->>>    To resolve name conflict between local and instance members.
+super->>>   To resolve name conflict between superclass and subclass members.
+---------------------------
+
+NOTE::::::
+    Super is available ONLY in instance member methods of child class.
+

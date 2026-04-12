@@ -38,4 +38,3 @@ class Test {
 -------------------------------------------------------------------------------------
 // final method
 ->  Methods declared as 'final' cannot be overridden.
-hhuiohiki
