@@ -1,0 +1,27 @@
+// Access Modifiers
+1.  Define a Java class Person with private instance variables name and age.
+    Demonstrate how you can access instance variables of Person from Main class's
+    main method.
+
+2.  Create a Java file with a main class HelloWorld and another class A1. Also define a
+    java file with class B1 and B2 (both are non public classes). If there is a way then
+    Demonstrate how to access public method of class B1 and B2 from class A1.
+
+3.  Create a java file with a public class Circle (with private data member radius), which
+    provides public methods to calculate area and circumference of circle along with
+    setters and getters. Create another Java file containing the main class. Create
+    instance of Circle class in the main method and set radius of circle. Display area
+    and circumference of circle.
+
+4.  Define a class Employee with default accessibility of instance variables empid,
+    name and salary. Provide setters and getters in the class. Also define Main class in
+    the same package to access Employee class.
+
+5.  Define a Box class with private member variables length, breadth and height. Also
+    define protected member variables volume and surfaceArea. Provide setter and
+    getters. Also provide methods to calculate volume and surface area. Write Main
+    class in the same package to access Box class and display area and volume of a
+    box.
+
+-------------------------------------------------------------------------------------------
+

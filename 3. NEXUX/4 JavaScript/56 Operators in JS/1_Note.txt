@@ -1,0 +1,11 @@
+// Number, string, boolean, null, undefined, symbol, bigint
+
+// Non primitive data type
+// Array, Object, function, date, regex, error
+
+let n = 10;
+let n2 = 20;
+let n3 = 50;
+
+let arr = [10, 20, 50];
+console.log(arr);

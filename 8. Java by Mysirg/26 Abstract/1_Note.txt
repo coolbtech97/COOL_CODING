@@ -1,0 +1,97 @@
+// Agenda
+1. Abstract class
+2. Abstract method
+
+--------------------------------------------------------------------------------------
+C++
+There was no abstract keyword in C++. but, concept of abstract class was there.
+
+-- What is abstract class in C++?
+    It is a class which cannot be instantiate,
+    that is , you cannot create object of an abstract class.
+
+    but, you can create a pointer of an abstract class.             WOW WOW
+
+-- How to create an abstract class in C++?
+    A class is made abstract by declaring at least one of its functions as pure virtual function.
+    A pure virtual function is declared by assigning 0 in its declaration.
+
+    You can create an abstract class by declaring at least one pure virtual function in the class.
+
+    Example:
+    class A {
+        public:
+            virtual void f1() = 0; // Pure virtual function
+    };
+
+-- Why we create an abstract class?
+    Abstract class can only be used as a base class.
+
+    Example:
+    class B : public A {
+        public:
+            virtual void f1() = 0; // Pure virtual function             If you do inheritance,
+            void f1(){                                                  1. Either you write the same pure virutal function code
+                cout << "Implementation of f1 in class B" << endl;      2. Or, Declare the function [override]as pure virtual function in class B as well, and make class B abstract too.
+            }                                                           Otherwise ERROR in C++
+    };
+
+// Abstract class
+->  Java abstract classes are used to declare common characterstics of subclasses.
+
+->  An abstract class cannot be instantiated.
+
+->  Abstract classes are declared with the abstract keyword.
+
+Syntax:
+abstract class C{
+    // class body
+}
+
+C c = new C(); // ERROR: Cannot instantiate the abstract class  ERROR ERROR
+
+    you cannot create reference of abstract class.              WOw WOw
+
+---------------------------------------------------------------------------------------
+// More about Abstract Classes
+->  It can only be used as a superclass for other classes that extend the abstract class.
+
+->  Like any other class, an abstract class can contain fields that describe the characteristics
+    and methods that describe the actions that a class can perform.
+
+
+
+-----------------------------------------------------------------------------------------------------------
+// Abstract Method
+->  An abstract class can include methods that contain no implementation.
+    These are called abstract methods.
+    The abstract method decalration must then end with a semicolon rather than a block.
+
+NOTE:: If a class any any abstract method, whether declated or inherited
+       the entire class must be declared abstract.
+    
+        Example
+        abstract class A{
+            abstract void f1(); // Abstract method
+        }
+        class B extends A{
+
+        }
+
+        B obj = new B();
+            // ERROR: Class B must be declared abstract or implement abstract method f1() in class A
+            // Class B should also be an ABSTRACT CLASS, as it contain an abstract method f1() inherited from class A.
+            So, either you declare class B as abstract or you provide implementation of f1() in class B.
+
+--------------------------------------------------------------------------------------------
+
+// Find out the problem
+class Person{
+    abstract void show();
+}
+
+    Answer: If a class is containing an abstract method
+            then the class must be declared as abstract class.
+
+An object must have an implementation for all of its methods.
+You need to create a subclass that provides an implementation for the abstract method.

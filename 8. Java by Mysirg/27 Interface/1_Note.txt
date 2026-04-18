@@ -1,0 +1,98 @@
+// Agenda
+1. Interface meaning
+2. Interface Syntax
+3. About Interface
+4. Defining Interface
+5. How to use an Interface
+6. Why interface is required?
+7. Polymosphism
+8. Multiple implementations & extensions
+9. Abstract class vs Interface
+10. New Features
+
+--------------------------------------------------------------------------------------
+// About Interface
+Syntax--
+
+interface A {
+
+}
+
+
+
+->  An interface like that of an abstract class cannot be instantiated.
+
+->  Although you can create a reference variable of interface.
+
+[[ CANNOT CREATE OBJECT ]]
+
+
+->  Interface do not have constructors.
+
+->  Interface just specify the method declaretion (implicitly public and
+    abstract) and can only contain fields (implicitly public, static and final).
+
+
+--------------------------------------------------------------------------------------
+// Defining an Interface
+
+interface Area {
+    double PI = 3.14;       // implicitly public, static and final
+    double getArea();       // implicitly public and abstract
+}
+
+--------------------------------------------------------------------------------------
+// How to use an Interface?
+
+class Circle implements Area {
+    private double radius;
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+    public double getRadius() {
+        return radius;
+    }
+    @Override //whats thiss
+    public double getArea() {
+        return PI * radius * radius;
+    }
+}
+
+    Reference variable of interface can refer to an object of class
+    implementing that interface.
+
+    Area area = new Circle();
+    a1.setRadius(5);        // Error: cannot find symbol
+    double x = a1.getRadius();    // Error: cannot find symbol
+    double y = a1.getArea();      // OK: getArea() is declared in Area interface
+
+    a1 ia a reference variable of type Area, it can refer to an object of
+    circle but can only those members of circle which belongs to interface Area.
+
+
+If, a class that implements an interface does not define all the methods of interface,
+then it must be declared as abstract and the method definitions must be provided by
+the subclass that extends the abstract class.
+
+--------------------------------------------------------------------------------------
+// Why interface is required?
+->  Interfaces are used in java to achieve abstraction.
+
+->  It is also useful in capturing similarities among unrelated classes without
+    artificially forcing a class relationship.
+
+--------------------------------------------------------------------------------------
+// Polymorphism
+
+interface I1{                       |
+    void f1();                      |
+}                                   |
+class A1 implements I1{             |   I1 obj = new A1();
+    //------                        |   obj.f1();           // this will run the f1() of A1
+    public void f1(){/*------*/}    |
+}                                   |
+class A2 implements I1{             |   I1 obj = new A2();
+    //------                        |   obj.f1();           // this will run the f1() of A2
+    public void f1(){/*------*/}    |
+}                                   |

@@ -1,0 +1,31 @@
+// Conversion of Decimal to Binary to SAVE IN MEMORY
+
+
+0  |                       |                            
+<--><------expotent-------><--------mantissa--------->
+1  |  0 0 0 0 0 0 0 0 0 | 1 1 1 1 1 1 1 1 1 1 1 |
+
+The first bit is the sign bit, which is 0 for positive numbers and 1 for negative numbers. The next 8 bits are the exponent, which is stored in a biased form. The last 23 bits are the mantissa, which represents the significant digits of the number.
+
+
+1. Binary Convert
+2. Move decimal to Left side until we get 1.0
+
+For example 42.75
+1. Binary Convert
+4   2.75 in binary is 101010.11
+2. Move decimal to Left side until we get 1.0
+    101010.11 = 1.0101011 x 2^5
+3. Calculate Exponent
+    Exponent = 5 + 127 (bias) = 132
+4. Calculate Mantissa
+    Mantissa = 0101011 (the digits after the decimal point)
+5. Combine Sign, Exponent, and Mantissa
+    Sign = 0 (positive number)
+    Exponent = 132 (in binary: 10000100)
+    Mantissa = 0101011 (in binary: 01010110000000000000000)
+6. Final Representation
+    The final representation of 42.75 in IEEE 754 single-precision format is:
+0 10000100 01010110000000000000000
+
+understand brotherr....

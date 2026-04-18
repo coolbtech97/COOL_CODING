@@ -1,0 +1,999 @@
+UPES CSE AI STUDY MASTER FILE
+(YouTube + Chatbot Prompt Edition)
+============================================================
+Version: 14-Apr-2026
+Purpose: Every subject -> every unit/topic -> ready copy-paste prompts for Gemini/ChatGPT.
+Source Base: Your copied UPES handbook text (2023-2027 structure and syllabus blocks provided by you).
+
+
+======================================================================
+0) HOW TO USE THIS FILE
+======================================================================
+
+Daily Workflow:
+  1. Pick one subject and one unit.
+  2. Copy the exact prompt under that unit.
+  3. Paste in Gemini or ChatGPT.
+  4. Ask follow-up doubts until clear.
+  5. Solve 10-20 related questions.
+  6. Update your notes.
+
+Prompt Customization Fields:
+  - [LEVEL] = beginner / intermediate / advanced
+  - [TIME] = 30 min / 60 min / 120 min
+  - [LANG] = English / Hindi / Hinglish
+  - [MODE] = theory / practical / interview / exam
+
+Universal Follow-up Prompt (use after every topic):
+"Now test me with 15 questions in increasing difficulty. First give me hints only. Then show final answers and common mistakes."
+
+
+======================================================================
+1) PROGRAMME BLUEPRINT (DO NOT SKIP)
+======================================================================
+
+Programme: B.Tech Computer Science and Engineering with Specialization
+Total Credits: 162
+
+Credit Breakup:
+  1. Major Core (MC): 63
+  2. Basic Sciences (SCI): 26
+  3. Engineering Sciences (ENGG): 8
+  4. Major Elective (ME): 24
+  5. Life Skill Courses (LSC): 10
+  6. Exploratory Courses (EC): 15
+  7. Projects (PRJ): 16
+
+Abbreviations:
+  1. L = Lecture
+  2. T = Tutorial
+  3. P = Practical
+  4. TC = Total Credits
+
+
+======================================================================
+2) COMPLETE SUBJECT LIST (SEM 1 TO 8)
+======================================================================
+
+Semester 1:
+  1. CSEG1126 Linux Lab
+  2. CSEG1025 Programming in C
+  3. CSEG1125 Programming in C Lab
+  4. CSEG1027 Problem Solving
+  5. SSEN0101 Environment Sustainability and Climate Change
+  6. SLLS0101 Living Conversations
+  7. MATH1059 Advanced Engineering Mathematics-I
+  8. PHYS1032 Physics for Computer Engineers
+  9. PHYS1132 Physics Lab for Computer Engineers
+
+Semester 2:
+  1. CSEG1032 Computer Organization and Architecture
+  2. CSEG1033 Data Structures and Algorithms
+  3. CSEG1034 Data Structures and Algorithms Lab
+  4. CSEG1035 Python Programming
+  5. CSEG1135 Python Programming Lab
+  6. ECEG1012 Digital Electronics
+  7. SLSG0102 Critical Thinking and Writing
+  8. SSEN0102 Environment Sustainability and Climate Change (Living Lab)
+  9. MATH1065 Advanced Engineering Mathematics-II
+
+Semester 3:
+  1. CSAI2015 Elements of AIML
+  2. CSAI2115 Elements of AIML Lab
+  3. CSEG2046 DBMS
+  4. CSEG2146 DBMS Lab
+  5. CSEG2021 DAA
+  6. CSEG2121 DAA Lab
+  7. CSEG2006 Discrete Mathematical Structures
+  8. CSEG2060 Operating Systems
+  9. Exploratory-1
+  10. SLLS0201 Design Thinking
+
+Semester 4:
+  1. CSEG2065 Data Communication and Networks
+  2. CSEG2165 Data Communication and Networks Lab
+  3. CSEG2020 Object Oriented Programming
+  4. CSEG2120 Object Oriented Programming Lab
+  5. CSEG2064 Software Engineering
+  6. Exploratory-2
+  7. MATH2059 Linear Algebra
+  8. SLLS2004 Indian Constitution
+  9. PE-1 + PE-1 Lab
+
+Semester 5:
+  1. CSEG3040 Cryptography and Network Security
+  2. CSEG3055 Formal Languages and Automata Theory
+  3. CSEG3002 Object Oriented Analysis and Design
+  4. Exploratory-3
+  5. SLSG0205 Start your Startup
+  6. CSEG3060 Research Methodology in CS
+  7. CSEG3056 Probability, Entropy and MC Simulation
+  8. PE-2 + PE-2 Lab
+
+Semester 6:
+  1. Exploratory-4
+  2. SLLS0103 Leadership and Teamwork
+  3. CSEG3015 Compiler Design
+  4. CSEG3057 Statistics and Data Analysis
+  5. PROJ3154 Minor Project
+  6. PE-3 + PE-3 Lab
+
+Semester 7:
+  1. PROJ4145 Capstone Project Phase-1
+  2. SIIB4102 Summer Internship
+  3. Exploratory-5
+  4. PE-4 + PE-4 Lab
+  5. PE-5 + PE-5 Lab
+
+Semester 8:
+  1. PROJ4146 Capstone Project Phase-2
+  2. CSEG4038 IT Ethical Practices
+
+
+======================================================================
+3) SPECIALIZATION TRACKS (ELECTIVES COMPLETE LIST)
+======================================================================
+
+Track 1 AI/ML:
+Applied ML, Deep Learning, Pattern and Visual Recognition, Computational Linguistics/NLP, Algorithm for Intelligent Systems and Robotics (+ labs).
+
+Track 2 DevOps:
+DevOps Fundamentals and SCM, DevSecOps, Container Orchestration and Security, CI/CD Pipeline and Security, System Provisioning and Monitoring (+ labs).
+
+Track 3 Cloud and Virtualization:
+Cloud Fundamentals, Cloud Architecture and Deployment Models, Containerization and DevOps, Cloud Application Development, Cloud Security and Management (+ labs).
+
+Track 4 Full Stack:
+Frontend Development, Backend Development, Microservices and Spring Boot, Cloud Computing and Security, Container Orchestration and Security (+ labs).
+
+Track 5 Cyber Security and Digital Forensics:
+IT and Cyber Security, Ethical Hacking and Penetration Testing, Network Security, Digital Forensics, OS/Application/Cloud Security (+ labs).
+
+Track 6 Big Data:
+Big Data Overview and Ingestion, Storage and Analysis, Processing, Stream Processing, Big Data Search and Security (+ labs).
+
+Track 7 Data Science:
+Fundamentals of Data Science, Data Visualization and Interpretation, ML and DL, Computational Linguistics/NLP, Generative AI (+ labs).
+
+Track 8 IoT:
+IoT Sensors and Microcontrollers, IoT Network Architecture and Protocols, Industrial IoT and ARM Embedded, Single Board Computers and IoT App Dev, Data Analytics for IoT (+ labs).
+
+Track 9 Graphics and Gaming:
+Intro to Graphics and Animation, Interactive Design and 3D Animation, Game Programming, Computer Graphics, AR/VR Development, Web Programming for Interactive 3D Graphics (+ labs).
+
+
+======================================================================
+4) SEMESTER 1 DEEP PROMPT BANK
+======================================================================
+
+---------------------------------------------------------------------
+4.1 CSEG1126 LINUX LAB (12 EXPERIMENTS)
+---------------------------------------------------------------------
+
+Experiment 1 (Install VM + Linux):
+Important points:
+  1. VMware/VirtualBox install.
+  2. ISO boot and VM configuration.
+  3. Linux installation flow.
+Prompt:
+"Teach me Linux installation in VMware/VirtualBox like a lab instructor. Give step-by-step actions, common errors, and troubleshooting checklist. Then give viva questions and answers. Keep explanation [LEVEL], language [LANG], duration [TIME]."
+
+Experiment 2 (Basic commands):
+Important points:
+  1. ls, cd, pwd, mkdir, rmdir.
+  2. cp, mv, rm, touch.
+  3. user/system info commands.
+Prompt:
+"Teach basic Linux commands with memory tricks and real examples. For each command give syntax, 3 examples, common mistake, and mini practice task. End with 20 command-based quiz questions."
+
+Experiment 3 (Files and directories):
+Important points:
+  1. file operations.
+  2. permissions and ownership.
+  3. find, grep, tar, gzip.
+Prompt:
+"Explain Linux file and directory operations from beginner to practical level. Include chmod, chown, find, grep, tar, gzip with use-cases and one mini project: backup + search utility script."
+
+Experiment 4 (Shell scripting basics):
+Important points:
+  1. hello script.
+  2. input/output.
+  3. arithmetic and conditions.
+Prompt:
+"Teach bash shell scripting basics with script structure, variables, input/output, arithmetic and if-else. Then create 10 beginner scripting exercises with solutions."
+
+Experiment 5 (Command line args + conditions):
+Important points:
+  1. positional parameters.
+  2. prime/sum/armstrong scripts.
+Prompt:
+"Teach command line arguments and decision making in bash. Explain positional parameters with examples and create prime, sum-of-digits, and armstrong scripts with dry run."
+
+Experiment 6 (Loops + functions + regex + debug):
+Important points:
+  1. loop control.
+  2. shell functions.
+  3. script debugging.
+Prompt:
+"Teach bash loops, functions, regex, and debugging in one structured lesson. Add sample scripts for palindrome, gcd-lcm, sorting inputs and explain each line."
+
+Experiment 7 (Process basics):
+Important points:
+  1. process states.
+  2. process commands.
+  3. scheduling intro.
+Prompt:
+"Teach Linux process management from basics to practical. Include ps, top, kill, nice, jobs, bg, fg with scenario-based examples and viva questions."
+
+Experiment 8 (Signals and monitoring):
+Important points:
+  1. process control and signals.
+  2. resource monitoring.
+  3. communication basics.
+Prompt:
+"Explain signals, job control, and system monitoring in Linux. Give commands, examples, and a troubleshooting flow for high CPU/memory processes."
+
+Experiment 9 (System security and file automation):
+Important points:
+  1. rename by prefix/suffix.
+  2. search by extension/size.
+  3. fibonacci script.
+Prompt:
+"Create a bash scripting lesson for file automation and security checks. Include batch rename, recursive find filters, fibonacci generation, and permission validation scripts."
+
+Experiment 10 (modular scripts):
+Important points:
+  1. reusable code.
+  2. function-based scripts.
+Prompt:
+"Teach modular shell scripting best practices. Refactor string length, reverse, and concatenate programs into reusable functions. Show clean coding style."
+
+Experiment 11 (data parsing):
+Important points:
+  1. sentence tokenization.
+  2. string palindrome.
+Prompt:
+"Teach shell scripting for text parsing and user interaction. Build scripts for word split, palindrome check, and robust input validation."
+
+Experiment 12 (rule-based expert system):
+Important points:
+  1. if-elif-else rule engine.
+  2. symptom-based recommendation.
+  3. report writing.
+Prompt:
+"Help me build a rule-based expert system in bash script using if-elif-else. Give architecture, sample rules, user input parser, recommendation engine, test cases, and report template."
+
+
+---------------------------------------------------------------------
+4.2 CSEG1025 PROGRAMMING IN C (7 UNITS)
+---------------------------------------------------------------------
+
+Unit I Introduction to Computing:
+Important points:
+  1. computer organization basics.
+  2. pseudocode and flowchart.
+  3. editors/debuggers/translators.
+Prompt:
+"Teach Unit I of C programming syllabus: intro to computing, algorithm, pseudocode, flowchart, program execution model. Include solved examples and short concept test."
+
+Unit II C Fundamentals:
+Important points:
+  1. data types and variables.
+  2. operators precedence.
+  3. conditions and loops.
+Prompt:
+"Teach C fundamentals deeply: tokens, data types, operators, precedence, if/switch, loops, goto. For each topic give pitfalls and 20 exam-level MCQ with answers."
+
+Unit III Arrays and Functions:
+Important points:
+  1. arrays and strings.
+  2. pass by value/reference.
+  3. recursion and scope.
+Prompt:
+"Explain arrays, strings, functions, recursion, scope rules in C from scratch. Give 10 coding problems with increasing difficulty and detailed dry run."
+
+Unit IV Structures and Pointers:
+Important points:
+  1. structure/union/enum.
+  2. pointer to pointer.
+  3. pointer to function.
+Prompt:
+"Teach pointers and structures in C with memory diagrams. Cover pointer arithmetic, arrays vs pointers, pointer to function, struct pointers, and common segfault reasons."
+
+Unit V File and Memory Management:
+Important points:
+  1. file operations.
+  2. malloc/calloc/realloc/free.
+  3. memory safety.
+Prompt:
+"Teach C file handling and dynamic memory like an industry mentor. Include read/write modes, heap management, leak prevention, and debugging approach."
+
+Unit VI Preprocessor and Libraries:
+Important points:
+  1. macros.
+  2. standard libraries.
+  3. static vs shared library.
+Prompt:
+"Explain C preprocessor directives, macros, std libraries, compilation pipeline, static library, and shared library with practical commands and examples."
+
+Unit VII Multithreading and Optimization:
+Important points:
+  1. threads basics.
+  2. sockets and async I/O basics.
+  3. testing/debugging.
+Prompt:
+"Teach C multithreading and optimization fundamentals for students. Include pthread basics, race condition idea, unit testing basics, and optimization checklist."
+
+
+---------------------------------------------------------------------
+4.3 CSEG1125 PROGRAMMING IN C LAB (18 EXPERIMENTS)
+---------------------------------------------------------------------
+
+Experiment Group A (Setup + Operators + Conditions + Loops):
+Important points:
+  1. C environment setup.
+  2. arithmetic and logic problems.
+  3. control-flow questions.
+Prompt:
+"Give me a full lab tutorial for C Experiment 1 to 4: setup, operators, conditionals, loops. Include sample code, test cases, and expected outputs."
+
+Experiment Group B (Variables + Arrays + Functions):
+Important points:
+  1. scope and static/global.
+  2. array processing.
+  3. recursion tasks.
+Prompt:
+"Teach C lab experiments on scope, arrays, and functions with problem solving strategy and clean code templates for each experiment."
+
+Experiment Group C (Structures + Pointers + File handling):
+Important points:
+  1. complex numbers with struct.
+  2. pointer arithmetic and pass by reference.
+  3. text file handling.
+Prompt:
+"Explain C lab experiments on structures, pointers, and file handling. For each experiment show algorithm, C code, dry run, and viva questions."
+
+Experiment Group D (DMA + Bitwise + Preprocessor + Macro):
+Important points:
+  1. linked list and insertion.
+  2. bitwise operations.
+  3. macro function style.
+Prompt:
+"Teach dynamic memory, linked list insertion, bitwise operators, and C preprocessor macros with practical examples and debugging tips."
+
+Experiment Group E (Static/Shared lib + Threads + Socket + Testing):
+Important points:
+  1. create and use static/shared library.
+  2. multithreading basics.
+  3. socket intro.
+  4. testing and debugging.
+Prompt:
+"Guide me through C lab advanced experiments: static/shared library creation, pthread basics, socket programming basics, and test/debug workflow."
+
+
+---------------------------------------------------------------------
+4.4 CSEG1027 PROBLEM SOLVING (4 UNITS)
+---------------------------------------------------------------------
+
+Unit I Thinking on a problem:
+Important points:
+  1. problem vs exercise.
+  2. Polya theory.
+  3. divergent/convergent thinking.
+Prompt:
+"Teach problem-solving frameworks: Polya, cognitive approach, means-end analysis, and practical examples. Then give me a daily practice routine."
+
+Unit II Investigating problems + heuristics:
+Important points:
+  1. heuristics.
+  2. symmetry/extreme/pigeonhole.
+  3. invariants and coloring.
+Prompt:
+"Teach heuristics like symmetry, extreme principle, pigeonhole, invariants, and coloring proofs with intuitive examples and challenge problems."
+
+Unit III Crossover tactics:
+Important points:
+  1. graph tactics.
+  2. complex number use.
+  3. generating functions intro.
+Prompt:
+"Teach crossover problem-solving tactics using graph theory, complex numbers, generating functions, inequalities and polynomial methods."
+
+Unit IV Combinatorics + Number theory + puzzles:
+Important points:
+  1. inclusion-exclusion.
+  2. gcd/lcm/congruence.
+  3. puzzle strategy.
+Prompt:
+"Teach combinatorics and number theory for problem-solving: PIE, divisibility, congruence, diophantine equations, and classic puzzles with solved steps."
+
+
+---------------------------------------------------------------------
+4.5 SSEN0101 ENVIRONMENT SUSTAINABILITY AND CLIMATE CHANGE
+---------------------------------------------------------------------
+
+Unit I Humans and environment:
+Prompt:
+"Teach evolution of human-environment relationship from prehistory to modern climate crisis. Make timeline + key causes + outcomes for exam notes."
+
+Unit II Natural resources and SDGs:
+Prompt:
+"Explain natural resources classification, exploitation issues, and SDG linkage with Indian examples and policy perspective."
+
+Unit III Environmental issues local to global:
+Prompt:
+"Teach pollution types, land-use change, biodiversity loss, ozone depletion and climate change in one comparative framework with diagrams."
+
+Unit IV Biodiversity and ecosystem conservation:
+Prompt:
+"Explain biodiversity levels, ecosystem services, threats, and conservation strategies (in-situ/ex-situ) with Indian protected area examples."
+
+Unit V Pollution and health:
+Prompt:
+"Teach environmental pollution and health impacts: air/water/soil/noise/thermal/radioactive, standards, and prevention measures."
+
+Unit VI Climate change adaptation and mitigation:
+Prompt:
+"Explain climate change science, impacts in India, adaptation vs mitigation, carbon neutrality, policy instruments, and climate justice."
+
+Unit VII Environmental management:
+Prompt:
+"Teach environmental management system, ISO 14001, life cycle analysis, EIA, environmental audit, and 3R based waste management."
+
+Unit VIII Treaties and legislation:
+Prompt:
+"Provide a clear chart of major global environmental treaties and major Indian environmental laws with one-line purpose and importance."
+
+Unit IX Field work and living lab:
+Prompt:
+"Help me design a field project report format for local environmental issue identification, data collection, analysis, and practical recommendations."
+
+
+---------------------------------------------------------------------
+4.6 SLLS0101 LIVING CONVERSATIONS
+---------------------------------------------------------------------
+
+Unit I Basics of communication:
+Prompt:
+"Teach communication fundamentals (model, principles, verbal/non-verbal) with real student-life examples and exercises."
+
+Unit II Communication goals and breakdowns:
+Prompt:
+"Explain communication goals, breakdown causes, and practical repair strategies with role-play examples."
+
+Unit III Active listening:
+Prompt:
+"Teach active listening deeply: barriers, cues, and practical listening drills I can perform daily."
+
+Unit IV Non-verbal communication:
+Prompt:
+"Teach body language, voice modulation, and non-verbal mistakes to avoid in classroom and interview situations."
+
+Unit V Public speaking and presentation:
+Prompt:
+"Give me a practical public speaking roadmap: structure, confidence, delivery, visual design, and virtual presentation best practices."
+
+Unit VI Communication styles:
+Prompt:
+"Help me identify communication styles and adapt without losing authenticity. Give scenario-based examples."
+
+Unit VII Cross-cultural communication:
+Prompt:
+"Teach cross-cultural communication for global teams: assumptions, biases, trust building, and accountability."
+
+Unit VIII Project work:
+Prompt:
+"Create a communication project template with objective, audience mapping, message strategy, feedback loop, and evaluation rubric."
+
+
+---------------------------------------------------------------------
+4.7 MATH1059 ADVANCED ENGINEERING MATHEMATICS-I
+---------------------------------------------------------------------
+
+Unit 0 Motivation:
+Prompt:
+"Explain why calculus and differential equations are essential in computer science and engineering with practical examples."
+
+Unit I Differential calculus:
+Prompt:
+"Teach limits, continuity, differentiability, mean value theorems, partial differentiation, Jacobian, and maxima-minima with solved examples."
+
+Unit II Integral calculus:
+Prompt:
+"Teach definite integrals, double/triple integrals, coordinate transforms, beta/gamma functions and engineering applications with stepwise solutions."
+
+Unit III Vector algebra and calculus:
+Prompt:
+"Explain gradient, divergence, curl, line/surface/volume integrals, Green/Gauss/Stokes intuition with geometric interpretation."
+
+Unit IV Linear differential equations:
+Prompt:
+"Teach first and higher-order linear differential equations, integrating factors, variation of parameters, and applications in circuits/population."
+
+Unit V Non-linear differential equations:
+Prompt:
+"Teach logistic model, Lotka-Volterra, SIR and phase portrait interpretation with beginner-friendly visualization approach."
+
+
+---------------------------------------------------------------------
+4.8 PHYS1032 PHYSICS FOR COMPUTER ENGINEERS
+---------------------------------------------------------------------
+
+Unit I Lasers and fiber optics:
+Prompt:
+"Teach laser fundamentals, Einstein coefficients, population inversion, ruby/He-Ne lasers, holography, and optical fiber communication basics."
+
+Unit II Electromagnetics:
+Prompt:
+"Teach vector calculus tools in electromagnetics, electrostatics, magnetostatics, and Maxwell equations with conceptual and numerical examples."
+
+Unit III Quantum mechanics:
+Prompt:
+"Explain photoelectric effect, Compton effect, de Broglie waves, uncertainty principle, Schrödinger equations, and particle in a box."
+
+Unit IV Semiconductor physics:
+Prompt:
+"Teach p-n junction, drift velocity, Hall effect, diode behavior, rectifiers, zener regulation, LED, photodiode, and solar cell basics."
+
+
+---------------------------------------------------------------------
+4.9 PHYS1132 PHYSICS LAB
+---------------------------------------------------------------------
+
+Prompt for each experiment style:
+"Act as my physics lab mentor. For experiment [EXPERIMENT NAME], give objective, apparatus, theory, procedure, observations table format, sample calculations, graph requirements, precautions, and viva questions."
+
+Experiments to plug into [EXPERIMENT NAME]:
+  1. AC mains frequency via sonometer.
+  2. Hall effect.
+  3. Electromagnetic induction.
+  4. Magnetic field along circular coil axis.
+  5. Photocurrent-voltage at different frequency.
+  6. Optical fiber numerical aperture and bending loss.
+  7. Laser diffraction.
+  8. Solar cell IV and power curve.
+  9. Planck constant using LEDs.
+  10. Band gap using four-probe.
+
+
+======================================================================
+5) SEMESTER 2 DEEP PROMPT BANK
+======================================================================
+
+---------------------------------------------------------------------
+5.1 CSEG1032 COMPUTER ORGANIZATION AND ARCHITECTURE
+---------------------------------------------------------------------
+
+Unit I Digital computers:
+Prompt:
+"Teach COA Unit I deeply: computer block diagram, buses, number systems, complements, signed arithmetic, floating-point, RTL, micro-operations, ALU."
+
+Unit II Basic organization and instruction format:
+Prompt:
+"Explain instruction formats, addressing modes, stack organization, instruction cycle, interrupts, and compare IA-32 vs ARM in beginner-friendly way."
+
+Unit III Control unit organization:
+Prompt:
+"Teach hardwired vs microprogrammed control units, control memory, address sequencing, and RISC vs CISC with diagrams and comparison table."
+
+Unit IV Memory organization:
+Prompt:
+"Teach memory hierarchy, cache mapping, RAM/ROM types, hit/miss, write policies, and cache coherence with solved numerical examples."
+
+Unit V Input-output organization:
+Prompt:
+"Explain I/O organization, interfaces, interrupt types, programmed I/O, interrupt-driven I/O, DMA, and priority interrupts with real use-cases."
+
+Unit VI Pipelining:
+Prompt:
+"Teach pipelining concepts, hazards, handling methods, speedup, throughput, and compare pipeline behavior in different processor styles."
+
+
+---------------------------------------------------------------------
+5.2 CSEG1033 DATA STRUCTURES AND ALGORITHMS
+---------------------------------------------------------------------
+
+Unit I Introduction + arrays + complexity:
+Prompt:
+"Teach DSA Unit I with asymptotic analysis, amortized idea, arrays, structures, ADTs, memory allocation and recursion vs iteration tradeoffs."
+
+Unit II Linked lists:
+Prompt:
+"Teach all linked list variants and operations with memory diagrams, complexity table, and common coding errors in C."
+
+Unit III Stack and queue:
+Prompt:
+"Explain stack/queue/deque/priority queue with array and linked list implementation and applications (expression eval, DFS, BFS)."
+
+Unit IV Trees:
+Prompt:
+"Teach trees deeply: traversals, BST, AVL rotations, red-black concept, B-tree, heap and heapsort with visual walkthrough."
+
+Unit V Hashing and graphs:
+Prompt:
+"Teach hashing, collisions, load factor, graph representation, BFS/DFS, connected components, shortest path and MST fundamentals."
+
+Unit VI Sorting and searching:
+Prompt:
+"Explain sorting/searching algorithms with stability, in-place property, lower bound concept, complexity comparison and practical selection guide."
+
+
+---------------------------------------------------------------------
+5.3 CSEG1034 DSA LAB
+---------------------------------------------------------------------
+
+Prompt for each experiment:
+"Teach me DSA Lab experiment [TOPIC]. Provide algorithm, C code template, complexity, sample input-output, and viva questions."
+
+Use [TOPIC] from:
+  1. basic array/structure/union
+  2. linked list
+  3. stack
+  4. queue
+  5. tree
+  6. heap
+  7. hash table
+  8. graph
+  9. sorting
+  10. searching
+
+
+---------------------------------------------------------------------
+5.4 CSEG1035 PYTHON PROGRAMMING
+---------------------------------------------------------------------
+
+Unit I Intro and control flow:
+Prompt:
+"Teach Python syntax, tokens, data types, operators, conditionals, loops, and indentation rules with mini examples and practice tasks."
+
+Unit II Collections and functions:
+Prompt:
+"Teach strings, list, tuple, set, dictionary, comprehensions, recursion, lambda, map/filter and function argument types with practice questions."
+
+Unit III Modules/packages/regex:
+Prompt:
+"Teach Python modules, packages, sys/math/time/os usage and regex functions (match/search/findall/sub) with practical examples."
+
+Unit IV File and exception handling:
+Prompt:
+"Teach file handling modes and exception handling hierarchy in Python with robust coding patterns and debugging mindset."
+
+Unit V OOP in Python:
+Prompt:
+"Teach classes, objects, constructors, inheritance, polymorphism, data hiding, and special methods in Python with practical mini projects."
+
+Unit VI Data analysis and visualization:
+Prompt:
+"Teach NumPy, Pandas and Matplotlib for beginners: arrays, dataframe operations, missing values, aggregation, and plotting with real dataset workflow."
+
+
+---------------------------------------------------------------------
+5.5 CSEG1135 PYTHON LAB
+---------------------------------------------------------------------
+
+Prompt template:
+"Act as my Python lab tutor for [EXPERIMENT TOPIC]. Give clear problem explanation, Python code, dry run, edge cases, and viva answers."
+
+Experiment topics:
+  1. setup and printing
+  2. input/operators
+  3. conditionals
+  4. loops
+  5. strings and sets
+  6. list/tuple/dictionary
+  7. functions/lambda/recursion
+  8. file and exceptions
+  9. classes and objects
+  10. data analysis and visualization
+
+
+---------------------------------------------------------------------
+5.6 ECEG1012 DIGITAL ELECTRONICS
+---------------------------------------------------------------------
+
+Unit I Fundamentals and logic families:
+Prompt:
+"Teach digital basics: logic gates, boolean algebra, number systems, binary arithmetic, codes, TTL/CMOS characteristics and interfacing."
+
+Unit II Combinational circuits:
+Prompt:
+"Teach K-map simplification, multiplexers, decoders, adders/subtractors, ALU basics, comparators, encoders, and code converters with design examples."
+
+Unit III Sequential circuits:
+Prompt:
+"Teach latches, flip-flops, shift registers, counters, synchronous vs asynchronous design, and practical applications with timing understanding."
+
+Unit IV ADC and DAC:
+Prompt:
+"Explain DAC and ADC techniques, specifications, and converter comparison with practical engineering interpretation."
+
+Unit V Microprocessor intro:
+Prompt:
+"Teach 8085/8086 architecture, pin functions, bus timing, machine cycle, addressing modes, and instruction categories for exam preparation."
+
+
+---------------------------------------------------------------------
+5.7 SLSG0102 CRITICAL THINKING AND WRITING
+---------------------------------------------------------------------
+
+Unit I What is critical thinking:
+Prompt:
+"Teach critical thinking foundations with real decisions and ethical dilemmas."
+
+Unit II Learning how to learn:
+Prompt:
+"Explain cognition, metacognition, and Bloom taxonomy with practical study techniques for engineering students."
+
+Unit III Cognitive biases:
+Prompt:
+"Teach major cognitive biases and how they damage reasoning, with daily-life examples and correction methods."
+
+Unit IV Writing to read:
+Prompt:
+"Teach clear academic writing basics: structure, syntax, coherence, and revision checklist."
+
+Unit V Why reasoning:
+Prompt:
+"Explain inductive and deductive reasoning with examples and common logical mistakes."
+
+Unit VI Explanation vs justification vs persuasion:
+Prompt:
+"Differentiate explanation, justification and persuasion with examples from debate, reports and interviews."
+
+Unit VII Fact, truth, misinformation:
+Prompt:
+"Teach methods to verify claims and detect misinformation in digital media."
+
+Unit VIII Critical consumption:
+Prompt:
+"Teach critical media consumption framework for evaluating source credibility and hidden bias."
+
+Unit IX Perspective taking and ethical dilemma:
+Prompt:
+"Teach perspective taking and ethical dilemma analysis with a framework I can apply in group discussion and writing tasks."
+
+
+---------------------------------------------------------------------
+5.8 SSEN0102 ENVIRONMENT SUSTAINABILITY (LIVING LAB)
+---------------------------------------------------------------------
+
+Prompt for course implementation:
+"Design a complete living-lab project plan for environmental sustainability: topic, objective, stakeholder mapping, data method, analysis, intervention, and report format."
+
+Prompt for seven thrust areas (use one by one):
+  1. "Build a project plan on Indigenous Technology and Traditional Ecological Knowledge with documentation method and ethical safeguards."
+  2. "Build a climate change and bird migration study framework with field methods and conservation recommendations."
+  3. "Design a sustainable communities project with social learning and co-production model for local impact."
+  4. "Design an ecology-conservation-climate long-term monitoring project with measurable indicators."
+  5. "Design a One Health project linking human, animal, and ecosystem health with risk mapping."
+  6. "Design a climate and society project to study behavior change and policy adoption pathways."
+  7. "Design a low-cost water and soil testing project with community training and awareness modules."
+
+
+======================================================================
+6) SEMESTER 3 TO 8 PROMPT BANK (COURSE-WISE)
+======================================================================
+
+Use this base prompt for each course below:
+"I am studying [COURSE NAME] in UPES CSE syllabus. Teach me complete unit-wise roadmap, core concepts, important formulas/theorems, common exam questions, practical applications, lab/project tasks, and interview questions. End with 30-day study plan and revision strategy."
+
+Replace [COURSE NAME] with:
+  1. Elements of AIML
+  2. Elements of AIML Lab
+  3. Database Management Systems
+  4. DBMS Lab
+  5. Design and Analysis of Algorithms
+  6. DAA Lab
+  7. Discrete Mathematical Structures
+  8. Operating Systems
+  9. Design Thinking
+  10. Data Communication and Networks
+  11. Data Communication and Networks Lab
+  12. Object Oriented Programming
+  13. OOP Lab
+  14. Software Engineering
+  15. Linear Algebra
+  16. Cryptography and Network Security
+  17. Formal Languages and Automata Theory
+  18. Object Oriented Analysis and Design
+  19. Research Methodology in CS
+  20. Probability, Entropy, and MC Simulation
+  21. Compiler Design
+  22. Statistics and Data Analysis
+  23. IT Ethical Practices
+  24. Leadership and Teamwork
+  25. Start your Startup
+  26. Indian Constitution
+  27. Exploratory-1
+  28. Exploratory-2
+  29. Exploratory-3
+  30. Exploratory-4
+  31. Exploratory-5
+  32. Minor Project
+  33. Capstone Project Phase-1
+  34. Summer Internship
+  35. Capstone Project Phase-2
+
+
+======================================================================
+7) SPECIALIZATION TRACK PROMPT BANK (COURSE BY COURSE)
+======================================================================
+
+General Track Prompt:
+"I selected [TRACK NAME] in UPES CSE specialization. Create full course-by-course learning map with prerequisite graph, practical tools, mini projects, major projects, interview questions, and portfolio roadmap."
+
+TRACK 1 AI/ML course prompts:
+  1. Applied Machine Learning
+Prompt: "Teach Applied ML from math intuition to implementation, feature engineering, model evaluation, and deployment basics with mini projects."
+  2. Deep Learning
+Prompt: "Teach deep learning fundamentals, neural architectures, optimization and regularization with practical coding assignments."
+  3. Pattern and Visual Recognition
+Prompt: "Teach pattern recognition and computer vision basics with feature extraction and classification workflows."
+  4. NLP
+Prompt: "Teach computational linguistics and NLP pipeline from preprocessing to modern model intuition."
+  5. Algorithms for Intelligent Systems and Robotics
+Prompt: "Teach intelligent systems and robotics algorithms with planning, control and practical examples."
+
+TRACK 2 DevOps course prompts:
+  1. DevOps Fundamentals and SCM
+Prompt: "Teach DevOps lifecycle and source control strategy with practical Git workflows."
+  2. DevSecOps
+Prompt: "Teach DevSecOps pipeline with security scanning, policy checks and secure CI workflow."
+  3. Container Orchestration and Security
+Prompt: "Teach container orchestration and security basics with deployment troubleshooting."
+  4. CI/CD Pipeline and Security
+Prompt: "Teach CI/CD architecture and best practices for stable and secure releases."
+  5. System Provisioning and Monitoring
+Prompt: "Teach infrastructure provisioning, observability, alerting and operational debugging."
+
+TRACK 3 Cloud prompts:
+  1. Cloud Fundamentals
+Prompt: "Teach cloud fundamentals, service models, and architecture patterns with practical examples."
+  2. Cloud Architecture and Deployment Models
+Prompt: "Teach cloud deployment models and architecture decision making with case studies."
+  3. Containerization and DevOps
+Prompt: "Teach containerized application workflows from build to deployment."
+  4. Cloud Application Development
+Prompt: "Teach cloud-native app design, scalability and reliability basics."
+  5. Cloud Security and Management
+Prompt: "Teach IAM, cloud security controls, governance and operations best practices."
+
+TRACK 4 Full Stack prompts:
+  1. Frontend Development
+Prompt: "Teach frontend fundamentals, component architecture, state management and performance basics."
+  2. Backend Development
+Prompt: "Teach backend architecture, APIs, auth, validation and data access patterns."
+  3. Microservices and Spring Boot
+Prompt: "Teach microservices principles and Spring Boot service implementation with API gateway concept."
+  4. Cloud Computing and Security
+Prompt: "Teach secure cloud deployment for full stack apps."
+  5. Container Orchestration and Security
+Prompt: "Teach orchestration and service deployment reliability for full stack systems."
+
+TRACK 5 Cyber prompts:
+  1. IT and Cyber Security
+Prompt: "Teach cybersecurity fundamentals, threat models and defense strategy."
+  2. Ethical Hacking and Penetration Testing
+Prompt: "Teach pentesting lifecycle ethically, including recon, vulnerability analysis and reporting."
+  3. Network Security
+Prompt: "Teach network security controls, protocol risks and monitoring basics."
+  4. Digital Forensics
+Prompt: "Teach digital forensics process, evidence handling and analysis workflow."
+  5. OS/Application/Cloud Security
+Prompt: "Teach layered security hardening for OS, application and cloud."
+
+TRACK 6 Big Data prompts:
+  1. Big Data Overview and Ingestion
+Prompt: "Teach big data ecosystem and ingestion architecture with practical pipeline examples."
+  2. Big Data Storage and Analysis
+Prompt: "Teach distributed storage concepts and analytical workflow."
+  3. Big Data Processing
+Prompt: "Teach batch and in-memory processing patterns and optimization basics."
+  4. Stream Processing
+Prompt: "Teach stream processing concepts, windows and event-time basics."
+  5. Big Data Search and Security
+Prompt: "Teach data search architecture and security controls in big data systems."
+
+TRACK 7 Data Science prompts:
+  1. Fundamentals of Data Science
+Prompt: "Teach full data science lifecycle from problem framing to model interpretation."
+  2. Data Visualization and Interpretation
+Prompt: "Teach visualization principles and storytelling with data."
+  3. Machine Learning and Deep Learning
+Prompt: "Teach applied ML/DL with model choice and evaluation strategy."
+  4. NLP
+Prompt: "Teach NLP methods and practical workflows for text tasks."
+  5. Generative AI
+Prompt: "Teach foundations of generative AI, prompting methods, limitations and responsible usage."
+
+TRACK 8 IoT prompts:
+  1. IoT Sensors and Microcontrollers
+Prompt: "Teach IoT fundamentals, sensor interfaces and microcontroller basics with practical examples."
+  2. IoT Network Architecture and Protocols
+Prompt: "Teach IoT communication protocols and architecture design trade-offs."
+  3. Industrial IoT and ARM Embedded
+Prompt: "Teach IIoT architecture and ARM embedded programming fundamentals."
+  4. Single Board Computers and IoT App Dev
+Prompt: "Teach SBC-based IoT application development workflow with deployment basics."
+  5. Data Analytics for IoT
+Prompt: "Teach IoT data analytics pipeline and anomaly detection basics."
+
+TRACK 9 Graphics and Gaming prompts:
+  1. Intro to Graphics and Animation
+Prompt: "Teach graphics and animation fundamentals including transformations and rendering basics."
+  2. Interactive Design and 3D Animation
+Prompt: "Teach interactive design principles and 3D animation pipeline."
+  3. Game Programming
+Prompt: "Teach game loop, event handling, physics basics and optimization approach."
+  4. Computer Graphics
+Prompt: "Teach graphics pipeline, shading concept, and rasterization basics."
+  5. AR/VR Development
+Prompt: "Teach AR/VR app development fundamentals and user interaction design."
+  6. Web Programming for Interactive 3D Graphics
+Prompt: "Teach browser-based interactive 3D graphics architecture and performance practices."
+
+
+======================================================================
+8) HIGH-VALUE META PROMPTS (COPY ANYTIME)
+======================================================================
+
+  1. Topic simplifier prompt:
+"Teach [TOPIC] in 3 layers: beginner intuition, exam-level detail, and interview-level depth. Include diagrams in text form and memory tricks."
+
+  2. PYQ style prompt:
+"Generate 20 previous-year style descriptive questions on [TOPIC], then provide model answers and marking scheme."
+
+  3. Viva trainer prompt:
+"Act as strict viva examiner for [TOPIC]. Ask one question at a time, wait for my answer, then give feedback and next question."
+
+  4. Notes maker prompt:
+"Convert [TOPIC] into one-page revision notes with headings, formulas, pitfalls, and 10 rapid-fire questions."
+
+  5. Weakness fixer prompt:
+"I am weak in [TOPIC]. Diagnose my weak points through 10 diagnostic questions and give a 7-day recovery plan."
+
+  6. Lab record prompt:
+"For [LAB EXPERIMENT], generate complete record file format: aim, apparatus, theory, procedure, observation table, calculations, result, precautions, viva."
+
+  7. YouTube companion prompt:
+"I watched a YouTube lecture on [TOPIC]. Ask me conceptual questions to check understanding, then give correction and better explanation where I fail."
+
+  8. Interview conversion prompt:
+"Convert [TOPIC] from academic theory into interview discussion format with practical examples and common follow-up questions."
+
+
+======================================================================
+9) TWO-YEAR DIFFICULT EXECUTION STRATEGY (WITH CHATBOT)
+======================================================================
+
+Year 1:
+  1. Sem1+Sem2 foundation subjects complete with prompts.
+  2. Daily: 1 concept prompt + 1 practice prompt + 1 viva prompt.
+  3. Weekly: 1 mini project progression update.
+
+Year 2:
+  1. Sem3-Sem6 deep core + selected specialization.
+  2. Weekly: 2 interview prep sessions using prompts.
+  3. Monthly: one project milestone with documentation.
+
+Extra 6 months:
+  1. Capstone excellence.
+  2. Placement prep and mock interview cycles.
+  3. Portfolio polishing with strong project storytelling.
+
+
+======================================================================
+10) FINAL INSTRUCTION
+======================================================================
+
+For every topic in this file, do not read only once.
+Use this 5-step loop:
+  1. Prompt
+  2. Learn
+  3. Practice
+  4. Revise
+  5. Teach back
+
+If you stay consistent with this system for 2+ years, your understanding will become deep, practical, and interview-ready.
+
+END OF FILE

@@ -1,0 +1,53 @@
+// Agenda
+1. Constructor in Inheritance
+2. Constructor chaining
+
+--------------------------------------------------------------------------------------
+// Constructor in Inheritance
+->  Constructors are not inherited by subclass.
+->  Subclass's constructor invokes constructor of super class.
+->  Explicit call to the super class constructor from sub class's
+    constructor can be made using 'super()'.
+
+class A{
+    public A(){
+
+    }
+}
+class B extends A{
+    public B(){
+        super();
+        
+    }
+}
+
+CHECK OUT THE Test.java file
+
+
+Note:::
+    In the constructor of a CHILD,
+    1st line is hidden SUPER()
+    But, if you write by yourself Super(), or THIS()
+    that deault super (parent constructor call) will not work,,,
+
+
+    Means, again this() use karte h, to Default wala SUPER will not*** work...............///////////////
+
+
+--------------------------------------------------------------------------------------
+// Constructor chaining
+->  Constructor can call other constructors of the same class or super class
+        Same class by using this()
+        Super class byusing super()
+
+->  Constructor call from a constructor should be the first step.
+    (call should appear in the first line.)
+
+    Meaning,   constructor ka 1st line me hi dusre constructor ko call krna he,,
+                and default super() parent calling will not WOrkk,,......
+
+
+->  Such series of invocation of constructors is known as constructor chaining
+
+--------------------------------------------------------------------------------------
+Q. Define super class Person and subclass Employ. Perform constructor chaining

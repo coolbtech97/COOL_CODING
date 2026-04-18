@@ -1,0 +1,327 @@
+UPES SUPER MASTERING FILE (2023-2027 HANDBOOK BASED)
+========================================================
+
+Mission:
+Build UPES-level CSE capability through disciplined self-study in 2 years to 2.5 years.
+
+Source:
+Prepared from your copied UPES B.Tech CSE handbook content.
+
+Abbreviations:
+L = Lecture
+T = Tutorial
+P = Practical/Lab
+C = Credits
+
+Core Rule:
+1. Follow prerequisite order.
+2. Learn theory + lab together.
+3. Build projects from Semester 2 onward.
+4. Track weekly output, not mood.
+
+
+======================================================================
+PART 1: PROGRAM FACTS
+======================================================================
+
+Total Credits: 162
+
+Credit Buckets (important):
+1. Major Core: 63
+2. Basic Sciences: 26
+3. Engineering Sciences: 8
+4. Major Electives (Specialization): 24
+5. Life Skill Courses: 10
+6. Exploratory Courses: 15
+7. Projects (Minor + Capstone + Internship): 16
+
+Top-level Outcome Targets:
+1. Strong engineering fundamentals.
+2. Problem analysis and solution design.
+3. Modern tool usage.
+4. Teamwork and communication.
+5. Ethics and life-long learning.
+
+
+======================================================================
+PART 2: SEMESTER-WISE MASTER CHECKLIST
+======================================================================
+
+SEMESTER 1 (FOUNDATION)
+Subjects: Linux Lab, C, C Lab, Problem Solving, Math-I, Physics, EVS-I, Living Conversation.
+
+Master these:
+1. Linux terminal: files, permissions, grep/find, shell scripts, process commands.
+2. C basics to advanced: pointers, arrays, strings, functions, structures, files, memory.
+3. C lab problem set: loops, matrix ops, recursion, pointer tasks, file handling.
+4. Problem-solving frameworks: Polya method, logic puzzles, counting basics.
+5. Math-I: calculus, vector calculus, ODE basics.
+
+Output by end of Sem 1:
+1. 2 C mini projects.
+2. 1 shell scripting toolkit.
+3. 100 coding problems (easy level).
+
+
+SEMESTER 2 (CORE BUILD)
+Subjects: COA, DSA, DSA Lab, Python, Python Lab, Digital Electronics, Math-II, EVS-II, Critical Thinking.
+
+Master these:
+1. COA: number systems, instruction cycle, memory hierarchy, pipelining.
+2. DSA: arrays, linked list, stack, queue, trees, graphs, hashing, sorting/searching.
+3. Python: OOP, files, exceptions, libraries, numpy/pandas/matplotlib basics.
+4. Digital Electronics: combinational and sequential circuits, logic minimization.
+5. Math-II: numerical methods, optimization, complex analysis, PDE basics.
+
+Output by end of Sem 2:
+1. 2 DSA implementations repo (C/Python).
+2. 1 Python data project.
+3. 200 cumulative coding problems.
+
+
+SEMESTER 3 (COMPUTING CORE)
+Subjects: AIML, AIML Lab, DBMS, DBMS Lab, DAA, DAA Lab, Discrete Math, OS, Exploratory-1, Design Thinking.
+
+Master these:
+1. DBMS: ER, normalization, SQL, transactions, indexing, NoSQL intro.
+2. DAA: divide-conquer, greedy, DP, backtracking, NP completeness basics.
+3. OS: processes, scheduling, synchronization, deadlocks, memory/file systems.
+4. Discrete Math: logic, combinatorics, graphs, number theory.
+5. AIML: supervised vs unsupervised, preprocessing, model evaluation.
+
+Output by end of Sem 3:
+1. 1 SQL + Java/Python DB app.
+2. 1 DAA algorithm notebook.
+3. 1 OS simulation mini project.
+
+
+SEMESTER 4 (SYSTEM + DESIGN)
+Subjects: CN, CN Lab, OOP, OOP Lab, Software Engineering, Linear Algebra, PE-1, Exploratory-2.
+
+Master these:
+1. CN: layers, routing, congestion, TCP/UDP, wireshark basics.
+2. OOP Java: classes, inheritance, interfaces, exceptions, collections, JDBC.
+3. SE: SDLC, requirements, testing, metrics, risk, quality models.
+4. Linear Algebra: vector spaces, eigenvalues, SVD.
+5. PE-1 according to track.
+
+Output by end of Sem 4:
+1. 1 full Java OOP + DBMS project.
+2. 1 network lab diagnostics repository.
+
+
+SEMESTER 5 (SPECIALIZATION DEPTH)
+Subjects: Cryptography, FLAT, OOAD, Research Methodology, Probability/Entropy/MC, PE-2, Exploratory-3.
+
+Master these:
+1. Security primitives: symmetric/asymmetric crypto, hashes, protocols.
+2. FLAT for compiler and theory base.
+3. OOAD and UML models.
+4. Research writing: papers, literature review, proposal.
+5. Probability/statistics for data and ML depth.
+
+Output by end of Sem 5:
+1. 1 security-focused implementation.
+2. 1 research-style report.
+
+
+SEMESTER 6 (BUILD + APPLY)
+Subjects: Compiler Design, Statistics and Data Analysis, Leadership, PE-3, Minor Project, Exploratory-4.
+
+Master these:
+1. Compiler phases, parsing, symbol table, optimization basics.
+2. Stats for modeling and analysis.
+3. Team execution and project management.
+4. Minor project as production-grade work.
+
+Output by end of Sem 6:
+1. 1 deployable minor project.
+2. Full documentation + demo video + tests.
+
+
+SEMESTER 7
+Subjects: PE-4, PE-5, Capstone Phase-1, Exploratory-5, Summer Internship.
+
+Master these:
+1. Advanced elective depth.
+2. Capstone architecture and implementation strategy.
+3. Internship problem solving and team communication.
+
+
+SEMESTER 8
+Subjects: IT Ethical Practices, Capstone Phase-2.
+
+Master these:
+1. Responsible AI, privacy, ethics, professional practice.
+2. Capstone completion, deployment, publication, presentation.
+
+
+======================================================================
+PART 3: SPECIALIZATION TRACKS (CHOOSE ONE PRIMARY)
+======================================================================
+
+Available Tracks:
+1. Artificial Intelligence and Machine Learning
+2. DevOps
+3. Cloud Computing and Virtualization
+4. Full Stack Development
+5. Cyber Security and Digital Forensics
+6. Big Data
+7. Data Science
+8. Internet of Things
+9. Graphics and Gaming
+
+Selection Rule:
+1. Pick 1 primary track for career.
+2. Pick 1 secondary skill from another track.
+3. Complete minimum 24 credits in primary track.
+
+
+======================================================================
+PART 4: TWO-YEAR EXECUTION ROADMAP (REALISTIC)
+======================================================================
+
+Year 1 (Months 1-12): Foundation to Core
+
+Q1 (Months 1-3):
+1. C + Linux + Problem Solving + Math-I
+2. Daily 2 coding tasks
+3. Weekly Linux script
+
+Q2 (Months 4-6):
+1. DSA + Python + COA + Digital Electronics
+2. Weekly DSA contest
+3. Build 1 Python utility project
+
+Q3 (Months 7-9):
+1. DBMS + Discrete Math + OOP Java
+2. SQL daily practice
+3. Build DBMS mini app
+
+Q4 (Months 10-12):
+1. OS + CN + SE + DAA basics
+2. Start resume and GitHub portfolio formatting
+3. Build full-stack or system mini project
+
+
+Year 2 (Months 13-24): Advanced + Track + Career
+
+Q5 (Months 13-15):
+1. Crypto + FLAT + Probability + OOAD
+2. Start track-specific elective path
+
+Q6 (Months 16-18):
+1. Compiler + Statistics + Research methodology
+2. Build minor project (v1)
+
+Q7 (Months 19-21):
+1. PE-4, PE-5, internship style work
+2. Capstone phase-1
+
+Q8 (Months 22-24):
+1. Capstone phase-2 + ethics
+2. Interview preparation and placement push
+3. Publish final portfolio
+
+
+======================================================================
+PART 5: WEEKLY SYSTEM (NON-NEGOTIABLE)
+======================================================================
+
+Study split:
+1. 5 days: 2 to 4 hours coding/practice.
+2. 2 days: theory revision + notes.
+3. 1 weekly test (timed).
+
+Daily template:
+1. 60 to 90 min core subject.
+2. 60 min coding.
+3. 30 min revision.
+4. 1 GitHub push.
+
+Monthly goals:
+1. One subject test for each active major topic.
+2. One project increment with release note.
+3. One resume/portfolio improvement.
+
+
+======================================================================
+PART 6: PROJECT LADDER (MANDATORY)
+======================================================================
+
+Project 1: C + File Handling
+CLI student record system.
+
+Project 2: DSA + Python
+Task scheduler / data organizer.
+
+Project 3: Java + DBMS
+College management system.
+
+Project 4: OS + CN
+Socket-based chat/file transfer.
+
+Project 5: Track-specific
+Example: ML predictor / cloud deployment / security scanner / IoT dashboard.
+
+Project 6: Capstone
+Production quality with docs, tests, CI, demo.
+
+
+======================================================================
+PART 7: INTERVIEW AND JOB FOCUS PRIORITY
+======================================================================
+
+Tier 1 (must master):
+1. DSA
+2. OOP (Java)
+3. DBMS + SQL
+4. OS
+5. CN
+6. DAA
+
+Tier 2 (high value):
+1. Python
+2. Linux + Git
+3. Software engineering + testing
+
+Tier 3 (advanced):
+1. Compiler
+2. Security
+3. Statistics and probability
+4. Research and system design
+
+
+======================================================================
+PART 8: CHECKPOINTS
+======================================================================
+
+After 3 months:
+1. C + Linux base done
+2. 100 problems solved
+
+After 6 months:
+1. DSA + Python + SQL base strong
+2. 2 projects done
+
+After 12 months:
+1. Core CSE subjects covered once
+2. 4 projects in GitHub
+
+After 24 months:
+1. Track specialization completed
+2. Capstone quality portfolio ready
+3. Interview-ready profile
+
+
+======================================================================
+PART 9: DISCIPLINE CODE
+======================================================================
+
+1. No zero-day streak break.
+2. Consistency over intensity.
+3. Learn, build, publish, repeat.
+4. Compare with your previous week only.
+5. Small daily wins create top-level outcomes.
+
+END OF UPES SUPER MASTERING FILE
