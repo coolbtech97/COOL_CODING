@@ -1,0 +1,10 @@
+// Agenda
+1. Introduction to String
+2. Immutable class
+3. String is special
+4. Creating String
+5. Comparing String
+6. String Class Method
+
+--------------------------------------------------------------------------------------
+// Introduction to Strings

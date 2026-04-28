@@ -1,0 +1,54 @@
+// Agenda
+1. Array Introduction
+2. Declaring Arrays
+3. Two dimensional Arrays
+4. 2d Array declaration
+5. Distinct Array length
+
+--------------------------------------------------------------------------------------
+// Arrays
+->  Array is a linear collection of similar elements.
+
+->  In Java, Only Dynamic memory allocation is possible.
+
+    int arr[5];  // Wrong in Java
+
+    int arr[] = new int[5];  // Correct in Java
+    int[] arr = new int[5];  // Also correct in Java
+    int []arr = new int[5];  // Also correct in Java
+    int []arr = {1, 2, 3, 4, 5};  // Also correct in Java
+
+--------------------------------------------------------------------------------------
+// Initializing array during declaration
+
+int []arr = new int[]{1, 2, 3, 4, 5};
+
+int []arr = {1, 2, 3, 4, 5};
+
+NOTE::----->>>>>
+    You cannot** mention size and values together.
+    int []arr = new int[5]{1, 2, 3, 4, 5};  // NO NO WRONG WRONG
+
+--------------------------------------------------------------------------------------
+// Array is not blank
+
+int []arr = new int[3];
+
+
+-------------------------------------------------------------------------------------
+// Two dimensional Arrays
+
+->  It is array of arrays.
+
+int []arr = new int[6];
+
+
+int [][]arr;                    // Reference Created
+
+int [][]arr = new int[][];      // ERROR
+
+int [][]arr = new int[3][];     // Created 3 Reference Arrays
+
+int [][]arr = new int[][6];     // ERROR
+
+int [][]arr = new int[3][6];    // Create 3 Arrays of 6 Sizes

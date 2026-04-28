@@ -1,0 +1,109 @@
+// Agenda
+1. Introduction to Object class
+2. Methods of Object class
+
+--------------------------------------------------------------------------------------
+// OBJECT
+
+->  Object is a class in Java.
+
+->  Every class jas Object as a direct or indirect superclass.
+    Therefore, object class methods are available to all java classes.
+
+->  Object class is present in java.lang package.
+
+->  Object class acts as a root of the class hierarchy.
+
+--------------------------------------------------------------------------------------
+//=== METHODS OF OBJECT CLASS
+  clone()
+  equals()
+  finalize()
+  getClass()
+  toString()
+  hashCode()
+  wait()
+  notify()
+  notifyAll()
+
+-------------------------------------------------------------------------------------
+
+when we use the obj as variable like printing
+
+
+Complex z = new Complex();
+System.out.println(z);
+
+
+NOTE:: 
+    It is not z
+
+    It is z.toString() method calling,
+
+    we can also Override this Method
+
+-------------------------------------------------------------------------------------
+// toString()
+->  This method provides a String representation of an object and is used
+    to convert an object to a String.
+
+->  The default toString() method returns a String consisting of the name
+    of the class, @ , and the hashcode in hexadecimal format.
+
+-------------------------------------------------------------------------------------
+//
+
+    z.hashCode()
+
+->  JVM generates a unique number for every object, known as hashcode.
+->  This code is different for all the objects.
+
+-------------------------------------------------------------------------------------
+//
+
+    z.equals()
+
+->  This method is used to compare two objects/
+
+ex--->  
+        ibj1.equal(obj2)
+
+->  it returns true when teh objects are equal, false otherwise.
+->  Although, you have to override it in your class to work for the objects of your class.
+
+-------------------------------------------------------------------------------------
+// getClass()
+->  It returns the class object of this object and is used to ger the
+    actual runtime class of the object.
+
+->  It is final method.
+
+class Student{
+
+}
+
+Student s1 = new Student();
+System.out.println(s1.getClass().getName());
+
+-------------------------------------------------------------------------------------
+// finalize()
+->  finalize() method invokes implicity just before an unreferenced object
+    is collected by Grabage.
+
+->  It behaves as destructor of C++.
+
+-------------------------------------------------------------------------------------
+// clone()
+
+->  Complex a1 = new Complex(2,3);
+    Complex a2 = a1;
+
+    Here, data are same, and also referncing to the same object.
+
+    so We use
+    
+    Complex a3 = a1.clone();
+
+    // Here It makes the clone of a1, and returns it,
+    Not referencing the same object.
+    

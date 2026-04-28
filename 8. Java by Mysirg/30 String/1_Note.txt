@@ -1,0 +1,158 @@
+// Agenda
+1. Introduction to String
+2. Immutable class
+3. String is special
+4. Creating String
+5. Comparing String
+6. String Class Method
+
+--------------------------------------------------------------------------------------
+// Introduction to Strings
+
+->  A java.lang.String class is final which implies no class can extend it.
+
+->  Its Final
+
+--------------------------------------------------------------------------------------
+// Immutable class
+
+->  String is an immutable class, that is.
+->  String in java once created and initialized, cannot be changed in the same reference.
+
+--------------------------------------------------------------------------------------
+// String is Special
+
+->  You can create String object like primitives
+
+->  You can use + and += operator on Strings
+
+ex--
+String s1 = "anand";
+
+String s2 = " Kumar";
+
+String s3 = s1+s2;
+ or
+s2+=s1;
+
+--------------------------------------------------------------------------------------
+// Creating String
+
+->  A simple string can be created using a string literal enclosed inside double quotes --
+
+    String s1 = "My Name is Anand";
+
+->  If two or more Strings have the same set of characters in the same sequences then
+    they share the same reference in memory.
+
+NOTE:::
+String s1 = "anand";
+String s2 = "anand";
+System.out.println(s1==s2); // true
+
+
+
+--------------------------------------------------------------------------------------
+// Creating String with new keyword
+
+String s1 = new String("anand");
+System.out.println(s1==s3); // false
+
+System.out.println(s1.equals(s3)); // true
+
+->  Crreating String object using new keyword always generate a new object in memory,
+    even if the Strings are same.
+
+--------------------------------------------------------------------------------------
+// Comparing Strings
+
+String s1 = "computer";
+String s2 = "computer";
+String s3 = new String("computer");
+
+System.out.println(s1==s2); // true
+System.out.println(s1.equals(s2)); // true
+System.out.println(s1==s3); // false
+System.out.println(s1.equals(s3)); // true
+
+==          reference comparing
+equals()    content comparing
+
+--------------------------------------------------------------------------------------
+3
+s1.toUpperCase(); // COMPUTER
+s1.toLowerCase(); // computer
+
+Note::- 'NO CHANGES' IN s1 BECAUSE STRING IS IMMUTABLE
+
+
+--------------------------------------------------------------------------------------
+
+// MORE METHODS
+String s1 = "Anand Kumar";
+String s2 = "anand kumar";
+
+s1 == s2; // false
+s1.equals(s2); // false
+s1.equalsIgnoreCase(s2); // true
+s1.compareTo(s2); // -32
+
+s1.indexOf("a"); // 1
+s1.lastIndexOf("a"); // 9
+s1.indexOf("a", 2); // 4
+s1.indexOf("ana", 2); // 4
+
+s1.substring(0, 5); // Anand
+s1.substring(6); // Kumar
+
+s1.chatAt(0); // A
+s1.chatAt(1); // n
+s1.chatAt(2); // a
+s1.charAt(3); // n
+s1.charAt(4); // d
+
+// No illegal  memory acces
+s1.charAt(20); // StringIndexOutOfBoundsException ERROR ERROR
+
+s1 = "mysirg education services private limited";
+
+s1.substring(26); // private limited
+s1.substring(7,24); // education service
+s1.substring(7,25); // education services
+
+s1.replace(" ", "_"); // mysirg_education_services_private_limited
+s1.replace(" ", ""); // mysirgeducationservicesprivatelimited
+s1.replace(" ", " "); // mysirg education services private limited
+
+s2 = "   Anand Kumar   ";// leading spaces and trailing spaces
+s2.trim(); // "Anand Kumar" // removes leading and trailing spaces
+
+s1.length(); // 42
+
+s1.isEmpty(); // false
+s1.isBlank(); // false
+
+s1.contains("education"); // true
+s1.split(" "); // [mysirg, education, services, private, limited]
+
+s1.charArray(); // [m, y, s, i, r, g,  , e, d, u, c, a, t, i, o, n,  , s, e, r, v, i, c, e, s,  , p, r, i, v, a, t, e,  , l, i, m, i, t, e, d]
+
+---------------------------------------------------------------------------------------------
+
+Notes from mysirg
+
+lastIndexof(int ch)
+lastIndexOf(int ch, int fromIndex)
+lastIndexOf(String str)
+lastIndexOf(String str, int fromIndex)
+
+charAt(int index)
+substring(int beginIndex)
+substring(int beginIndex, int endIndex)
+
+replace(char oldChar, char newChar)
+
+trim()
+length()
+toString()
+toCharArray()
