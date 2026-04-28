@@ -70,7 +70,7 @@ public class Main{
 
 // 8.  Write a Java program to print cubes of first N natural numbers.
     private static void cubes(int n){
-        System.out.println("First cubes of "+n+" natural numbers: ");
+        System.out.println("First squares of "+n+" natural numbers: ");
         for(int i=1;i<=n;i++)
             System.out.print(i*i*i+" ");
         System.out.println("\n");
@@ -84,3 +84,4 @@ public class Main{
         System.out.println("\n");
     }
 }
+

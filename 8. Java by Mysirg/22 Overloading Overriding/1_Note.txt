@@ -153,3 +153,4 @@ class B extends A{
 
 B obj;
 obj.f1(); // it will call f1() of class B, because of object of class B, it is called early binding, because compiler decide at compile time which function to call
+
