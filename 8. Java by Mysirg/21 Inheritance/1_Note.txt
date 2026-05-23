@@ -96,3 +96,20 @@ class Employ extends Person
         return salary;
     }
 }
+
+
+--------------------------------------------------------------------------------------------
+
+We can decrease Restriction, but not increase Restriction
+
+at Inheritance
+
+ex--
+
+class A{
+    public void f1(){System.out.println("A");}
+}
+class B extends A{
+//  private void f1(){System.out.println("B");}
+//error
+}

@@ -7,7 +7,8 @@ public class A1{
         // without importing that class
         p2.B1 b = new p2.B1();
 
-
+        a.fb1();
+        b.fb1();
     }
 }
 

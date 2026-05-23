@@ -96,3 +96,157 @@ class A2 implements I1{             |   I1 obj = new A2();
     //------                        |   obj.f1();           // this will run the f1() of A2
     public void f1(){/*------*/}    |
 }                                   |
+
+--------------------------------------------------------------------------------------
+// Multiple Implementations
+->  A class can extend only one class but can implements any number of interfaces.
+
+class B extends A implements I1, I2, I3 {
+    //------
+    //------
+    //------
+}
+
+--------------------------------------------------------------------------------------
+// More Examples
+->  Can wants to implement MusicPlayer
+->  SportsWatch also wants to implement MusicPlayer
+->  Car also wants to implement Metrics ' to show various driving metrics '
+->  Batch wants to implement Admission
+->  Television wants to implement MagicStick to become a SmartTV.
+
+--------------------------------------------------------------------------------------
+// Multiple Extension
+->  Multiple extension is allowed when extending interfaces,
+    i.e. one interface can extend none, one or more interfaces.
+
+interface I1 {
+    //------
+}
+interface I2 {
+    //------
+}
+
+interface I3 extends I1, I2 {
+    //------
+    //------
+}
+
+--------------------------------------------------------------------------------------
+// NOTE::::
+        
+    ->  Class extends class         ***
+    ->  Class implements interface  ***
+    ->  Interface extends interface ***
+
+--------------------------------------------------------------------------------------
+// Abstract class vs Interface
+->  Abstract class will have constructor but Interfaces do not have constructors.
+->  Abstract class can have abstract and non-abstract methods, but interfaces can have only abstract methods
+    ( surprise is waiting for you )
+->  All members of an interface are public, but in Abstract class you can se only access modifiers.
+
+->  Interface can have only static variables, but Abstract class can have instance variables.
+->  Interface can jave only final variables, but Abstract class can have non-final variables as well.
+
+--------------------------------------------------------------------------------------
+// New Features
+->  Before Java 8, interfaces can only have abstract methods, but from Java 8 onwards,
+    you can write methods with definitions.
+
+    BUT then how interfaces are different from abstract classes?
+
+    There were some interfaces in Java (Before Java 8), like List which were used heavily in programming projects.
+
+    From Java 8 onwards, some often interfaces like List were modified with extra abstract methods in it.
+
+    So if some project was running on Java 7 and we updated Java version from 7 to 8, suddenly project should
+    stop working because, classes implemented List do have definitions for extra abstract methods.
+
+
+    To solve this Problem ORACLE, instead of making methods abstract, they define them as default methods
+
+    interface I1 {
+        default void f1() {             // NEED TO USE default KEYWORD******
+            //------                                            known as DEFAULT METHOD
+        }
+    }
+
+--------------------------------------------------------------------------------------
+
+A class cannot extends multiple classes but can imeplement interfaces.
+
+public class MultiInterface implements I1, I2 {
+    public static void main(String[] args) {
+        MultiInterface obj = new MultiInterface();
+        obj.f1();                                           // ERROR: class MultiInterface inherits unrelated defaults for f1() from types I1 and I2
+    }
+}
+interface I1 {
+    default void f1() {
+        System.out.println("I1");
+    }
+}
+interface I2 {
+    default void f1() {
+        System.out.println("I2");
+    }
+}
+
+
+answer, If there is defined multiple default methods with same signature,
+        then the CLASS must OVERRIDE that method.
+
+
+/= To solve this problem java forces to define default method in class A.
+
+    Normally you need not to override default method of interface in the class.
+
+--------------------------------------------------------------------------------------
+//= Another Scenario
+
+public class B extends A implements I1 {
+    public static void main(String[] args) {
+        B obj = new B();
+        obj.f1();   // which one will bind?
+    }
+}
+
+interface I1 {
+    default void f1() {
+        System.out.println("I1");
+    }
+}
+
+class A{
+    public void f1() {
+        System.out.println("A");
+    }
+}
+
+
+== here, one is interface and one is class,
+    CLASS HAS MORE PRIORITY******
+
+
+Interfaces are not allowed to define default methods which are already available in Object class.
+****************************************************
+
+--------------------------------------------------------------------------------------
+// Static Methods in Interfaces
+
+interface I1 {
+    static void f1() {
+        System.out.println("I1");
+    }
+}
+
+I1.f1();   // OK: static method         WOW WOW WOW WOW
+
+--------------------------------------------------------------------------------------
+// Conclusion
+JAVA interfaces can have
+    - variables ( public, static and final )
+    - methods ( abstract & public )
+    - default methods
+    - static methods
