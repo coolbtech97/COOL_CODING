@@ -1,0 +1,26 @@
+1: const obj = {};
+    Object.defineProperty(obj, "hidden",
+    { value: "This is hidden",
+      enumerable: false, // Not enumerable
+      writable: true, // Optional: Can be modified
+      configurable: true // Optional: Can be deleted or changed });
+
+1. writable
+    Determines if the value of the property can be changed*.
+
+    - If writable: true     ,   The property value can be reassigned.
+    - If writable: false    ,   The property value is read-only.
+        Attempts to change it fail:
+            - In non-strict mode, the operation silently fails.
+            - In strict mode,     it throws a TypeError.
+
+2. enumerable
+    Determines if the property will show up in enumeration operation like:
+        - for ...in
+        - Object.keys()
+        - Object.entries()
+        - If enumerable: true   ,   The property is visible furing iteration.
+        - If enumerable: false  ,   The property is hidden from enumeration methods but can still be accessed directly.
+
+3. configurable
+    Determines if the property's description itself ca be mo

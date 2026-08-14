@@ -91,6 +91,7 @@ let acc6 = "100.50abc";
 console.log(parseFloat(acc6));  // type conversion      100.5
 
 
+// Null
 let num ;
 console.log(num);             // undefined
 console.log(typeof num);      // undefined
@@ -98,4 +99,28 @@ console.log(typeof num);      // undefined
 let m = null;
 console.log(m);               // null
 console.log(typeof m);        // object (this is a known quirk in JavaScript)
+console.log(Number(m));       // 0
+
+// Undefined
+let m2;
+console.log(Number(m2))       // NaN
+
+
+
+// Number to String
+
+let ab = 20;
+console.log(String(ab))
+console.log(typeof String(ab))
+
+// Boolean to String
+let ax = true
+console.log(ax)             // true
+console.log(String(ax))     // "true"
+
+
+
+// String to Boolean
+let abc = " "
+console.log(Boolean(abc))   // true         Empty String is False ONLY****
 

@@ -9,3 +9,65 @@ let n3 = 50;
 
 let arr = [10, 20, 50];
 console.log(arr);
+
+
+// ----------------------------------------------------------------------------------------------------
+
+// Object
+// key:valye
+
+let obj = {
+    user_name: "Anand",
+    account_number: 3022459421,
+    balance: 10000000
+}
+
+console.log(obj)
+
+console.log(obj.user_name)
+console.log(obj.account_number)
+console.log(obj.balance)
+
+console.log(typeof obj)     //Object
+
+// ----------------------------------------------------------------------------------------------------
+
+//FUNCTION
+
+// WE CAN ASSIGN FUNCTION IN A VARIABLE*****
+
+let f1 = function(){
+    console.log("Hello COOL")
+}
+
+f1();
+
+console.log(typeof f1);     //function
+
+// We can put returns within that function, NO NEED TO TYPE RETURN TYPES
+
+// ----------------------------------------------------------------------------------------------------
+
+//Type Conversion
+
+let account_balance = "100"
+
+let num = Number(account_balance);//******* VERY EASY WOW WOW WOW WOW
+
+console.log(typeof account_balance) //string
+console.log(typeof num)             // number
+
+// Boolean convert to number
+
+let x = true;
+console.log(Number(x))  // 1
+
+
+
+// ERRORS can be
+
+let n1 = "240vm"
+
+console.log(Number(n1));    // NaN    Not a Number
+
+
