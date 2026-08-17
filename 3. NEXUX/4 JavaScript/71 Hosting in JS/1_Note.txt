@@ -1,0 +1,10 @@
+// JS Code Execution
+
+-> Js is a synchronous single thereaded language.
+-> Hosting in Js is the behaviour where varaible and function declarations are
+   moved to the top of their containing scope during the compilation phase, before
+   the code has been executed.
+-> This means that JS "hoists" of lifts the declaration (
+    not the assignments) to the top, so you can refer to them b
+    they are written in the code. However, only the declarat\
+    hoisted, not the assignments or initiali
