@@ -8,3 +8,9 @@
     not the assignments) to the top, so you can refer to them b
     they are written in the code. However, only the declarat\
     hoisted, not the assignments or initiali
+
+
+
+-> Hosting matlab, sara variables ko initialise phle kr dena
+
+-> matlab, decalration ko Code ke first me Likh dena,,,,

@@ -1,0 +1,44 @@
+// The this keyword in JS is a special keyword that reefers to
+// the context in which the current code is being executed.
+// Its value depends on how the function where this is used is called.
+
+
+// 1: Global Context (Outside Any Function)
+// In browser: window
+// In Node.js: Module's exports object
+
+
+
+
+// *********************************************************
+
+
+// 2: Inside a Function
+// 1: (Non-Strict Mode)
+// When this is used inside a regular function, it refers to the global object
+// ii: Strict Mode
+// this will be undefined inside a function.
+
+
+// *******************************************************
+
+// 3. Inside a Method (Object Context)
+// When this is used inside an object's method, it refers to the oject that
+
+
+
+
+
+
+// *******************************************************
+
+// Arrow functions don't have their own this.
+// Instead, they inherit this from the surronding (lexical) scope.
+
+
+
+
+
+
+// Inside a Constructor or Class
+// In constructors and classes, this reefers to the instance of the object bei
